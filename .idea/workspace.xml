@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3d78c7a-bcec-46d7-80a1-da32972dfd29" name="Default" comment="" />
+    <list default="true" id="e3d78c7a-bcec-46d7-80a1-da32972dfd29" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -25,17 +28,9 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/services/shop/modules/offormit/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.65384614">
-              <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-              <folding>
-                <marker date="1466606901650" expanded="true" signature="2110:2121" placeholder="..." />
-                <marker date="1466606901650" expanded="true" signature="2555:2799" placeholder="..." />
-                <marker date="1466606901650" expanded="true" signature="2555:2801" placeholder="..." />
-                <marker date="1466606901650" expanded="true" signature="2637:2799" placeholder="..." />
-                <marker date="1466606901650" expanded="true" signature="2860:3209" placeholder="..." />
-                <marker date="1466606901650" expanded="true" signature="2860:3967" placeholder="..." />
-                <marker date="1466606901650" expanded="true" signature="6642:6658" placeholder="..." />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -44,7 +39,7 @@
         <entry file="file://$PROJECT_DIR$/.htaccess">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="76" column="13" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="22" />
+              <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -55,14 +50,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="42" column="225" selection-start-line="42" selection-start-column="225" selection-end-line="42" selection-end-column="225" />
-              <folding>
-                <marker date="1466615480986" expanded="true" signature="142:187" placeholder="select * fro... user_l" />
-                <marker date="1466615480986" expanded="true" signature="315:365" placeholder="Select * fro... profile" />
-                <marker date="1466615480986" expanded="true" signature="1105:1281" placeholder="insert into zayavka... " />
-                <marker date="1466615480986" expanded="true" signature="1105:1312" placeholder="insert into zayavka... " />
-                <marker date="1466615480986" expanded="true" signature="1105:1314" placeholder="insert into zayavka... " />
-                <marker date="1466615480986" expanded="true" signature="1332:1539" placeholder="insert into zayavka... " />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -70,23 +58,15 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/services/profile/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7063903">
-              <caret line="217" column="70" selection-start-line="217" selection-start-column="70" selection-end-line="217" selection-end-column="70" />
+            <state vertical-scroll-proportion="1.2891892">
+              <caret line="323" column="0" selection-start-line="323" selection-start-column="0" selection-end-line="323" selection-end-column="0" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#form#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#form#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#form#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#form#0;n#!!top" expanded="true" />
-                <marker date="1466675058442" expanded="true" signature="813:918" placeholder="select * fro... profile" />
-                <marker date="1466675058442" expanded="true" signature="5320:5336" placeholder="..." />
-                <marker date="1466675058442" expanded="true" signature="6247:6357" placeholder="..." />
-                <marker date="1466675058442" expanded="true" signature="6443:6459" placeholder="..." />
-                <marker date="1466675058442" expanded="true" signature="6810:6826" placeholder="..." />
-                <marker date="1466675058442" expanded="true" signature="7752:7866" placeholder="..." />
-                <marker date="1466675058442" expanded="true" signature="7957:7973" placeholder="..." />
-                <marker date="1466675058442" expanded="true" signature="8546:8611" placeholder="select * fro... zayavka" />
-                <marker date="1466675058442" expanded="true" signature="10316:10524" placeholder="..." />
+                <marker date="1466694775180" expanded="true" signature="813:918" placeholder="select * fro... profile" />
+                <marker date="1466694775180" expanded="true" signature="5320:5336" placeholder="..." />
+                <marker date="1466694775180" expanded="true" signature="6443:6459" placeholder="..." />
+                <marker date="1466694775180" expanded="true" signature="6810:6826" placeholder="..." />
+                <marker date="1466694775180" expanded="true" signature="7957:7973" placeholder="..." />
+                <marker date="1466694775180" expanded="true" signature="8546:8611" placeholder="select * fro... zayavka" />
               </folding>
             </state>
           </provider>
@@ -95,7 +75,7 @@
       <file leaf-file-name="auth.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/services/auth.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.351852">
+            <state vertical-scroll-proportion="0.0">
               <caret line="102" column="7" selection-start-line="101" selection-start-column="7" selection-end-line="102" selection-end-column="7" />
               <folding />
             </state>
@@ -111,6 +91,9 @@
         <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/pages/services/index.php" root0="SKIP_HIGHLIGHTING" root1="SKIP_INSPECTION" />
@@ -184,7 +167,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
+    <option name="width" value="1370" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -203,7 +186,7 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -228,8 +211,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -238,58 +219,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ch1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ch1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ch1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="profile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -355,12 +288,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18740849" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18685377" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -591,13 +524,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/откинуты/modules/eq.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="21.038462">
-          <caret line="129" column="24" selection-start-line="126" selection-start-column="4" selection-end-line="129" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/sprinkle.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -741,7 +667,7 @@
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="76" column="13" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="22" />
+          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -750,20 +676,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="42" column="225" selection-start-line="42" selection-start-column="225" selection-end-line="42" selection-end-column="225" />
-          <folding>
-            <marker date="1466615480986" expanded="true" signature="142:187" placeholder="select * fro... user_l" />
-            <marker date="1466615480986" expanded="true" signature="315:365" placeholder="Select * fro... profile" />
-            <marker date="1466615480986" expanded="true" signature="1105:1281" placeholder="insert into zayavka... " />
-            <marker date="1466615480986" expanded="true" signature="1105:1312" placeholder="insert into zayavka... " />
-            <marker date="1466615480986" expanded="true" signature="1105:1314" placeholder="insert into zayavka... " />
-            <marker date="1466615480986" expanded="true" signature="1332:1539" placeholder="insert into zayavka... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/services/auth.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.351852">
+        <state vertical-scroll-proportion="0.0">
           <caret line="102" column="7" selection-start-line="101" selection-start-column="7" selection-end-line="102" selection-end-column="7" />
           <folding />
         </state>
@@ -771,39 +690,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/services/shop/modules/offormit/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.65384614">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-          <folding>
-            <marker date="1466606901650" expanded="true" signature="2110:2121" placeholder="..." />
-            <marker date="1466606901650" expanded="true" signature="2555:2799" placeholder="..." />
-            <marker date="1466606901650" expanded="true" signature="2555:2801" placeholder="..." />
-            <marker date="1466606901650" expanded="true" signature="2637:2799" placeholder="..." />
-            <marker date="1466606901650" expanded="true" signature="2860:3209" placeholder="..." />
-            <marker date="1466606901650" expanded="true" signature="2860:3967" placeholder="..." />
-            <marker date="1466606901650" expanded="true" signature="6642:6658" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/services/profile/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7063903">
-          <caret line="217" column="70" selection-start-line="217" selection-start-column="70" selection-end-line="217" selection-end-column="70" />
+        <state vertical-scroll-proportion="1.2891892">
+          <caret line="323" column="0" selection-start-line="323" selection-start-column="0" selection-end-line="323" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#form#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#form#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#form#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#form#0;n#!!top" expanded="true" />
-            <marker date="1466675058442" expanded="true" signature="813:918" placeholder="select * fro... profile" />
-            <marker date="1466675058442" expanded="true" signature="5320:5336" placeholder="..." />
-            <marker date="1466675058442" expanded="true" signature="6247:6357" placeholder="..." />
-            <marker date="1466675058442" expanded="true" signature="6443:6459" placeholder="..." />
-            <marker date="1466675058442" expanded="true" signature="6810:6826" placeholder="..." />
-            <marker date="1466675058442" expanded="true" signature="7752:7866" placeholder="..." />
-            <marker date="1466675058442" expanded="true" signature="7957:7973" placeholder="..." />
-            <marker date="1466675058442" expanded="true" signature="8546:8611" placeholder="select * fro... zayavka" />
-            <marker date="1466675058442" expanded="true" signature="10316:10524" placeholder="..." />
+            <marker date="1466694775180" expanded="true" signature="813:918" placeholder="select * fro... profile" />
+            <marker date="1466694775180" expanded="true" signature="5320:5336" placeholder="..." />
+            <marker date="1466694775180" expanded="true" signature="6443:6459" placeholder="..." />
+            <marker date="1466694775180" expanded="true" signature="6810:6826" placeholder="..." />
+            <marker date="1466694775180" expanded="true" signature="7957:7973" placeholder="..." />
+            <marker date="1466694775180" expanded="true" signature="8546:8611" placeholder="select * fro... zayavka" />
           </folding>
         </state>
       </provider>
