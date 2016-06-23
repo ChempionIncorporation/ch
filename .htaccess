@@ -1,0 +1,85 @@
+RewriteEngine on
+
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-l
+
+#RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+
+#RewriteRule ^articles/([^/]+)/?$ /modules/display_article.php?articleId=$1 [L]
+#RewriteRule ^portfolio/all/?$ /pages/services/portfolio.php [L]
+
+RewriteRule ^services/([^/]+)/?$ /pages/services/index.php?url=$1 [L]
+RewriteRule ^clients/?$ /pages/services/clie.php [L]
+RewriteRule ^help/?$ /pages/services/help.php [L]
+RewriteRule ^search/?$ /pages/services/search.php [L]
+RewriteRule ^search/([^/]+)/?$ /pages/services/search.php?&under=$1&url=$1 [L]
+
+RewriteRule ^portfolio/?$ /pages/services/portfolio.php [L]
+RewriteRule ^portfolio/details/([^/]+)?$ /pages/services/portfoliolist.php?idp=$1 [L]
+RewriteRule ^portfolio/([^/]+)/?$ /pages/services/portfoliolist.php?url=$1 [L]
+RewriteRule ^portfolio/([^/]+)/([^/]+)/?$ /pages/services/portfoliolist.php?pod=$2&url=$1 [L]
+
+RewriteRule ^price/?$ /pages/services/price.php [L]
+RewriteRule ^reviews/?$ /pages/services/reviews.php [L]
+RewriteRule ^vocation/?$ /pages/services/vocation.php [L]
+RewriteRule ^contacts/?$ /pages/services/contacts.php [L]
+RewriteRule ^news/?$ /pages/services/news.php [L]
+	RewriteRule ^news/([^/]+)/?$ /pages/services/news.php?link=$1 [L]
+
+	RewriteRule ^polygraphy/?$ /pages/services/index.php?url=polygraphy&cat=polygraphy&id=1 [L,QSA]
+	RewriteRule ^polygraphy/([^/]+)/?$ /pages/services/index.php?cat=polygraphy&under=$1&url=$1&id=2 [L]
+	RewriteRule ^polygraphy/([^/]+)/([^/]+)/?$ /pages/services/index.php?cat=polygraphy&under=$1&url=$2&id=3 [L]
+
+	RewriteRule ^suveniry/?$ /pages/services/index.php?url=suveniry&cat=suveniry&id=1 [L,QSA]
+	RewriteRule ^suveniry/([^/]+)/?$ /pages/services/index.php?cat=suveniry&url=$1&id=2 [L]
+	RewriteRule ^suveniry/([^/]+)/([^/]+)/?$ /pages/services/index.php?cat=suveniry&under=$1&url=$2&id=3 [L]
+
+	RewriteRule ^sayty/?$ /pages/services/index.php?url=sayty&cat=sayty&id=1 [L,QSA]
+	RewriteRule ^sayty/([^/]+)/?$ /pages/services/index.php?cat=sayty&under=$1&url=$1&id=2 [L,QSA]
+	RewriteRule ^sayty/([^/]+)/([^/]+)/?$ /pages/services/index.php?cat=sayty&under=$1&url=$2&id=3 [L,QSA]
+
+	RewriteRule ^naruzhnaya_reklama/?$ /pages/services/index.php?url=naruzhnaya_reklama&cat=naruzhnaya_reklama&id=1 [L,QSA]
+	RewriteRule ^naruzhnaya_reklama/([^/]+)/?$ /pages/services/index.php?cat=naruzhnaya_reklama&url=$1&id=2 [L,QSA]
+	RewriteRule ^naruzhnaya_reklama/([^/]+)/([^/]+)/?$ /pages/services/index.php?cat=naruzhnaya_reklama&under=$1&url=$2&id=3 [L,QSA]
+
+	RewriteRule ^promo_aktsii/?$ /pages/services/index.php?url=promo_aktsii&cat=promo_aktsii&id=1 [L,QSA]
+	RewriteRule ^promo_aktsii/([^/]+)/?$ /pages/services/index.php?cat=promo_aktsii&url=$1&id=2 [L,QSA]
+	RewriteRule ^promo_aktsii/([^/]+)/([^/]+)/?$ /pages/services/index.php?cat=promo_aktsii&under=$1&url=$2&id=3 [L,QSA]
+
+	RewriteRule ^transport/?$ /pages/services/index.php?url=transport&cat=transport&id=1 [L,QSA]
+	RewriteRule ^transport/([^/]+)/?$ /pages/services/index.php?cat=transport&under=$1&url=$1&id=2 [L,QSA]
+	RewriteRule ^transport/([^/]+)/([^/]+)/?$ /pages/services/index.php?cat=transport&under=$1&url=$2&id=3 [L,QSA]
+
+	RewriteRule ^media_reklama/?$ /pages/services/index.php?url=media_reklama&cat=media_reklama&id=1 [L,QSA]
+	RewriteRule ^media_reklama/([^/]+)/?$ /pages/services/index.php?cat=media_reklama&under=$1&url=$1&id=2 [L,QSA]
+	RewriteRule ^media_reklama/([^/]+)/([^/]+)/?$ /pages/services/index.php?cat=media_reklama&under=$1&url=$2&id=3 [L,QSA]
+
+	RewriteRule ^dizayn/?$ /pages/services/index.php?url=dizayn&cat=dizayn&id=1 [L,QSA]
+	RewriteRule ^dizayn/([^/]+)/?$ /pages/services/index.php?cat=dizayn&url=$1&id=2 [L,QSA]
+	#RewriteRule ^dizayn/([^/]+)/([^/]+)/?$ /pages/services/index.php?cat=dizayn&under=$1&url=$2 [L,QSA]
+
+	RewriteRule ^nestandartnaya_reklama/?$ /pages/services/index.php?url=nestandartnaya_reklama&cat=nestandartnaya_reklama&id=1 [L,QSA]
+	RewriteRule ^nestandartnaya_reklama/([^/]+)/?$ /pages/services/index.php?cat=nestandartnaya_reklama&under=$1&url=$1&id=2 [L,QSA]
+	RewriteRule ^nestandartnaya_reklama/([^/]+)/([^/]+)/?$ /pages/services/index.php?cat=nestandartnaya_reklama&under=$1&url=$2&id=3 [L,QSA]
+
+
+RewriteRule ^offset/?$ /pages/services/offset.php [L]
+RewriteRule ^id([^/]+)/?$ /pages/services/profile/index.php?id=$1 [L,QSA]
+RewriteRule ^auth/?$ /pages/services/auth.php [L]
+RewriteRule ^editor/?$ /pages/services/shop/modules/editor/view.php [L]
+
+RewriteRule ^shop/?$ /pages/services/shop/index.php [L]
+RewriteRule ^shop/([^/]+)/?$ /pages/services/shop/index.php?prod=1&view=$1 [L]
+RewriteRule ^shop/([^/]+)/([^/]+)?$ /pages/services/shop/index.php?prod=2&view=$1&id=$2 [L]
+
+RewriteRule ^cart/?$ /pages/services/shop/modules/offormit/index.php [L]
+RewriteRule ^cart/send?$ /pages/services/shop/modules/offormit/send.php [L]
+
+
+#RewriteRule ^price/all/?$ /pages/services/price.php [L]
+#/services/polygraphy
+#AddDefaultCharset Off
+#<IfModule dir_module>
+#    DirectoryIndex index.php
+#</IfModule>

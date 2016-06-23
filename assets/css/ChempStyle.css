@@ -1,0 +1,65 @@
+body{
+    background-color: #F7F7F7;
+}
+/*Gallery*/
+.mosaicflow__column {
+    float:left;
+}
+
+.mosaicflow__item {
+    position:relative;
+    border: 1px solid silver;
+    margin:5px;
+}
+.mosaicflow__item img {
+    display:block;
+    width:100%;
+    max-width:400px;
+    height:auto;
+}
+.mosaicflow__item p {
+    position: absolute;
+    bottom: 50%;
+    width: 50%;
+    margin: 0px;
+    background: hsla(0,0%,0%,.5);
+    color: #fff;
+    font-size: 15px;
+    text-shadow: 1px 1px 1px hsla(0,0%,0%,.75);
+    opacity: 0;
+    -webkit-transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
+    -moz-transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
+    -o-transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
+    transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
+    padding: 5px;
+}
+.mosaicflow__item div {
+    position: absolute;
+    bottom: 0%;
+    width: 70%;
+    margin: 0px;
+    background:  hsla(1, 43%, 60%, 0.5);
+    color: #fff;
+    font-size: 15px;
+    text-shadow: 1px 1px 1px hsla(0,0%,0%,.75);
+    opacity: 0;
+    -webkit-transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
+    -moz-transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
+    -o-transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
+    transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
+    padding: 5px;
+    height: 49%;
+}
+.mosaicflow__item:hover p {
+    opacity:1;
+}
+.mosaicflow__item:hover .info-p {
+    opacity:1;
+}
+/*-------NEWS-LINE--------*/
+.news{
+    margin: 5px 20px; 
+}
+h2{
+    color: #525252;
+}

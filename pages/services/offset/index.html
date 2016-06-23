@@ -1,0 +1,569 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0035)http://sborka.ua/?id=6&type=2#price -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link href="./style/css.css" rel="stylesheet" type="text/css">
+    <script async="" src="./style/analytics.js"></script><script type="text/javascript" src="./style/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="./style/jquery.form.js"></script>
+    <script type="text/javascript" src="./style/jquery.fancybox-1.3.4.pack.js"></script>
+    <script type="text/javascript" src="./style/jquery.easing-1.3.pack.js"></script>
+    <link rel="stylesheet" href="./style/jquery.fancybox-1.3.4.css" type="text/css" media="screen">
+    <link rel="stylesheet" type="text/css" href="./style/ddsmoothmenu.css">
+    <script type="text/javascript" src="./style/ddsmoothmenu.js"></script>
+    <link href="./style/ui.datepicker.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="./style/ui.datepicker.js"></script>
+    <script type="text/javascript" src="./style/jquery.tablesorter.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style/jquery.tablesorter.css">
+<style type="text/css"></style><link rel="shortcut icon" type="image/x-icon" href="http://sborka.ua/mail.ico"></head>
+<body>
+<script type="text/javascript">
+$(document).ready(function(){
+	//if ($.browser.opera||$.browser.msie){ 
+	if ($.browser.msie){ 
+    	alert("Уважаемый клиент, к сожалению, бесперебойная работа с нашим сервисом на 100% гарантируется только с браузерами Mozilla Firefox, Google Chrome и Apple Safari. Возможно с Opera. Перейдите в наш сервис с использованием одного из этих браузеров. Приносим свои извинения."); 
+ };
+});
+</script>
+  
+<div class="main">
+<style type="text/css">
+td {
+	padding: 5px 10px !important;
+}
+.tabs2 {
+	line-height: 34px;
+	list-style: none;
+	border-bottom: 1px solid #DDD;
+	background: #FFF;
+}
+.tabs2 li {
+	float: left;
+	display: inline;
+	margin: 0 1px -1px 0;
+	padding: 10px;
+	color: #777;
+	cursor: pointer;
+	background: #F9F9F9;
+	border: 1px solid #E4E4E4;
+	border-bottom: 1px solid #F9F9F9;
+	position: relative;
+	font-size: 18px;
+	font-weight: 700;
+}
+.tabs2 li:hover, .vertical .tabs li:hover {
+	color: #cc0000;
+	background: #fff;
+}
+.tabs2 li.current {
+	color: #cc0000;
+	background: #fff;
+	padding: 13px 13px 14px 13px;
+	border: 1px solid #D4D4D4;
+	border-bottom: 1px solid #fff;
+}
+.box {
+	display: none;
+	clear: both;
+}
+.box.visible {
+	display: block;
+}
+.sp {
+	width: 205px;
+	height: 30px;
+	padding: 10px;
+	float: left;
+	text-align: center;
+	box-shadow: inset 0 0 1px 1px #ccc;
+}
+.sp:hover, .sp.active {
+	box-shadow: inset 0 0 2px 2px #CC0000;
+}
+.outer {
+	width: 225px;
+	height: 300px;
+	float: left;
+	text-align: center;
+}
+.sp2 {
+	padding: 30px 0 10px 0;
+	box-shadow: inset 0 0 1px 1px #ccc;
+}
+.clearinput {
+	border: none !important;
+	font-weight: 700;
+	text-align: right;
+	width: 40px;
+}
+#chooseformat,#chooseformat option{
+	font-size:14px; padding:3px;}
+</style>
+<style type="text/css">
+.t_razmer {
+	background-color: #f2f2f2;
+    border-color: #f2f2f2;
+    border-style: solid;
+    border-width: 1px;
+    color: #333;
+    font-family: Calibri;
+    list-style: outside none none;
+    margin-bottom: 0;
+    padding: 10px 30px;
+}
+
+.t_razmer:hover,
+.t_razmer:focus, .tactive {
+	background-color: white;
+	//border-radius: 2px;
+	border-color: lightgray;
+	border-width: 1px;
+	border-style: solid;
+	color:#C00;
+	padding: 10px;
+	padding-left: 30px;
+	padding-right: 29px;
+	margin-bottom: 0px;
+	cursor: pointer;
+	transition: all 0.3s ease-out;
+}
+
+.t_razmer > li {
+  display: inline-block;
+}
+
+.t_colonka a{
+    text-decoration: none;
+    color: #333;
+}
+
+.t_colonka a:hover {
+    color: #C00;
+}
+
+.t_colonka td { padding:3px 3px 3px 0  !important;}
+
+.t_row {
+  margin-right: -5px;
+  margin-left: -3px;
+}
+.t_colonka {
+    float: left;
+    min-height: 1px;
+    padding: 6px;
+    position: relative;
+    width: 24%;
+}
+.t_greyblock li {
+    cursor: pointer;
+    display: inline-block;
+    height: 21px;
+    border: 1px solid #f2f2f2;
+    /*padding: 7px 0px 7px 0px;*/
+    margin-right: 7px;
+    background: #fff;
+    vertical-align: middle;
+    font-size: 11px;
+    text-align: center;
+    display: table-cell;
+    width:1%;
+    -webkit-transition: all .6s ease; 
+}
+.t_greyblock > li > a {
+  text-decoration: none;
+  color: #333;
+}
+.t_greyblock li:hover, .t_greyblock li.selected {
+    background: #f2f2f2;
+    color: #c00;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    }
+.t_greyblock > li > a:hover {
+  color: #C5181E;
+}   
+#t_plot {
+  padding: 7px 0px 7px 0px;
+  cursor: pointer;
+}
+.t_switchable input {
+    display:none;
+}
+.t_switchable input:checked+#t_plot {
+    color:white;
+    font-weight: bold;
+    padding: 7px 0px 7px 0px;
+    background-color: #C00;
+    cursor: pointer;
+}
+</style>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('ul.tabs,ul.tabs2').each(function() {  
+		$(this).find('li').each(function(i) {  
+			$(this).click(function(){  
+				$(this).addClass('current').siblings().removeClass('current')  
+					.parents('div.section').find('div.box').eq(i).fadeIn(150).siblings('div.box').hide();  
+			});  
+		});  
+	});
+	var tabIndex = window.location.hash.replace('#tab','')-1;
+	if (tabIndex != -1) $('ul.tabs li').eq(tabIndex).click();
+	$('a[href*=#tab]').click(function() {
+		var tabIndex = $(this).attr('href').replace(/(.*)#tab/, '')-1;
+		$('ul.tabs li').eq(tabIndex).click();
+	});
+});
+</script>
+<div class="section">
+<div class="t_row">
+<div class="t_colonka"><a href="http://sborka.ua/?id=6&amp;type=1#price"> 
+    <ul class="t_razmer ">
+    <li style="width:80px;"><b>90 × 50</b></li><span class="">Визитка</span></ul>
+	</a>
+    <a href="http://sborka.ua/?id=6&amp;type=2#price"> 
+    <ul class="t_razmer tactive">
+    <li style="width:80px;"><b>50 × 180</b></li><span class="">Двойная визитка</span></ul>
+	</a>
+    <a href="http://sborka.ua/?id=6&amp;type=3#price"> 
+    <ul class="t_razmer ">
+    <li style="width:80px;"><b>90 × 100</b></li><span class="">Двойная визитка</span></ul>
+	</a>
+    <a href="http://sborka.ua/?id=6&amp;type=4#price"> 
+    <ul class="t_razmer ">
+    <li style="width:80px;"><b>45 × 50</b></li><span class="">Полвизитки</span></ul>
+	</a>
+    </div><div class="t_colonka"><a href="http://sborka.ua/?id=6&amp;type=5#price"> 
+    <ul class="t_razmer ">
+    <li style="width:80px;"><b>55 × 85</b></li><span class="">Евровизитка</span></ul>
+	</a>
+    <a href="http://sborka.ua/?id=6&amp;type=6#price"> 
+    <ul class="t_razmer ">
+    <li style="width:80px;"><b>55 × 170</b></li><span class="">Двойная евровизитка</span></ul>
+	</a>
+    <a href="http://sborka.ua/?id=6&amp;type=7#price"> 
+    <ul class="t_razmer ">
+    <li style="width:80px;"><b>85 × 110</b></li><span class="">Двойная евровизитка</span></ul>
+	</a>
+    <a href="http://sborka.ua/?id=6&amp;type=8#price"> 
+    <ul class="t_razmer ">
+    <li style="width:80px;"><b>30 × 50</b></li><span class="">Евробирка</span></ul>
+	</a>
+    </div><div class="t_colonka"><a href="http://sborka.ua/?id=6&amp;type=9#price"> 
+    <ul class="t_razmer ">
+    <li style="width:80px;"><b>100 × 70</b></li><span class="">Календарь</span></ul>
+	</a>
+    <a href="http://sborka.ua/?id=6&amp;type=10#price"> 
+    <ul class="t_razmer ">
+    <li style="width:80px;"><b>70 × 200</b></li><span class="">Двойной календарь</span></ul>
+	</a>
+    <a href="http://sborka.ua/?id=6&amp;type=11#price"> 
+    <ul class="t_razmer ">
+    <li style="width:80px;"><b>100 × 140</b></li><span class="">Двойной календарь</span></ul>
+	</a>
+    <a href="http://sborka.ua/?id=6&amp;type=12#price"> 
+    <ul class="t_razmer ">
+    <li style="width:80px;"><b>50 × 70</b></li><span class="">Полкалендаря</span></ul>
+	</a>
+    </div><div class="t_colonka"><a href="http://sborka.ua/?id=6&amp;type=13#price"> 
+    <ul class="t_razmer ">
+    <li style="width:80px;"><b>40 × 70</b></li><span class="">Минивизитка</span></ul>
+	</a>
+    <a href="http://sborka.ua/?id=6&amp;type=14#price"> 
+    <ul class="t_razmer ">
+    <li style="width:80px;"><b>90 × 150</b></li><span class="">Минифлаер</span></ul>
+	</a>
+    <a href="http://sborka.ua/?id=6&amp;type=15#price"> 
+    <ul class="t_razmer ">
+    <li style="width:80px;"><b>420 × 596</b></li><span class="">А2</span></ul>
+	</a>
+    <a href="http://sborka.ua/?id=6&amp;type=16#price"> 
+    <ul class="t_razmer ">
+    <li style="width:80px;"><b>596 × 840</b></li><span class="">А1</span></ul>
+	</a>
+    </div><div class="t_colonka"><a href="http://sborka.ua/?id=6&amp;type=17#price"> 
+    <ul class="t_razmer ">
+    <li style="width:80px;"><b>99 × 210</b></li><span class="">Еврофлаер</span></ul>
+	</a>
+    <a href="http://sborka.ua/?id=6&amp;type=18#price"> 
+    <ul class="t_razmer ">
+    <li style="width:80px;"><b>198 × 210</b></li><span class="">Двойной еврофлаер</span></ul>
+	</a>
+    <a href="http://sborka.ua/?id=6&amp;type=19#price"> 
+    <ul class="t_razmer ">
+    <li style="width:80px;"><b>90 × 90</b></li><span class="">Кубарик</span></ul>
+	</a>
+    <a href="http://sborka.ua/?id=6&amp;type=20#price"> 
+    <ul class="t_razmer ">
+    <li style="width:80px;"><b>99 × 99</b></li><span class="">Полфлаера</span></ul>
+	</a>
+    </div><div class="t_colonka"><a href="http://sborka.ua/?id=6&amp;type=21#price"> 
+    <ul class="t_razmer ">
+    <li style="width:80px;"><b>105 × 148</b></li><span class="">А6</span></ul>
+	</a>
+    <a href="http://sborka.ua/?id=6&amp;type=22#price"> 
+    <ul class="t_razmer ">
+    <li style="width:80px;"><b>148 × 210</b></li><span class="">А5</span></ul>
+	</a>
+    <a href="http://sborka.ua/?id=6&amp;type=23#price"> 
+    <ul class="t_razmer ">
+    <li style="width:80px;"><b>210 × 297</b></li><span class="">А4</span></ul>
+	</a>
+    <a href="http://sborka.ua/?id=6&amp;type=24#price"> 
+    <ul class="t_razmer ">
+    <li style="width:80px;"><b>297 × 420</b></li><span class="">А3</span></ul>
+	</a>
+    </div><div class="t_colonka"><a href="http://sborka.ua/?id=6&amp;type=25#price"> 
+    <ul class="t_razmer ">
+    <li style="width:80px;"><b>50 × 145</b></li><span class="">А7 dl</span></ul>
+	</a>
+    <a href="http://sborka.ua/?id=6&amp;type=26#price"> 
+    <ul class="t_razmer ">
+    <li style="width:80px;"><b>105 × 297</b></li><span class="">А5 dl</span></ul>
+	</a>
+    <a href="http://sborka.ua/?id=6&amp;type=27#price"> 
+    <ul class="t_razmer ">
+    <li style="width:80px;"><b>420 × 148</b></li><span class="">А4 dl</span></ul>
+	</a>
+    <a href="http://sborka.ua/?id=6&amp;type=28#price"> 
+    <ul class="t_razmer ">
+    <li style="width:80px;"><b>594 × 210</b></li><span class="">А3 dl</span></ul>
+	</a>
+    </div><div class="t_colonka" style="margin-bottom: 20px;">
+	<ul class="t_razmer" style="height:138px;"><li><b>Нестандартный размер</b></li><span class=""><br>Офсетная печать</span><br>
+    <form action="http://sborka.ua/?id=6#price" method="get"><input type="hidden" name="id" value="6"><input type="hidden" name="type" value="30">
+    <table style="width:100px;margin-top:10px;" border="0" cellspacing="0" cellpadding="0">
+    <tbody><tr><td>ширина</td><td width="1"></td><td>высота</td></tr>
+    <tr><td><input type="number" name="width" value="30" style="width:40px; padding:3px;" min="30" max="596"></td><td>×</td><td><input type="number" name="height" value="30" style="width:40px; padding:3px;" min="30" max="420"></td></tr>
+    <tr><td colspan="3"><input type="submit" value="показать цены" id="shp"></td></tr></tbody></table>
+    </form></ul>
+</div>
+</div>
+<br style="clear:both;"><a name="price"></a><br>
+<h3 class="new" style="padding:6px;">50 × 180 Двойная визитка</h3>
+	<p style="padding:6px; font-size:16px; font-weight:400; text-align:center;">Активный прайс лист. Для заказа - выберите материал, срок печати, тираж и кликните на стоимость.</p>
+	<ul class="t_greyblock" onmousedown="return false" onselectstart="return false">
+      <li><label class="t_switchable"><input id="allcheck" type="checkbox" checked=""><div id="t_plot" onclick="allbox();">Все <br> плотности</div></label></li>
+              <li><label class="t_switchable"><input id="rd1630" type="checkbox">
+        <div id="t_plot" onclick="openbox(&#39;d1630&#39;);">с/к<br>Raflatac</div></label></li>
+              <li><label class="t_switchable"><input id="rd800" type="checkbox">
+        <div id="t_plot" onclick="openbox(&#39;d800&#39;);">80<br>офсет</div></label></li>
+              <li><label class="t_switchable"><input id="rd900" type="checkbox">
+        <div id="t_plot" onclick="openbox(&#39;d900&#39;);">90<br>мел</div></label></li>
+              <li><label class="t_switchable"><input id="rd1150" type="checkbox">
+        <div id="t_plot" onclick="openbox(&#39;d1150&#39;);">115<br>мел</div></label></li>
+              <li><label class="t_switchable"><input id="rd1300" type="checkbox">
+        <div id="t_plot" onclick="openbox(&#39;d1300&#39;);">130<br>мел</div></label></li>
+              <li><label class="t_switchable"><input id="rd1500" type="checkbox">
+        <div id="t_plot" onclick="openbox(&#39;d1500&#39;);">150<br>мел</div></label></li>
+              <li><label class="t_switchable"><input id="rd1700" type="checkbox">
+        <div id="t_plot" onclick="openbox(&#39;d1700&#39;);">170<br>мел</div></label></li>
+              <li><label class="t_switchable"><input id="rd2500" type="checkbox">
+        <div id="t_plot" onclick="openbox(&#39;d2500&#39;);">250<br>мел</div></label></li>
+              <li><label class="t_switchable"><input id="rd3000" type="checkbox">
+        <div id="t_plot" onclick="openbox(&#39;d3000&#39;);">300<br>мел</div></label></li>
+              <li><label class="t_switchable"><input id="rd3500" type="checkbox">
+        <div id="t_plot" onclick="openbox(&#39;d3500&#39;);">350<br>мел</div></label></li>
+              <li><label class="t_switchable"><input id="rd35024" type="checkbox">
+        <div id="t_plot" onclick="openbox(&#39;d35024&#39;);">350<br>Лен</div></label></li>
+              <li style="width:2%"><label class="t_switchable"><input id="rd3507" type="checkbox">
+        <div id="t_plot" onclick="openbox(&#39;d3507&#39;);">350<br>ГЛ лам 1+0</div></label></li>
+              <li style="width:2%"><label class="t_switchable"><input id="rd3508" type="checkbox">
+        <div id="t_plot" onclick="openbox(&#39;d3508&#39;);">350<br>ГЛ лам 1+1</div></label></li>
+              <li style="width:2%"><label class="t_switchable"><input id="rd3509" type="checkbox">
+        <div id="t_plot" onclick="openbox(&#39;d3509&#39;);">350<br>МАТ лам 1+0</div></label></li>
+              <li style="width:2%"><label class="t_switchable"><input id="rd35010" type="checkbox">
+        <div id="t_plot" onclick="openbox(&#39;d35010&#39;);">350<br>МАТ лам 1+1</div></label></li>
+      	</ul>
+    <div id="allbox" style="display: block;"></div>
+	<script language="JavaScript" type="text/JavaScript">
+    function openbox(id) { // если выбрали отдельную плотность
+        if (document.getElementById('allbox').style.display == "block") // если кнопка все плотности нажата, то
+        {
+           allbox();  // закрываем все плотности
+           document.getElementById('allcheck').checked = false;  // отключаем кнопку все плотности
+        }
+        if (document.getElementById(id).style.display == "none")   // если кнопка отдельной плотности не нажата, то
+           {document.getElementById(id).style.display = "block"; }  // светим кнопку нужной плотности
+        else
+           {document.getElementById(id).style.display = "none"; }  // иначе не светим
+    }
+    </script>
+	<script language="JavaScript" type="text/JavaScript">
+    function allbox() 
+    {
+        if (document.getElementById('allbox').style.display == "block") {
+            var name = {"1":["d1630","rd1630","\u0441\/\u043a<br>Raflatac",""],"2":["d800","rd800","80<br>\u043e\u0444\u0441\u0435\u0442",""],"3":["d900","rd900","90<br>\u043c\u0435\u043b",""],"4":["d1150","rd1150","115<br>\u043c\u0435\u043b",""],"5":["d1300","rd1300","130<br>\u043c\u0435\u043b",""],"6":["d1500","rd1500","150<br>\u043c\u0435\u043b",""],"7":["d1700","rd1700","170<br>\u043c\u0435\u043b",""],"8":["d2500","rd2500","250<br>\u043c\u0435\u043b",""],"9":["d3000","rd3000","300<br>\u043c\u0435\u043b",""],"10":["d3500","rd3500","350<br>\u043c\u0435\u043b",""],"11":["d35024","rd35024","350<br>\u041b\u0435\u043d",""],"12":["d3507","rd3507","350<br>\u0413\u041b \u043b\u0430\u043c 1+0","style=\"width:2%\""],"13":["d3508","rd3508","350<br>\u0413\u041b \u043b\u0430\u043c 1+1","style=\"width:2%\""],"14":["d3509","rd3509","350<br>\u041c\u0410\u0422 \u043b\u0430\u043c 1+0","style=\"width:2%\""],"15":["d35010","rd35010","350<br>\u041c\u0410\u0422 \u043b\u0430\u043c 1+1","style=\"width:2%\""]};
+            var j = 15; 
+            for (var i = 1; i <= j; i++) {
+              if(document.getElementById(name[i][0])) {    
+              document.getElementById(name[i][0]).style.display = "none"; }
+            }
+            document.getElementById('allbox').style.display = "none";
+        }else{
+            document.getElementById('allbox').style.display = "block";
+            var name = {"1":["d1630","rd1630","\u0441\/\u043a<br>Raflatac",""],"2":["d800","rd800","80<br>\u043e\u0444\u0441\u0435\u0442",""],"3":["d900","rd900","90<br>\u043c\u0435\u043b",""],"4":["d1150","rd1150","115<br>\u043c\u0435\u043b",""],"5":["d1300","rd1300","130<br>\u043c\u0435\u043b",""],"6":["d1500","rd1500","150<br>\u043c\u0435\u043b",""],"7":["d1700","rd1700","170<br>\u043c\u0435\u043b",""],"8":["d2500","rd2500","250<br>\u043c\u0435\u043b",""],"9":["d3000","rd3000","300<br>\u043c\u0435\u043b",""],"10":["d3500","rd3500","350<br>\u043c\u0435\u043b",""],"11":["d35024","rd35024","350<br>\u041b\u0435\u043d",""],"12":["d3507","rd3507","350<br>\u0413\u041b \u043b\u0430\u043c 1+0","style=\"width:2%\""],"13":["d3508","rd3508","350<br>\u0413\u041b \u043b\u0430\u043c 1+1","style=\"width:2%\""],"14":["d3509","rd3509","350<br>\u041c\u0410\u0422 \u043b\u0430\u043c 1+0","style=\"width:2%\""],"15":["d35010","rd35010","350<br>\u041c\u0410\u0422 \u043b\u0430\u043c 1+1","style=\"width:2%\""]};
+            var j = 15; 
+            for (var i = 1; i <= j; i++) {
+             if(document.getElementById(name[i][0])) {  
+              document.getElementById(name[i][0]).style.display = "block"; }
+            }
+            for (var i = 1; i <= j; i++) {
+               if(document.getElementById(name[i][0])) {    
+              document.getElementById(name[i][1]).checked = false; }
+            }
+        }
+    }
+    </script>
+	<div id="d1630"><h3 class="newo" style="margin-bottom:0; border:solid 1px #666; border-bottom:0; background-color:#f2f2f2;">Самоклеящаяся бумага Raflatak</h3>
+		
+		<div style="border:solid 1px #666; border-top:none;">
+		<table class="newprice" width="100%" oldclass="pages price">
+		<thead><tr><td align="center" style="width:150px;">Тираж</td><td></td><td nowrap="nowrap" align="right">500</td><td nowrap="nowrap" align="right">1 000</td><td nowrap="nowrap" align="right">2 000</td><td nowrap="nowrap" align="right">3 000</td><td nowrap="nowrap" align="right">4 000</td><td nowrap="nowrap" align="right">5 000</td><td nowrap="nowrap" align="right">10 000</td><td nowrap="nowrap" align="right">15 000</td><td nowrap="nowrap" align="right">20 000</td><td nowrap="nowrap" align="right">25 000</td></tr></thead>
+			 <tbody><tr><td align="center" width="1" nowrap="nowrap"><strong>Односторонняя печать</strong></td><td></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr class="highlight"><td nowrap="nowrap" align="center">печать&nbsp;на&nbsp;<strong>17:00</strong></td><td align="center" class="small" nowrap="" width="1">на&nbsp;30&nbsp;03,&nbsp;Срд</td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=831&amp;tirazh=500&amp;srok=0&amp;color=1">421,47</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=831&amp;tirazh=1000&amp;srok=0&amp;color=1">546,66</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=831&amp;tirazh=2000&amp;srok=0&amp;color=1">1 093,32</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=831&amp;tirazh=3000&amp;srok=0&amp;color=1">1 640,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=831&amp;tirazh=4000&amp;srok=0&amp;color=1">2 186,66</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=831&amp;tirazh=5000&amp;srok=0&amp;color=1">2 733,32</a></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr class="highlight"><td nowrap="nowrap" align="center">печать&nbsp;за&nbsp;<strong>1&nbsp;день</strong></td><td align="center" class="small" style="white-space:nowrap;" width="1">на&nbsp;30&nbsp;03,&nbsp;Срд</td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=831&amp;tirazh=500&amp;srok=24&amp;color=1">324,21</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=831&amp;tirazh=1000&amp;srok=24&amp;color=1">420,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=831&amp;tirazh=2000&amp;srok=24&amp;color=1">839,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=831&amp;tirazh=3000&amp;srok=24&amp;color=1">1 259,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=831&amp;tirazh=4000&amp;srok=24&amp;color=1">1 679,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=831&amp;tirazh=5000&amp;srok=24&amp;color=1">1 856,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=831&amp;tirazh=10000&amp;srok=24&amp;color=1">3 458,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=831&amp;tirazh=15000&amp;srok=24&amp;color=1">5 313,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=831&amp;tirazh=20000&amp;srok=24&amp;color=1">6 918,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=831&amp;tirazh=25000&amp;srok=24&amp;color=1">8 769,00</a></td></tr><tr class="highlight"><td nowrap="nowrap" align="center">печать за <strong>2 дня</strong></td><td align="center" class="small" style="white-space:nowrap;" width="1">на 31 03, Чтв</td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=831&amp;tirazh=500&amp;srok=48&amp;color=1">292,11</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=831&amp;tirazh=1000&amp;srok=48&amp;color=1">389,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=831&amp;tirazh=2000&amp;srok=48&amp;color=1">764,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=831&amp;tirazh=3000&amp;srok=48&amp;color=1">1 152,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=831&amp;tirazh=4000&amp;srok=48&amp;color=1">1 532,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=831&amp;tirazh=5000&amp;srok=48&amp;color=1">1 730,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=831&amp;tirazh=10000&amp;srok=48&amp;color=1">3 210,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=831&amp;tirazh=15000&amp;srok=48&amp;color=1">4 940,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=831&amp;tirazh=20000&amp;srok=48&amp;color=1">6 423,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=831&amp;tirazh=25000&amp;srok=48&amp;color=1">8 150,00</a></td></tr><tr class="highlight"><td nowrap="nowrap" align="center">печать за <strong>3 дня</strong></td><td align="center" class="small" style="white-space:nowrap;" width="1">на&nbsp;01&nbsp;04,&nbsp;Птн</td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=831&amp;tirazh=500&amp;srok=72&amp;color=1">247,17</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=831&amp;tirazh=1000&amp;srok=72&amp;color=1">344,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=831&amp;tirazh=2000&amp;srok=72&amp;color=1">693,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=831&amp;tirazh=3000&amp;srok=72&amp;color=1">1 037,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=831&amp;tirazh=4000&amp;srok=72&amp;color=1">1 383,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=831&amp;tirazh=5000&amp;srok=72&amp;color=1">1 608,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=831&amp;tirazh=10000&amp;srok=72&amp;color=1">2 963,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=831&amp;tirazh=15000&amp;srok=72&amp;color=1">4 571,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=831&amp;tirazh=20000&amp;srok=72&amp;color=1">5 930,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=831&amp;tirazh=25000&amp;srok=72&amp;color=1">7 535,00</a></td></tr></tbody></table></div></div><div id="d800"><h3 class="newo" style="margin-bottom:0; border:solid 1px #666; border-bottom:0; background-color:#f2f2f2;">Офсетная бумага 80 гр/м2</h3>
+		
+		<div style="border:solid 1px #666; border-top:none;">
+		<table class="newprice" width="100%" oldclass="pages price">
+		<thead><tr><td align="center" style="width:150px;">Тираж</td><td></td><td nowrap="nowrap" align="right">1 000</td><td nowrap="nowrap" align="right">2 500</td><td nowrap="nowrap" align="right">5 000</td><td nowrap="nowrap" align="right">10 000</td><td nowrap="nowrap" align="right">15 000</td><td nowrap="nowrap" align="right">20 000</td></tr></thead>
+			 <tbody><tr><td align="center" width="1" nowrap="nowrap"><strong>Односторонняя печать</strong></td><td></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr class="highlight"><td nowrap="nowrap" align="center">печать&nbsp;за&nbsp;<strong>1&nbsp;день</strong></td><td align="center" class="small" style="white-space:nowrap;" width="1">на&nbsp;30&nbsp;03,&nbsp;Срд</td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=956&amp;tirazh=1000&amp;srok=24&amp;color=1">113,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=956&amp;tirazh=2500&amp;srok=24&amp;color=1">183,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=956&amp;tirazh=5000&amp;srok=24&amp;color=1">336,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=956&amp;tirazh=10000&amp;srok=24&amp;color=1">610,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=956&amp;tirazh=15000&amp;srok=24&amp;color=1">826,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=956&amp;tirazh=20000&amp;srok=24&amp;color=1">1 040,00</a></td></tr><tr class="highlight"><td nowrap="nowrap" align="center">печать за <strong>2 дня</strong></td><td align="center" class="small" style="white-space:nowrap;" width="1">на 31 03, Чтв</td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=956&amp;tirazh=1000&amp;srok=48&amp;color=1">108,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=956&amp;tirazh=2500&amp;srok=48&amp;color=1">174,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=956&amp;tirazh=5000&amp;srok=48&amp;color=1">320,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=956&amp;tirazh=10000&amp;srok=48&amp;color=1">581,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=956&amp;tirazh=15000&amp;srok=48&amp;color=1">787,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=956&amp;tirazh=20000&amp;srok=48&amp;color=1">990,00</a></td></tr><tr class="highlight"><td nowrap="nowrap" align="center">печать за <strong>3 дня</strong></td><td align="center" class="small" style="white-space:nowrap;" width="1">на&nbsp;01&nbsp;04,&nbsp;Птн</td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=956&amp;tirazh=1000&amp;srok=72&amp;color=1">102,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=956&amp;tirazh=2500&amp;srok=72&amp;color=1">164,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=956&amp;tirazh=5000&amp;srok=72&amp;color=1">302,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=956&amp;tirazh=10000&amp;srok=72&amp;color=1">548,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=956&amp;tirazh=15000&amp;srok=72&amp;color=1">742,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=956&amp;tirazh=20000&amp;srok=72&amp;color=1">934,00</a></td></tr></tbody></table></div></div><div id="d900"><h3 class="newo" style="margin-bottom:0; border:solid 1px #666; border-bottom:0; background-color:#f2f2f2;">Мелованная бумага 90 гр/м2</h3>
+		
+		<div style="border:solid 1px #666; border-top:none;">
+		<table class="newprice" width="100%" oldclass="pages price">
+		<thead><tr><td align="center" style="width:150px;">Тираж</td><td></td><td nowrap="nowrap" align="right">1 000</td><td nowrap="nowrap" align="right">2 500</td><td nowrap="nowrap" align="right">5 000</td><td nowrap="nowrap" align="right">10 000</td><td nowrap="nowrap" align="right">15 000</td><td nowrap="nowrap" align="right">20 000</td><td nowrap="nowrap" align="right">50 000</td></tr></thead>
+			 <tbody><tr class="highlight"><td nowrap="nowrap" align="center">печать за <strong>1 день</strong></td><td align="center" class="small" style="white-space:nowrap;" width="1">на&nbsp;30&nbsp;03,&nbsp;Срд</td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=957&amp;tirazh=1000&amp;srok=24&amp;color=2">116,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=957&amp;tirazh=2500&amp;srok=24&amp;color=2">221,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=957&amp;tirazh=5000&amp;srok=24&amp;color=2">344,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=957&amp;tirazh=10000&amp;srok=24&amp;color=2">536,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=957&amp;tirazh=15000&amp;srok=24&amp;color=2">874,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=957&amp;tirazh=20000&amp;srok=24&amp;color=2">1 073,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=957&amp;tirazh=50000&amp;srok=24&amp;color=2">2 680,00</a></td></tr><tr class="highlight"><td nowrap="nowrap" align="center">печать за <strong>2 дня</strong></td><td align="center" class="small" width="1" style="white-space:nowrap;">на 31 03, Чтв</td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=957&amp;tirazh=1000&amp;srok=48&amp;color=2">108,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=957&amp;tirazh=2500&amp;srok=48&amp;color=2">211,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=957&amp;tirazh=5000&amp;srok=48&amp;color=2">336,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=957&amp;tirazh=10000&amp;srok=48&amp;color=2">528,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=957&amp;tirazh=15000&amp;srok=48&amp;color=2">857,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=957&amp;tirazh=20000&amp;srok=48&amp;color=2">1 056,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=957&amp;tirazh=50000&amp;srok=48&amp;color=2">2 643,00</a></td></tr><tr class="highlight"><td nowrap="nowrap" align="center">печать за <strong>3 дня</strong></td><td align="center" class="small" style="white-space:nowrap;" width="1">на&nbsp;01&nbsp;04,&nbsp;Птн</td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=957&amp;tirazh=1000&amp;srok=72&amp;color=2">102,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=957&amp;tirazh=2500&amp;srok=72&amp;color=2">204,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=957&amp;tirazh=5000&amp;srok=72&amp;color=2">329,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=957&amp;tirazh=10000&amp;srok=72&amp;color=2">521,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=957&amp;tirazh=15000&amp;srok=72&amp;color=2">843,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=957&amp;tirazh=20000&amp;srok=72&amp;color=2">1 042,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=957&amp;tirazh=50000&amp;srok=72&amp;color=2">2 604,00</a></td></tr></tbody></table></div></div><div id="d1150"><h3 class="newo" style="margin-bottom:0; border:solid 1px #666; border-bottom:0; background-color:#f2f2f2;">Мелованная бумага 115 гр/м2</h3>
+		
+		<div style="border:solid 1px #666; border-top:none;">
+		<table class="newprice" width="100%" oldclass="pages price">
+		<thead><tr><td align="center" style="width:150px;">Тираж</td><td></td><td nowrap="nowrap" align="right">1 000</td><td nowrap="nowrap" align="right">2 500</td><td nowrap="nowrap" align="right">5 000</td><td nowrap="nowrap" align="right">10 000</td><td nowrap="nowrap" align="right">15 000</td><td nowrap="nowrap" align="right">20 000</td><td nowrap="nowrap" align="right">50 000</td></tr></thead>
+			 <tbody><tr><td align="center" width="1" nowrap="nowrap"><strong>Односторонняя печать</strong></td><td></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr class="highlight"><td nowrap="nowrap" align="center">печать&nbsp;за&nbsp;<strong>1&nbsp;день</strong></td><td align="center" class="small" style="white-space:nowrap;" width="1">на&nbsp;30&nbsp;03,&nbsp;Срд</td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=1000&amp;srok=24&amp;color=1">122,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=2500&amp;srok=24&amp;color=1">232,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=5000&amp;srok=24&amp;color=1">314,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=10000&amp;srok=24&amp;color=1">502,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=15000&amp;srok=24&amp;color=1">809,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=20000&amp;srok=24&amp;color=1">1 004,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=50000&amp;srok=24&amp;color=1">2 511,00</a></td></tr><tr class="highlight"><td nowrap="nowrap" align="center">печать за <strong>2 дня</strong></td><td align="center" class="small" style="white-space:nowrap;" width="1">на 31 03, Чтв</td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=1000&amp;srok=48&amp;color=1">113,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=2500&amp;srok=48&amp;color=1">222,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=5000&amp;srok=48&amp;color=1">306,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=10000&amp;srok=48&amp;color=1">497,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=15000&amp;srok=48&amp;color=1">796,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=20000&amp;srok=48&amp;color=1">993,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=50000&amp;srok=48&amp;color=1">2 481,00</a></td></tr><tr class="highlight"><td nowrap="nowrap" align="center">печать за <strong>3 дня</strong></td><td align="center" class="small" style="white-space:nowrap;" width="1">на&nbsp;01&nbsp;04,&nbsp;Птн</td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=1000&amp;srok=72&amp;color=1">107,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=2500&amp;srok=72&amp;color=1">214,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=5000&amp;srok=72&amp;color=1">300,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=10000&amp;srok=72&amp;color=1">491,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=15000&amp;srok=72&amp;color=1">785,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=20000&amp;srok=72&amp;color=1">980,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=50000&amp;srok=72&amp;color=1">2 451,00</a></td></tr><tr><td align="center" width="1" nowrap=""><strong>Двусторонняя печать</strong></td><td></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr class="highlight"><td nowrap="nowrap" align="center">печать за <strong>1 день</strong></td><td align="center" class="small" style="white-space:nowrap;" width="1">на&nbsp;30&nbsp;03,&nbsp;Срд</td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=1000&amp;srok=24&amp;color=2">122,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=2500&amp;srok=24&amp;color=2">232,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=5000&amp;srok=24&amp;color=2">361,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=10000&amp;srok=24&amp;color=2">578,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=15000&amp;srok=24&amp;color=2">930,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=20000&amp;srok=24&amp;color=2">1 155,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=50000&amp;srok=24&amp;color=2">2 889,00</a></td></tr><tr class="highlight"><td nowrap="nowrap" align="center">печать за <strong>2 дня</strong></td><td align="center" class="small" width="1" style="white-space:nowrap;">на 31 03, Чтв</td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=1000&amp;srok=48&amp;color=2">113,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=2500&amp;srok=48&amp;color=2">222,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=5000&amp;srok=48&amp;color=2">353,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=10000&amp;srok=48&amp;color=2">571,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=15000&amp;srok=48&amp;color=2">917,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=20000&amp;srok=48&amp;color=2">1 142,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=50000&amp;srok=48&amp;color=2">2 853,00</a></td></tr><tr class="highlight"><td nowrap="nowrap" align="center">печать за <strong>3 дня</strong></td><td align="center" class="small" style="white-space:nowrap;" width="1">на&nbsp;01&nbsp;04,&nbsp;Птн</td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=1000&amp;srok=72&amp;color=2">107,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=2500&amp;srok=72&amp;color=2">214,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=5000&amp;srok=72&amp;color=2">346,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=10000&amp;srok=72&amp;color=2">564,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=15000&amp;srok=72&amp;color=2">902,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=20000&amp;srok=72&amp;color=2">1 127,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=958&amp;tirazh=50000&amp;srok=72&amp;color=2">2 818,00</a></td></tr></tbody></table></div></div><div id="d1300"><h3 class="newo" style="margin-bottom:0; border:solid 1px #666; border-bottom:0; background-color:#f2f2f2;">Мелованная бумага 130 гр/м2</h3>
+		
+		<div style="border:solid 1px #666; border-top:none;">
+		<table class="newprice" width="100%" oldclass="pages price">
+		<thead><tr><td align="center" style="width:150px;">Тираж</td><td></td><td nowrap="nowrap" align="right">500</td><td nowrap="nowrap" align="right">1 000</td><td nowrap="nowrap" align="right">2 500</td><td nowrap="nowrap" align="right">5 000</td><td nowrap="nowrap" align="right">10 000</td><td nowrap="nowrap" align="right">15 000</td><td nowrap="nowrap" align="right">20 000</td><td nowrap="nowrap" align="right">50 000</td></tr></thead>
+			 <tbody><tr class="highlight"><td nowrap="nowrap" align="center">печать на <strong>17:00</strong></td><td align="center" class="small" nowrap="" width="1">на&nbsp;30&nbsp;03,&nbsp;Срд</td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=959&amp;tirazh=500&amp;srok=0&amp;color=2">122,06</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=959&amp;tirazh=1000&amp;srok=0&amp;color=2">162,64</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=959&amp;tirazh=2500&amp;srok=0&amp;color=2">406,60</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=959&amp;tirazh=5000&amp;srok=0&amp;color=2">731,88</a></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr class="highlight"><td nowrap="nowrap" align="center">печать за <strong>1 день</strong></td><td align="center" class="small" style="white-space:nowrap;" width="1">на&nbsp;30&nbsp;03,&nbsp;Срд</td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=959&amp;tirazh=500&amp;srok=24&amp;color=2">93,90</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=959&amp;tirazh=1000&amp;srok=24&amp;color=2">126,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=959&amp;tirazh=2500&amp;srok=24&amp;color=2">241,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=959&amp;tirazh=5000&amp;srok=24&amp;color=2">391,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=959&amp;tirazh=10000&amp;srok=24&amp;color=2">629,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=959&amp;tirazh=15000&amp;srok=24&amp;color=2">1 010,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=959&amp;tirazh=20000&amp;srok=24&amp;color=2">1 256,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=959&amp;tirazh=50000&amp;srok=24&amp;color=2">3 140,00</a></td></tr><tr class="highlight"><td nowrap="nowrap" align="center">печать за <strong>2 дня</strong></td><td align="center" class="small" width="1" style="white-space:nowrap;">на 31 03, Чтв</td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=959&amp;tirazh=500&amp;srok=48&amp;color=2">89,08</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=959&amp;tirazh=1000&amp;srok=48&amp;color=2">120,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=959&amp;tirazh=2500&amp;srok=48&amp;color=2">233,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=959&amp;tirazh=5000&amp;srok=48&amp;color=2">384,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=959&amp;tirazh=10000&amp;srok=48&amp;color=2">619,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=959&amp;tirazh=15000&amp;srok=48&amp;color=2">995,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=959&amp;tirazh=20000&amp;srok=48&amp;color=2">1 241,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=959&amp;tirazh=50000&amp;srok=48&amp;color=2">3 101,00</a></td></tr><tr class="highlight"><td nowrap="nowrap" align="center">печать за <strong>3 дня</strong></td><td align="center" class="small" style="white-space:nowrap;" width="1">на&nbsp;01&nbsp;04,&nbsp;Птн</td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=959&amp;tirazh=500&amp;srok=72&amp;color=2">83,86</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=959&amp;tirazh=1000&amp;srok=72&amp;color=2">112,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=959&amp;tirazh=2500&amp;srok=72&amp;color=2">223,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=959&amp;tirazh=5000&amp;srok=72&amp;color=2">376,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=959&amp;tirazh=10000&amp;srok=72&amp;color=2">612,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=959&amp;tirazh=15000&amp;srok=72&amp;color=2">980,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=959&amp;tirazh=20000&amp;srok=72&amp;color=2">1 226,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=959&amp;tirazh=50000&amp;srok=72&amp;color=2">3 063,00</a></td></tr></tbody></table></div></div><div id="d1500"><h3 class="newo" style="margin-bottom:0; border:solid 1px #666; border-bottom:0; background-color:#f2f2f2;">Мелованная бумага 150 гр/м2</h3>
+		
+		<div style="border:solid 1px #666; border-top:none;">
+		<table class="newprice" width="100%" oldclass="pages price">
+		<thead><tr><td align="center" style="width:150px;">Тираж</td><td></td><td nowrap="nowrap" align="right">1 000</td><td nowrap="nowrap" align="right">2 500</td><td nowrap="nowrap" align="right">5 000</td><td nowrap="nowrap" align="right">10 000</td><td nowrap="nowrap" align="right">15 000</td><td nowrap="nowrap" align="right">20 000</td><td nowrap="nowrap" align="right">50 000</td></tr></thead>
+			 <tbody><tr class="highlight"><td nowrap="nowrap" align="center">печать за <strong>3 дня</strong></td><td align="center" class="small" style="white-space:nowrap;" width="1">на&nbsp;01&nbsp;04,&nbsp;Птн</td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=960&amp;tirazh=1000&amp;srok=72&amp;color=2">144,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=960&amp;tirazh=2500&amp;srok=72&amp;color=2">284,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=960&amp;tirazh=5000&amp;srok=72&amp;color=2">474,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=960&amp;tirazh=10000&amp;srok=72&amp;color=2">776,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=960&amp;tirazh=15000&amp;srok=72&amp;color=2">1 250,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=960&amp;tirazh=20000&amp;srok=72&amp;color=2">1 554,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=960&amp;tirazh=50000&amp;srok=72&amp;color=2">3 882,00</a></td></tr></tbody></table></div></div><div id="d1700"><h3 class="newo" style="margin-bottom:0; border:solid 1px #666; border-bottom:0; background-color:#f2f2f2;">Мелованная бумага 170 гр/м2</h3>
+		
+		<div style="border:solid 1px #666; border-top:none;">
+		<table class="newprice" width="100%" oldclass="pages price">
+		<thead><tr><td align="center" style="width:150px;">Тираж</td><td></td><td nowrap="nowrap" align="right">1 000</td><td nowrap="nowrap" align="right">2 500</td><td nowrap="nowrap" align="right">5 000</td><td nowrap="nowrap" align="right">10 000</td><td nowrap="nowrap" align="right">15 000</td><td nowrap="nowrap" align="right">20 000</td><td nowrap="nowrap" align="right">50 000</td></tr></thead>
+			 <tbody><tr class="highlight"><td nowrap="nowrap" align="center">печать за <strong>3 дня</strong></td><td align="center" class="small" style="white-space:nowrap;" width="1">на&nbsp;01&nbsp;04,&nbsp;Птн</td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=961&amp;tirazh=1000&amp;srok=72&amp;color=2">190,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=961&amp;tirazh=2500&amp;srok=72&amp;color=2">330,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=961&amp;tirazh=5000&amp;srok=72&amp;color=2">536,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=961&amp;tirazh=10000&amp;srok=72&amp;color=2">1 070,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=961&amp;tirazh=15000&amp;srok=72&amp;color=2">1 524,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=961&amp;tirazh=20000&amp;srok=72&amp;color=2">1 894,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=961&amp;tirazh=50000&amp;srok=72&amp;color=2">4 858,00</a></td></tr></tbody></table></div></div><div id="d2500"><h3 class="newo" style="margin-bottom:0; border:solid 1px #666; border-bottom:0; background-color:#f2f2f2;">Мелованная бумага 250 гр/м2</h3>
+		
+		<div style="border:solid 1px #666; border-top:none;">
+		<table class="newprice" width="100%" oldclass="pages price">
+		<thead><tr><td align="center" style="width:150px;">Тираж</td><td></td><td nowrap="nowrap" align="right">1 000</td><td nowrap="nowrap" align="right">2 000</td><td nowrap="nowrap" align="right">3 000</td><td nowrap="nowrap" align="right">4 000</td><td nowrap="nowrap" align="right">5 000</td><td nowrap="nowrap" align="right">10 000</td><td nowrap="nowrap" align="right">15 000</td><td nowrap="nowrap" align="right">20 000</td><td nowrap="nowrap" align="right">25 000</td></tr></thead>
+			 <tbody><tr class="highlight"><td nowrap="nowrap" align="center">печать за <strong>1 день</strong></td><td align="center" class="small" style="white-space:nowrap;" width="1">на&nbsp;30&nbsp;03,&nbsp;Срд</td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=721&amp;tirazh=1000&amp;srok=24&amp;color=2">229,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=721&amp;tirazh=2000&amp;srok=24&amp;color=2">462,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=721&amp;tirazh=3000&amp;srok=24&amp;color=2">691,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=721&amp;tirazh=4000&amp;srok=24&amp;color=2">824,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=721&amp;tirazh=5000&amp;srok=24&amp;color=2">907,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=721&amp;tirazh=10000&amp;srok=24&amp;color=2">1 648,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=721&amp;tirazh=15000&amp;srok=24&amp;color=2">2 553,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=721&amp;tirazh=20000&amp;srok=24&amp;color=2">3 129,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=721&amp;tirazh=25000&amp;srok=24&amp;color=2">4 036,00</a></td></tr><tr class="highlight"><td nowrap="nowrap" align="center">печать за <strong>2 дня</strong></td><td align="center" class="small" width="1" style="white-space:nowrap;">на 31 03, Чтв</td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=721&amp;tirazh=1000&amp;srok=48&amp;color=2">210,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=721&amp;tirazh=2000&amp;srok=48&amp;color=2">413,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=721&amp;tirazh=3000&amp;srok=48&amp;color=2">621,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=721&amp;tirazh=4000&amp;srok=48&amp;color=2">743,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=721&amp;tirazh=5000&amp;srok=48&amp;color=2">824,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=721&amp;tirazh=10000&amp;srok=48&amp;color=2">1 483,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=721&amp;tirazh=15000&amp;srok=48&amp;color=2">2 305,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=721&amp;tirazh=20000&amp;srok=48&amp;color=2">2 799,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=721&amp;tirazh=25000&amp;srok=48&amp;color=2">3 623,00</a></td></tr><tr class="highlight"><td nowrap="nowrap" align="center">печать за <strong>3 дня</strong></td><td align="center" class="small" style="white-space:nowrap;" width="1">на&nbsp;01&nbsp;04,&nbsp;Птн</td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=721&amp;tirazh=1000&amp;srok=72&amp;color=2">182,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=721&amp;tirazh=2000&amp;srok=72&amp;color=2">362,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=721&amp;tirazh=3000&amp;srok=72&amp;color=2">544,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=721&amp;tirazh=4000&amp;srok=72&amp;color=2">659,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=721&amp;tirazh=5000&amp;srok=72&amp;color=2">743,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=721&amp;tirazh=10000&amp;srok=72&amp;color=2">1 318,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=721&amp;tirazh=15000&amp;srok=72&amp;color=2">2 059,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=721&amp;tirazh=20000&amp;srok=72&amp;color=2">2 470,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=721&amp;tirazh=25000&amp;srok=72&amp;color=2">3 212,00</a></td></tr></tbody></table></div></div><div id="d3000"><h3 class="newo" style="margin-bottom:0; border:solid 1px #666; border-bottom:0; background-color:#f2f2f2;">Мелованная бумага 300 гр/м2</h3>
+		
+		<div style="border:solid 1px #666; border-top:none;">
+		<table class="newprice" width="100%" oldclass="pages price">
+		<thead><tr><td align="center" style="width:150px;">Тираж</td><td></td><td nowrap="nowrap" align="right">1 000</td><td nowrap="nowrap" align="right">2 000</td><td nowrap="nowrap" align="right">3 000</td><td nowrap="nowrap" align="right">4 000</td><td nowrap="nowrap" align="right">5 000</td><td nowrap="nowrap" align="right">10 000</td><td nowrap="nowrap" align="right">15 000</td><td nowrap="nowrap" align="right">20 000</td><td nowrap="nowrap" align="right">25 000</td></tr></thead>
+			 <tbody><tr class="highlight"><td nowrap="nowrap" align="center">печать за <strong>1 день</strong></td><td align="center" class="small" style="white-space:nowrap;" width="1">на&nbsp;30&nbsp;03,&nbsp;Срд</td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=726&amp;tirazh=1000&amp;srok=24&amp;color=2">248,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=726&amp;tirazh=2000&amp;srok=24&amp;color=2">499,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=726&amp;tirazh=3000&amp;srok=24&amp;color=2">747,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=726&amp;tirazh=4000&amp;srok=24&amp;color=2">888,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=726&amp;tirazh=5000&amp;srok=24&amp;color=2">980,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=726&amp;tirazh=10000&amp;srok=24&amp;color=2">1 778,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=726&amp;tirazh=15000&amp;srok=24&amp;color=2">2 756,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=726&amp;tirazh=20000&amp;srok=24&amp;color=2">3 379,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=726&amp;tirazh=25000&amp;srok=24&amp;color=2">4 359,00</a></td></tr><tr class="highlight"><td nowrap="nowrap" align="center">печать за <strong>2 дня</strong></td><td align="center" class="small" width="1" style="white-space:nowrap;">на 31 03, Чтв</td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=726&amp;tirazh=1000&amp;srok=48&amp;color=2">227,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=726&amp;tirazh=2000&amp;srok=48&amp;color=2">447,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=726&amp;tirazh=3000&amp;srok=48&amp;color=2">670,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=726&amp;tirazh=4000&amp;srok=48&amp;color=2">800,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=726&amp;tirazh=5000&amp;srok=48&amp;color=2">888,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=726&amp;tirazh=10000&amp;srok=48&amp;color=2">1 603,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=726&amp;tirazh=15000&amp;srok=48&amp;color=2">2 491,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=726&amp;tirazh=20000&amp;srok=48&amp;color=2">3 024,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=726&amp;tirazh=25000&amp;srok=48&amp;color=2">3 912,00</a></td></tr><tr class="highlight"><td nowrap="nowrap" align="center">печать за <strong>3 дня</strong></td><td align="center" class="small" style="white-space:nowrap;" width="1">на&nbsp;01&nbsp;04,&nbsp;Птн</td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=726&amp;tirazh=1000&amp;srok=72&amp;color=2">195,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=726&amp;tirazh=2000&amp;srok=72&amp;color=2">392,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=726&amp;tirazh=3000&amp;srok=72&amp;color=2">586,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=726&amp;tirazh=4000&amp;srok=72&amp;color=2">713,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=726&amp;tirazh=5000&amp;srok=72&amp;color=2">800,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=726&amp;tirazh=10000&amp;srok=72&amp;color=2">1 423,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=726&amp;tirazh=15000&amp;srok=72&amp;color=2">2 223,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=726&amp;tirazh=20000&amp;srok=72&amp;color=2">2 666,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=726&amp;tirazh=25000&amp;srok=72&amp;color=2">3 469,00</a></td></tr></tbody></table></div></div><div id="d3500"><h3 class="newo" style="margin-bottom:0; border:solid 1px #666; border-bottom:0; background-color:#f2f2f2;">Мелованная бумага 350 гр/м2</h3>
+		
+		<div style="border:solid 1px #666; border-top:none;">
+		<table class="newprice" width="100%" oldclass="pages price">
+		<thead><tr><td align="center" style="width:150px;">Тираж</td><td></td><td nowrap="nowrap" align="right">500</td><td nowrap="nowrap" align="right">1 000</td><td nowrap="nowrap" align="right">2 000</td><td nowrap="nowrap" align="right">3 000</td><td nowrap="nowrap" align="right">4 000</td><td nowrap="nowrap" align="right">5 000</td><td nowrap="nowrap" align="right">10 000</td><td nowrap="nowrap" align="right">15 000</td><td nowrap="nowrap" align="right">20 000</td><td nowrap="nowrap" align="right">25 000</td></tr></thead>
+			 <tbody><tr class="highlight"><td nowrap="nowrap" align="center">печать на <strong>17:00</strong></td><td align="center" class="small" nowrap="" width="1">на&nbsp;30&nbsp;03,&nbsp;Срд</td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=720&amp;tirazh=500&amp;srok=0&amp;color=2">280,98</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=720&amp;tirazh=1000&amp;srok=0&amp;color=2">364,44</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=720&amp;tirazh=2000&amp;srok=0&amp;color=2">728,88</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=720&amp;tirazh=3000&amp;srok=0&amp;color=2">1 093,33</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=720&amp;tirazh=4000&amp;srok=0&amp;color=2">1 457,77</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=720&amp;tirazh=5000&amp;srok=0&amp;color=2">1 822,21</a></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr class="highlight"><td nowrap="nowrap" align="center">печать за <strong>1 день</strong></td><td align="center" class="small" style="white-space:nowrap;" width="1">на&nbsp;30&nbsp;03,&nbsp;Срд</td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=720&amp;tirazh=500&amp;srok=24&amp;color=2">216,14</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=720&amp;tirazh=1000&amp;srok=24&amp;color=2">280,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=720&amp;tirazh=2000&amp;srok=24&amp;color=2">559,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=720&amp;tirazh=3000&amp;srok=24&amp;color=2">839,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=720&amp;tirazh=4000&amp;srok=24&amp;color=2">1 119,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=720&amp;tirazh=5000&amp;srok=24&amp;color=2">1 237,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=720&amp;tirazh=10000&amp;srok=24&amp;color=2">2 305,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=720&amp;tirazh=15000&amp;srok=24&amp;color=2">3 542,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=720&amp;tirazh=20000&amp;srok=24&amp;color=2">4 612,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=720&amp;tirazh=25000&amp;srok=24&amp;color=2">5 846,00</a></td></tr><tr class="highlight"><td nowrap="nowrap" align="center">печать за <strong>2 дня</strong></td><td align="center" class="small" width="1" style="white-space:nowrap;">на 31 03, Чтв</td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=720&amp;tirazh=500&amp;srok=48&amp;color=2">194,74</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=720&amp;tirazh=1000&amp;srok=48&amp;color=2">259,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=720&amp;tirazh=2000&amp;srok=48&amp;color=2">509,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=720&amp;tirazh=3000&amp;srok=48&amp;color=2">768,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=720&amp;tirazh=4000&amp;srok=48&amp;color=2">1 021,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=720&amp;tirazh=5000&amp;srok=48&amp;color=2">1 153,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=720&amp;tirazh=10000&amp;srok=48&amp;color=2">2 140,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=720&amp;tirazh=15000&amp;srok=48&amp;color=2">3 293,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=720&amp;tirazh=20000&amp;srok=48&amp;color=2">4 282,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=720&amp;tirazh=25000&amp;srok=48&amp;color=2">5 433,00</a></td></tr><tr class="highlight"><td nowrap="nowrap" align="center">печать за <strong>3 дня</strong></td><td align="center" class="small" style="white-space:nowrap;" width="1">на&nbsp;01&nbsp;04,&nbsp;Птн</td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=720&amp;tirazh=500&amp;srok=72&amp;color=2">164,78</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=720&amp;tirazh=1000&amp;srok=72&amp;color=2">229,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=720&amp;tirazh=2000&amp;srok=72&amp;color=2">462,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=720&amp;tirazh=3000&amp;srok=72&amp;color=2">691,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=720&amp;tirazh=4000&amp;srok=72&amp;color=2">922,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=720&amp;tirazh=5000&amp;srok=72&amp;color=2">1 072,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=720&amp;tirazh=10000&amp;srok=72&amp;color=2">1 975,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=720&amp;tirazh=15000&amp;srok=72&amp;color=2">3 047,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=720&amp;tirazh=20000&amp;srok=72&amp;color=2">3 953,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=720&amp;tirazh=25000&amp;srok=72&amp;color=2">5 023,00</a></td></tr></tbody></table></div></div><div id="d35024"><h3 class="newo" style="margin-bottom:0; border:solid 1px #666; border-bottom:0; background-color:#f2f2f2;">Структурный картон типа "Лен" 350 гр/м2</h3>
+		
+		<div style="border:solid 1px #666; border-top:none;">
+		<table class="newprice" width="100%" oldclass="pages price">
+		<thead><tr><td align="center" style="width:150px;">Тираж</td><td></td><td nowrap="nowrap" align="right">1 000</td><td nowrap="nowrap" align="right">2 000</td><td nowrap="nowrap" align="right">3 000</td><td nowrap="nowrap" align="right">4 000</td><td nowrap="nowrap" align="right">5 000</td><td nowrap="nowrap" align="right">10 000</td><td nowrap="nowrap" align="right">15 000</td><td nowrap="nowrap" align="right">20 000</td><td nowrap="nowrap" align="right">25 000</td></tr></thead>
+			 <tbody><tr class="highlight"><td nowrap="nowrap" align="center">печать за <strong>5 дней</strong></td><td align="center" class="small" style="white-space:nowrap;" width="1">на 04 04, Пнд</td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=725&amp;tirazh=1000&amp;srok=120&amp;color=2">317,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=725&amp;tirazh=2000&amp;srok=120&amp;color=2">631,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=725&amp;tirazh=3000&amp;srok=120&amp;color=2">948,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=725&amp;tirazh=4000&amp;srok=120&amp;color=2">1 265,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=725&amp;tirazh=5000&amp;srok=120&amp;color=2">1 474,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=725&amp;tirazh=10000&amp;srok=120&amp;color=2">2 741,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=725&amp;tirazh=15000&amp;srok=120&amp;color=2">4 216,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=725&amp;tirazh=20000&amp;srok=120&amp;color=2">5 481,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=725&amp;tirazh=25000&amp;srok=120&amp;color=2">6 957,00</a></td></tr></tbody></table></div></div><div id="d3507"><h3 class="newo" style="margin-bottom:0; border:solid 1px #666; border-bottom:0; background-color:#f2f2f2;">Мелованная бумага 350 гр/м2 + Глянцевая ламинация по лицевой стороне</h3>
+		
+		<div style="border:solid 1px #666; border-top:none;">
+		<table class="newprice" width="100%" oldclass="pages price">
+		<thead><tr><td align="center" style="width:150px;">Тираж</td><td></td><td nowrap="nowrap" align="right">1 000</td><td nowrap="nowrap" align="right">2 000</td><td nowrap="nowrap" align="right">3 000</td><td nowrap="nowrap" align="right">4 000</td><td nowrap="nowrap" align="right">5 000</td><td nowrap="nowrap" align="right">10 000</td><td nowrap="nowrap" align="right">15 000</td><td nowrap="nowrap" align="right">20 000</td><td nowrap="nowrap" align="right">25 000</td></tr></thead>
+			 <tbody><tr class="highlight"><td nowrap="nowrap" align="center">печать за <strong>1 день</strong></td><td align="center" class="small" style="white-space:nowrap;" width="1">на&nbsp;30&nbsp;03,&nbsp;Срд</td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=719&amp;tirazh=1000&amp;srok=24&amp;color=2">297,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=719&amp;tirazh=2000&amp;srok=24&amp;color=2">593,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=719&amp;tirazh=3000&amp;srok=24&amp;color=2">888,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=719&amp;tirazh=4000&amp;srok=24&amp;color=2">1 186,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=719&amp;tirazh=5000&amp;srok=24&amp;color=2">1 318,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=719&amp;tirazh=10000&amp;srok=24&amp;color=2">2 470,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=719&amp;tirazh=15000&amp;srok=24&amp;color=2">3 788,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=719&amp;tirazh=20000&amp;srok=24&amp;color=2">4 941,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=719&amp;tirazh=25000&amp;srok=24&amp;color=2">6 257,00</a></td></tr><tr class="highlight"><td nowrap="nowrap" align="center">печать за <strong>2 дня</strong></td><td align="center" class="small" width="1" style="white-space:nowrap;">на 31 03, Чтв</td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=719&amp;tirazh=1000&amp;srok=48&amp;color=2">268,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=719&amp;tirazh=2000&amp;srok=48&amp;color=2">544,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=719&amp;tirazh=3000&amp;srok=48&amp;color=2">817,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=719&amp;tirazh=4000&amp;srok=48&amp;color=2">1 087,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=719&amp;tirazh=5000&amp;srok=48&amp;color=2">1 237,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=719&amp;tirazh=10000&amp;srok=48&amp;color=2">2 305,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=719&amp;tirazh=15000&amp;srok=48&amp;color=2">3 542,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=719&amp;tirazh=20000&amp;srok=48&amp;color=2">4 612,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=719&amp;tirazh=25000&amp;srok=48&amp;color=2">5 846,00</a></td></tr><tr class="highlight"><td nowrap="nowrap" align="center">печать за <strong>3 дня</strong></td><td align="center" class="small" style="white-space:nowrap;" width="1">на&nbsp;01&nbsp;04,&nbsp;Птн</td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=719&amp;tirazh=1000&amp;srok=72&amp;color=2">248,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=719&amp;tirazh=2000&amp;srok=72&amp;color=2">494,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=719&amp;tirazh=3000&amp;srok=72&amp;color=2">743,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=719&amp;tirazh=4000&amp;srok=72&amp;color=2">989,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=719&amp;tirazh=5000&amp;srok=72&amp;color=2">1 153,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=719&amp;tirazh=10000&amp;srok=72&amp;color=2">2 140,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=719&amp;tirazh=15000&amp;srok=72&amp;color=2">3 293,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=719&amp;tirazh=20000&amp;srok=72&amp;color=2">4 282,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=719&amp;tirazh=25000&amp;srok=72&amp;color=2">5 433,00</a></td></tr></tbody></table></div></div><div id="d3508"><h3 class="newo" style="margin-bottom:0; border:solid 1px #666; border-bottom:0; background-color:#f2f2f2;">Мелованная бумага 350 гр/м2 + Глянцевая ламинация с 2-х сторон</h3>
+		
+		<div style="border:solid 1px #666; border-top:none;">
+		<table class="newprice" width="100%" oldclass="pages price">
+		<thead><tr><td align="center" style="width:150px;">Тираж</td><td></td><td nowrap="nowrap" align="right">1 000</td><td nowrap="nowrap" align="right">2 000</td><td nowrap="nowrap" align="right">3 000</td><td nowrap="nowrap" align="right">4 000</td><td nowrap="nowrap" align="right">5 000</td><td nowrap="nowrap" align="right">10 000</td><td nowrap="nowrap" align="right">15 000</td><td nowrap="nowrap" align="right">20 000</td><td nowrap="nowrap" align="right">25 000</td></tr></thead>
+			 <tbody><tr class="highlight"><td nowrap="nowrap" align="center">печать за <strong>3 дня</strong></td><td align="center" class="small" style="white-space:nowrap;" width="1">на&nbsp;01&nbsp;04,&nbsp;Птн</td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=745&amp;tirazh=1000&amp;srok=72&amp;color=2">386,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=745&amp;tirazh=2000&amp;srok=72&amp;color=2">770,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=745&amp;tirazh=3000&amp;srok=72&amp;color=2">1 155,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=745&amp;tirazh=4000&amp;srok=72&amp;color=2">1 541,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=745&amp;tirazh=5000&amp;srok=72&amp;color=2">1 715,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=745&amp;tirazh=10000&amp;srok=72&amp;color=2">3 210,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=745&amp;tirazh=15000&amp;srok=72&amp;color=2">4 925,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=745&amp;tirazh=20000&amp;srok=72&amp;color=2">6 423,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=745&amp;tirazh=25000&amp;srok=72&amp;color=2">8 135,00</a></td></tr></tbody></table></div></div><div id="d3509"><h3 class="newo" style="margin-bottom:0; border:solid 1px #666; border-bottom:0; background-color:#f2f2f2;">Мелованная бумага 350 гр/м2 + Матовая ламинация по лицевой стороне</h3>
+		
+		<div style="border:solid 1px #666; border-top:none;">
+		<table class="newprice" width="100%" oldclass="pages price">
+		<thead><tr><td align="center" style="width:150px;">Тираж</td><td></td><td nowrap="nowrap" align="right">1 000</td><td nowrap="nowrap" align="right">2 000</td><td nowrap="nowrap" align="right">3 000</td><td nowrap="nowrap" align="right">4 000</td><td nowrap="nowrap" align="right">5 000</td><td nowrap="nowrap" align="right">10 000</td><td nowrap="nowrap" align="right">15 000</td><td nowrap="nowrap" align="right">20 000</td><td nowrap="nowrap" align="right">25 000</td></tr></thead>
+			 <tbody><tr class="highlight"><td nowrap="nowrap" align="center">печать за <strong>3 дня</strong></td><td align="center" class="small" style="white-space:nowrap;" width="1">на&nbsp;01&nbsp;04,&nbsp;Птн</td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=1062&amp;tirazh=1000&amp;srok=72&amp;color=2">273,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=1062&amp;tirazh=2000&amp;srok=72&amp;color=2">543,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=1062&amp;tirazh=3000&amp;srok=72&amp;color=2">817,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=1062&amp;tirazh=4000&amp;srok=72&amp;color=2">1 088,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=1062&amp;tirazh=5000&amp;srok=72&amp;color=2">1 268,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=1062&amp;tirazh=10000&amp;srok=72&amp;color=2">2 354,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=1062&amp;tirazh=15000&amp;srok=72&amp;color=2">3 622,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=1062&amp;tirazh=20000&amp;srok=72&amp;color=2">4 710,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=1062&amp;tirazh=25000&amp;srok=72&amp;color=2">5 976,00</a></td></tr></tbody></table></div></div><div id="d35010"><h3 class="newo" style="margin-bottom:0; border:solid 1px #666; border-bottom:0; background-color:#f2f2f2;">Мелованная бумага 350 гр/м2 + Матовая ламинация с 2-х сторон</h3>
+		
+		<div style="border:solid 1px #666; border-top:none;">
+		<table class="newprice" width="100%" oldclass="pages price">
+		<thead><tr><td align="center" style="width:150px;">Тираж</td><td></td><td nowrap="nowrap" align="right">1 000</td><td nowrap="nowrap" align="right">2 000</td><td nowrap="nowrap" align="right">3 000</td><td nowrap="nowrap" align="right">4 000</td><td nowrap="nowrap" align="right">5 000</td><td nowrap="nowrap" align="right">10 000</td><td nowrap="nowrap" align="right">15 000</td><td nowrap="nowrap" align="right">20 000</td><td nowrap="nowrap" align="right">25 000</td></tr></thead>
+			 <tbody><tr class="highlight"><td nowrap="nowrap" align="center">печать за <strong>1 день</strong></td><td align="center" class="small" style="white-space:nowrap;" width="1">на&nbsp;30&nbsp;03,&nbsp;Срд</td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=722&amp;tirazh=1000&amp;srok=24&amp;color=2">445,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=722&amp;tirazh=2000&amp;srok=24&amp;color=2">888,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=722&amp;tirazh=3000&amp;srok=24&amp;color=2">1 333,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=722&amp;tirazh=4000&amp;srok=24&amp;color=2">1 778,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=722&amp;tirazh=5000&amp;srok=24&amp;color=2">1 975,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=722&amp;tirazh=10000&amp;srok=24&amp;color=2">3 788,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=722&amp;tirazh=15000&amp;srok=24&amp;color=2">5 763,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=722&amp;tirazh=20000&amp;srok=24&amp;color=2">7 411,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=722&amp;tirazh=25000&amp;srok=24&amp;color=2">9 386,00</a></td></tr><tr class="highlight"><td nowrap="nowrap" align="center">печать за <strong>2 дня</strong></td><td align="center" class="small" width="1" style="white-space:nowrap;">на 31 03, Чтв</td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=722&amp;tirazh=1000&amp;srok=48&amp;color=2">424,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=722&amp;tirazh=2000&amp;srok=48&amp;color=2">839,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=722&amp;tirazh=3000&amp;srok=48&amp;color=2">1 263,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=722&amp;tirazh=4000&amp;srok=48&amp;color=2">1 680,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=722&amp;tirazh=5000&amp;srok=48&amp;color=2">1 894,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=722&amp;tirazh=10000&amp;srok=48&amp;color=2">3 623,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=722&amp;tirazh=15000&amp;srok=48&amp;color=2">5 517,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=722&amp;tirazh=20000&amp;srok=48&amp;color=2">7 081,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=722&amp;tirazh=25000&amp;srok=48&amp;color=2">8 975,00</a></td></tr><tr class="highlight"><td nowrap="nowrap" align="center">печать за <strong>3 дня</strong></td><td align="center" class="small" style="white-space:nowrap;" width="1">на&nbsp;01&nbsp;04,&nbsp;Птн</td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=722&amp;tirazh=1000&amp;srok=72&amp;color=2">394,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=722&amp;tirazh=2000&amp;srok=72&amp;color=2">792,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=722&amp;tirazh=3000&amp;srok=72&amp;color=2">1 186,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=722&amp;tirazh=4000&amp;srok=72&amp;color=2">1 581,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=722&amp;tirazh=5000&amp;srok=72&amp;color=2">1 810,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=722&amp;tirazh=10000&amp;srok=72&amp;color=2">3 458,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=722&amp;tirazh=15000&amp;srok=72&amp;color=2">5 269,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=722&amp;tirazh=20000&amp;srok=72&amp;color=2">6 752,00</a></td><td align="right"><a href="http://sborka.ua/?id=32&amp;type=2&amp;good=722&amp;tirazh=25000&amp;srok=72&amp;color=2">8 562,00</a></td></tr></tbody></table></div></div></div>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#width, #height').change(function(){
+		if ($('#width').val()<30) $('#width').val(30);
+		if ($('#width').val()>596) $('#width').val(596);
+		if ($('#height').val()<30) $('#height').val(30);
+		if ($('#height').val()>420) $('#height').val(420);
+	});
+});
+</script>
+
+<script type="text/javascript">
+$(window).keypress(function (e) {
+	if (e.which == 13 && e.ctrlKey ) $("#customorder").submit();
+}); 
+</script>
+<div style="display:none;">
+  <div id="samples"></div>
+  <div id="materials"> </div>
+  <div id="tech"> </div>
+  <div id="park"> </div>
+</div>
+</div>
+
+<div class="footer"><table width="100%"><tbody><tr><td style="width:193px;"><p>©&nbsp;2011&nbsp;—&nbsp;2016&nbsp;<a href="http://sborka.ua/?id=5">ООО&nbsp;«Sborka.ua»</a><br>
+<a href="http://sborka.ua/?id=3">Условия использования</a><br>
+<a href="http://diel.com.ua/" title="Разработка систем управления">Cделано в «Диэле»</a></p></td>
+<td><p><strong>Понедельник - Пятница  с 9:00 до 19:00, Суббота с 9:30 до 16:00<br>
+<span style="font-size:14px;">0 800 60-62-51</span> звонки в пределах Украины (даже с мобильных) бесплатны!<br> MTS 095 173-38-38. KYIVSTAR 067 623-73-71.</strong></p></td></tr></tbody></table></div>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".window").fancybox();
+	$(".iframe").fancybox({
+		'width':800,
+		'height':480
+	});
+	//$(".pages").tablesorter();
+	$(".pages").tablesorter({
+    textExtraction: function(node) {
+        var attr = $(node).attr('data-sort-value');
+        if (typeof attr !== 'undefined' && attr !== false) {
+            return attr;
+        }
+        return $(node).text(); 
+    } 
+	}); 
+	$('link[rel$=icon]').remove();
+			$('head').append( $('<link rel="shortcut icon" type="image/x-icon"/>' ).attr( 'href', "/mail.ico" ) );	setTimeout("HideAlert()",30000);
+});
+function HideAlert(){
+    $(".alert").fadeOut(500);
+}
+</script>
+<script type="text/javascript">
+function highlight_form() {
+  $('input[type="text"], input[type="password"], textarea, select').each(function(){
+    $(this).bind('focus blur', function() {
+      $(this).toggleClass('input-inside');
+    });
+  });
+}
+$(document).ready(function(){ 
+  highlight_form();
+});
+</script>
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-29577552-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div><div id="datepicker_div"></div></body></html>

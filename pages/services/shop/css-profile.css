@@ -1,0 +1,100 @@
+/*СЕЛЕКТОРЫ*/
+body {
+    background-color: #f1f1f1;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1 {
+    font-size: 2em;
+    font-family: impact;
+}
+/*!СЕЛЕКТОРЫ!*/
+
+/*Блоки по бокам*/
+body .left-block-review {
+    width: 400px;
+    min-Height: 200px;
+    background-color: white;
+    margin: 15px 0px 20px 27%;
+    position: absolute;
+    border: 5px solid rgb(232, 232, 232);
+    padding: 20px;
+    max-height: 60%;
+    overflow:hidden;
+}
+.left-block-review .left-desc-profil{
+    padding: 40px 0px 0px 0px;
+    font-size: 12px;
+}
+.left-desc-profil p {
+    padding: 5px 0px 5px 4px;
+    margin-bottom: 5px;
+}
+body .right-block-review {
+    width: 400px;
+    min-Height: 200px;
+    background-color: white;
+    margin: 15px 0px 20px 63%;
+    position: absolute;
+    border: 5px solid rgb(232, 232, 232);
+    padding: 20px;
+    max-height: 35%;
+    overflow:hidden;
+}
+.right-block-review .right-desc-profil {
+    padding: 40px;
+    font-size: 12px;
+    font-family: tahoma;
+}
+/*Блок ЯНДЕКС*/
+body a[rel="nofollow"]{
+    visibility: hidden;
+}
+
+/*ПОДРОБНОСТИ И ССЫЛКИ*/
+a[id="set"] {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 800;
+}
+a[id="set"]:hover{
+    text-decoration: underline;
+    color: #ff7b00;
+}
+
+/*Работа над кнопкой*/
+button[id="set"]{
+    text-decoration: none;
+    color: #88212A;
+    font-weight: 800;
+    background: none;
+    border: 2px solid silver;
+    padding: 10px;
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+    margin-top:20px;
+}
+button[id="set"]:hover{
+    color: #0085af;
+    text-decoration: underline;
+    box-shadow: rgba(0, 204, 255, 0.1) 0px 0px 50px;
+}
+
+/*Блок ФУТЕРА!!*/
+
+#footer{
+    position: absolute;
+    width: 100%;
+    height: 87px;
+    color: #ffffff;
+    font-size: 0.7rem;
+    display: inline-block;
+    background-color: #88212a;
+    z-index: 998;
+    overflow: hidden;
+    left: 0%;
+    margin-top: 10%;
+
+}
