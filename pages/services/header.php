@@ -1,4 +1,4 @@
-
+<? session_start(); ?>
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="/assets/css/flexboxgrid.css"> <!-- Blocks !-->
@@ -6,22 +6,12 @@
     <link rel="stylesheet" href="/assets/css/ChempStyle.css"><!-- MyStyle !-->
     <link rel="stylesheet" href="/assets/css/font-awesome.css"><!-- MyStyle !-->
     <link rel="stylesheet" href="/assets/css/style.css"><!-- MyStyle !-->
-<!--    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
-
-<!--    <script src="/assets/js/jquery.min.js"></script>-->
-<!--    <script src="/assets/js/bootstrap.js"></script>-->
-<!--    <script src="/assets/js/bootstrap.min.js"></script>-->
-<!--    <script src="/assets/js/jquery.mosaicflow.min.js"></script>-->
-<!--    <script type="text/javascript" src="/assets/js/jquery-1.2.6.min.js"></script>-->
-<!--    <script type="text/javascript" src="/assets/js/jquery-ui-personalized-1.5.2.packed.js"></script>-->
     <script type="text/javascript" src="/assets/js/sprinkle.js"></script>
 
     <script type="text/javascript" src="/assets/js/jquery.js"></script>
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css"><!-- Fraem !-->
     <script src="/assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/pages/services/shop/modules/prod/List_prod.js"></script>
-<!--    <script src="../../js/jquery.fancy-textbox.js" type="text/javascript"></script>-->
-<!--    <link href="../../css-styles/bootstrap.min.css" rel="stylesheet" type="text/css" />-->
 
 </head>
 <body  style="background: #e8e8e8">
@@ -44,19 +34,32 @@
                     <div class="box">
                         <ul class="nav navbar-nav"">
                             <li><a href="/" style="color: white">Главная</a></li>
-                            <li><a href="/portfolio/" style="color: white">Портфолио</a></li>
+                        <!--                            <li><a href="/portfolio/" style="color: white">Портфолио</a></li>-->
                             <li>
                                 <a style="color: white" onclick="Reformal.widgetOpen();return false;" href="http://champion.reformal.ru">
                                     Отзывы
                                 </a>
                             </li>
-                            <li><a style="color: white" href="/contacts/">Контакты</a></li>
-                            <?
-                            if(!empty($_SESSION['id'])){?>
-                                    <li><a href="/id<?print $_SESSION['id']?>?quit=1" style="color: white">Выход</a></li>
-                                <?}else{?>
-                                    <li><a href="/id<?print $_SESSION['id']?>" style="color: white"><?print $_SESSION['name']?></a></li>
-                                <?}?>
+                        <li><a style="color: white" href="/contacts/">Контакты</a></li>
+
+                        <? if (!empty($_SESSION['password'])) { ?>
+                            <li class="dropdown">
+                                <? print "<a style='color: white;' class='dropdown-toggle' data-toggle='dropdown' href='#'>"; ?>
+                                <? print $_SESSION['i'] . " " . $_SESSION['o'] ?>
+                                <span class="caret"></span></a>
+                                <ul class="dropdown-menu" style="background-color: rgba(255, 255, 255, 0.95)">
+                                    <? print"<li><a href='id" . $_SESSION['id'] . "'>Профиль</a></li>"; ?>
+                                    <li><a href="#">Статистика</a></li>
+                                </ul>
+                                </a>
+                            </li>
+                        <? } else { ?>
+                            <li>
+                                <a style="color: white" href="/auth/">
+                                    Вход
+                                </a>
+                            </li>
+                        <? } ?>
                         </ul>
                     </div>
                 </div>

@@ -11,19 +11,19 @@ if(!empty($_GET['ent_login']) && !empty($_GET['ent_pass'])){
     $sql = mysql_query("select * from user_l where login='".$_GET['ent_login']."' and psw='".$_GET['ent_pass']."'");
     $res = mysql_fetch_array($sql);
     if($res) {
-        $sql = mysql_query("SELECT * FROM profile");
+        $sql = mysql_query("SELECT * FROM profile where login='" . $_GET['ent_login'] . "'");
 
-        while($row = mysql_fetch_array($sql)){
-            if($_GET['ent_login'] == $row['login']){
-                $_SESSION['id'] = $row['id'];
-                $_SESSION['login'] = $_GET['ent_login'];
-                $_SESSION['password']= md5($_GET['ent_login']."|".$_GET['ent_pass']);
-               /* print $_GET['ent_login']."</br>";
-                print $_GET['ent_pass']."</br>";
-                print_r ($_SESSION);*/
-                print "<meta http-equiv='refresh' content='0; url=/id".$_SESSION['id']."'>";
-            }
-        }
+        $row = mysql_fetch_array($sql);
+        print_r($row);
+        $_SESSION['id'] = $row['id'];
+        $_SESSION['login'] = $_GET['ent_login'];
+        $_SESSION['f'] = $row['f'];
+        $_SESSION['i'] = $row['i'];
+        $_SESSION['o'] = $row['o'];
+        $_SESSION['password'] = md5($_GET['ent_login'] . "|" . $_GET['ent_pass']);
+
+        print "<meta http-equiv='refresh' content='0; url=/id" . $_SESSION['id'] . "'>";
+
     }
     else
     {
@@ -64,11 +64,14 @@ else if(!empty($_GET['reg_login']) && !empty($_GET['reg_pass']) && !empty($_GET[
                     {
                         print_r($_GET);
                         print md5($_GET['reg_login']."|".$_GET['reg_pass']);
-                        $otvet = "Провал";
+                        $otvet = "<a href='/auth/'>Провал попробовать еще раз</a>>";
                     }
                     print $otvet."<br/>";
                     print "Вторая(Profile): ";
-                    if(mysql_query("INSERT INTO profile(login, number_phone, email, grp) values('".$_GET['reg_login']."',".$_GET['reg_phone'].",'".$_GET['reg_email']."', 2)"))
+
+
+                    $arr = explode(" ", $_GET['reg_fio']);
+                    if (mysql_query("INSERT INTO profile(f,i,o,login, number_phone, email, grp) values('" . $arr[0] . "','" . $arr[1] . "','" . $arr[2] . "','" . $_GET['reg_login'] . "'," . $_GET['reg_phone'] . ",'" . $_GET['reg_email'] . "', 2)"))
                         $otvet = "Успех";
                     else
                         $otvet = "Провал";

@@ -1,11 +1,12 @@
+<?
+include('header.php');
+?>
+
+
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
- <!--    <meta name="viewport" content="width=device-width, initial-scale=3.0, maximum-scale=3.0, user-scalable=no"> -->
     <link rel="shortcut icon" href="/img/favicon.png" type="image/png">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.33.2/jquery.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="../../css-styles/champ.css" />
-	<link rel="stylesheet" type="text/css" href="../../css-styles/body.css">
 	<script src="../../js/menu.js"></script>
     <title>РА Чемпион</title>
     <meta name="keywords" content="">
@@ -14,7 +15,6 @@
 </head>
 <?php
 require_once($_SERVER['DOCUMENT_ROOT']."/modules/connect.php");
-require_once($_SERVER['DOCUMENT_ROOT']."/modules/menu_top.php");
 $category = "portfolio";
 ?>
 <div id="content">

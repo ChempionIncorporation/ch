@@ -19,7 +19,7 @@ if(isset($_GET['quit']) && $_GET['quit'] == 1){
 <form action="?save=1" method="post">
     <div class="container" style="margin-top:100px">
         <div class="row top-xs" style="">
-            <div class="col-xs-3" style="border-right:5px solid #e8e8e8;background: #fff">
+            <div class="col-xs-3" style=";border: 1px solid silver;background: #fff">
                 <div class="box" >
                     <?
                         include_once('modules/left-bar.php');
@@ -44,28 +44,62 @@ if(isset($_GET['quit']) && $_GET['quit'] == 1){
                             $print = $print."address";
                         if ($re['email'] == $_POST['email'])
                             $print = $print."email";
-
                     }
                     ?>
                 </div>
             </div>
-            <div class="col-xs" style="margin-left:5px;padding:20px;">
-                <div class="box" >
+            <div class="col-xs" style="margin-left:5px;padding:10px;">
+                <div class="box">
                     <div class="row">
                         <div class="col-xs">
                             <div class="box">
-                                <div class="jumbotron" style="background: #e8e8e8">
-                                    <h1>Добро пожаловать <?print $re['name']?></h1>
-                                    <p>Вас приветствует сайт РА-Champion</p>
-                                </div>
+                                <h2>Добро пожаловать <? print $_SESSION['i'] . " " . $_SESSION['o'] ?></h2>
+                                <p style="margin-left:20px;margin-bottom:5px">Вас приветствует сайт РА-Champion</p>
                             </div>
                         </div>
                     </div>
                 </div>
                         <div class="box">
                             <div class="row">
-                            <div class="col-xs" style="background: #fff;padding:20px 5px;border: 3px solid #e8e8e8">
+                                <div class="col-xs"
+                                     style="background: #fff;padding:20px 5px;margin:2px;border: 1px solid silver">
                                 <div class="box">
+                                    <div class="row">
+                                        <div class="col-xs-7" style="">
+                                            <div class="box">
+                                                Фамилия:
+                                            </div>
+                                        </div>
+                                        <div class="col-xs" style="">
+                                            <div class="box"><b>
+                                                    <? print $_SESSION['f'] ?>
+                                                </b></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-7" style="">
+                                            <div class="box">
+                                                Имя:
+                                            </div>
+                                        </div>
+                                        <div class="col-xs" style="">
+                                            <div class="box"><b>
+                                                    <? print $_SESSION['i'] ?>
+                                                </b></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-7" style="">
+                                            <div class="box">
+                                                Отчество:
+                                            </div>
+                                        </div>
+                                        <div class="col-xs" style="">
+                                            <div class="box"><b>
+                                                    <? print $_SESSION['o'] ?>
+                                                </b></div>
+                                        </div>
+                                    </div>
                                     <div class="row">
                                         <div class="col-xs-7" style="">
                                             <div class="box">
@@ -74,93 +108,103 @@ if(isset($_GET['quit']) && $_GET['quit'] == 1){
                                         </div>
                                         <div class="col-xs" style="">
                                             <div class="box"><b>
-                                                <?print $_GET['id']?>
-                                            </b></div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-xs-7" style="">
-                                            <div class="box">
-                                                Вы находитесь в группе:
-                                            </div>
-                                        </div>
-                                        <div class="col-xs" style="">
-                                            <div class="box"><b>
-                                                <?print $re['grp'] ?>
-                                            </b></div>
+                                                    <? print $_GET['id'] ?>
+                                                </b></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xs"  style="background: #fff;padding:20px 5px;;border: 3px solid #e8e8e8">
-                                <div class="box">
-                                    <div class="row">
-                                        <div class="col-xs-5" style="">
-                                            <div class="box">
-                                                Номер телефона
+                                <div class="col-xs"
+                                     style="background: #fff;padding:20px 5px;margin:2px;border: 1px solid silver">
+                                    <div class="box">
+                                        <div class="row">
+                                            <div class="col-xs-6" style="">
+                                                <div class="box">
+                                                    Номер телефона
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-xs" style="">
-                                            <div class="box">
-                                                <?
+                                            <div class="col-xs" style="">
+                                                <div class="box">
+                                                    <?
 
-                                                if(empty($re['number_phone'])){
-                                                    $p = "<font style='font-weight: 900' color='red'>Пусто.</font>";
-                                                }else {
-                                                    $p = "+380 ".$re['number_phone'];
-                                                }
-                                                print "<b>".$p."</b>";?>
+                                                    if (empty($re['number_phone'])) {
+                                                        $p = "<font style='font-weight: 900' color='red'>Пусто.</font>";
+                                                    } else {
+                                                        $num = "(0" . substr($re['number_phone'], 0, 2) . ") " . substr($re['number_phone'], 2, 2) . "-" . substr($re['number_phone'], 4, 2) . "-" . substr($re['number_phone'], 6, 3);
+                                                        $p = "+38 " . $num;
+                                                    }
+                                                    print "<b>" . $p . "</b>"; ?>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xs-5" style="">
-                                            <div class="box">
-                                                Адресс:
+                                        <div class="row">
+                                            <div class="col-xs-6" style="">
+                                                <div class="box">
+                                                    Адресс:
+                                                </div>
+                                            </div>
+                                            <div class="col-xs" style="">
+                                                <div class="box"><b>
+                                                        <?
+                                                        if (empty($re['city']) && empty($re['address'])) {
+                                                            $g = "<font style='font-weight: 900' color='red'>Пусто.</font>";
+                                                        } else {
+                                                            $g = "Город: " . $re['city'] . ", " . "Ул.: " . $re['address'];
+                                                        }
+                                                        print $g;
+                                                        ?>
+                                                    </b></div>
                                             </div>
                                         </div>
-                                        <div class="col-xs" style="">
-                                            <div class="box"><b>
-                                                <?
-                                                if(empty($re['city'])){
-                                                    $g = "<font style='font-weight: 900' color='red'>Пусто.</font>";
-                                                }else{
-                                                    $g = $re['city'];
-                                                }
-                                                if(empty($re['address'])){
-                                                    $r = "<font style='font-weight: 900' color='red'>Пусто.</font>";
-                                                }else{
-                                                    $r = $re['address'];
-                                                }
-                                                print "Город: ".$g.", "."Ул.: ".$r;?>
-                                            </b></div>
-                                        </div>
-                                    </div>
 
-                                    <div class="row">
-                                        <div class="col-xs-5" style="">
-                                            <div class="box">
-                                                Электронная почта:
+                                        <div class="row">
+                                            <div class="col-xs-6" style="">
+                                                <div class="box">
+                                                    Электронная почта:
+                                                </div>
+                                            </div>
+                                            <div class="col-xs" style="">
+                                                <div class="box"><b>
+                                                        <?
+                                                        if (empty($re['email']))
+                                                            print "<font style='font-weight: 900' color='red'>Пусто</font>";
+                                                        else
+                                                            print $re['email'];
+
+                                                        ?>
+                                                    </b></div>
                                             </div>
                                         </div>
-                                        <div class="col-xs" style="">
-                                            <div class="box"><b>
-                                                <?
-                                                    if(empty($re['email']))
-                                                        print "<font style='font-weight: 900' color='red'>Пусто</font>";
-                                                    else
-                                                        print $re['email'];
-
-                                                ?>
-                                            </b></div>
+                                        <div class="row">
+                                            <div class="col-xs-6" style="">
+                                                <div class="box">
+                                                    Вы находитесь в группе:
+                                                </div>
+                                            </div>
+                                            <div class="col-xs" style="">
+                                                <div class="box"><b>
+                                                        <? print $re['grp'] ?>
+                                                    </b></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
                         </div>
                     </div>
-<!--              Делаем статистику заказа  -->
+                <div class="row middle-xs" style="padding:10px;margin:10px;background:white">
+                    <div class="col-xs-5">
+                        <div class="box">
+                            Для редактирования своих данных нажмите:
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="box">
+                            <button type="button" class="btn btn-info">Редактировать</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--              Делаем статистику заказа  -->
             <?$sql = mysql_query("select * from zayavka where key_athor='".$_SESSION['password']."'");
             if(!empty($sql)){?>
                 <div class="box">
@@ -320,4 +364,3 @@ if(isset($_GET['quit']) && $_GET['quit'] == 1){
                     <button class="btn btn-large btn-primary"  type="submit">Сохранить</button>
                 </div>
 </form>
-

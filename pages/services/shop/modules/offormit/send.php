@@ -19,7 +19,7 @@ $o = getVal($_SESSION['password']);
 print_r($o);
 print "<br>";
 print $o['address']. //Adress
-    $o['name']." P:".$o['number_phone'];//author
+    $o['f'] . " " . $o['i'] . " " . $o['o'] . " P:" . $o['number_phone'];//author
 
 print "<br>";
 
@@ -39,13 +39,14 @@ print "<br>";
 ////    print "<br>".$v."</br>";
 //endforeach;
 
-print "insert into zayavka(status,address,pname,key_athor,full_my_text, cdate) values( 1, '".$o['address']."','".$o['name']." P:".$o['number_phone']."', '".$_SESSION['password']."', '".$_SESSION['namew']."', now());";
-if(mysql_query("insert into zayavka(status,address,pname,key_athor,full_my_text, cdate) values( 1, '".$o['address']."','".$o['name']." P:".$o['number_phone']."', '".$_SESSION['password']."', '".$_SESSION['namew']."', now());"))
+print "insert into zayavka(status,address,pauthor,key_athor,full_my_text, cdate) values( 1, '" . $o['address'] . "','" . $o['f'] . " " . $o['i'] . " " . $o['o'] . " P:" . $o['number_phone'] . "', '" . $_SESSION['password'] . "', '" . $_SESSION['namew'] . "', now())";
+if (mysql_query("insert into zayavka(status,address,pauthor,key_athor,full_my_text, cdate) values( 1, '" . $o['address'] . "','" . $o['f'] . " " . $o['i'] . " " . $o['o'] . " P:" . $o['number_phone'] . "', '" . $_SESSION['password'] . "', '" . $_SESSION['namew'] . "', now())"))
 {
-    print "<script>alert('OK!')</script>";
-    print "<meta http-equiv='refresh' content='5; url=/id".$o['id']."'>";
+//    print "<script>alert('OK!')</script>";
+    print "<meta http-equiv='refresh' content='0; url=/id" . $o['id'] . "'>";
 }else{
-    print "<script>alert('FAIL!')</script>";
+//    print "<script>alert('FAIL!')</script>";
+    print "<meta http-equiv='refresh' content='0; url=/id" . $o['id'] . "'>";
 }
 
 

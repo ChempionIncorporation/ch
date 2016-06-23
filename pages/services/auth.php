@@ -123,7 +123,13 @@
 							<br />
 				Введите свою почту:
 							<a href="#" data-toggle="tooltip" data-placement="right" title="Латинские буквы и цифры">
-								<input type="text" name="reg_email" style="height:30px;width:250px" placeholder="Почта" required>
+								<input type="text" name="reg_email" style="height:30px;width:250px" placeholder="Почта"
+									   required>
+							</a><br/>
+							Введите ФИО:<br>
+							<a href="#" data-toggle="tooltip" data-placement="right" title="Латинские буквы и цифры">
+								<input type="text" name="reg_fio" style="height:30px;width:300px" placeholder="ФИО"
+									   required>
 							</a><br />
 							<script>
 								$(document).ready(function(){

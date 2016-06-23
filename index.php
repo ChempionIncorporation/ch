@@ -1,84 +1,11 @@
-<!DOCTYPE html>
-<head>
-	<meta charset="utf-8">
-	<title></title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="assets/css/flexboxgrid.css"> <!-- Blocks !-->
-	<link rel="stylesheet" href="assets/css/bootstrap-theme.min.css"><!-- Fraem !-->
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css"><!-- Fraem !-->
-	<link rel="stylesheet" href="assets/css/ekko-lightbox.min.css"><!-- Library !-->
-	<link rel="stylesheet" href="assets/css/ChempStyle.css"><!-- MyStyle !-->
-
+<?
+include("pages/services/header.php");
+?>
+<head>-->
 	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/js/jquery.mosaicflow.min.js"></script>
-	<script type="text/javascript" src="assets/js/jquery.js"></script>
-
 </head>
 <body>
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background:#88212a;color:white">
-	<div class="container" style="color: white">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-		</div>
-		<div class="collapse navbar-collapse">
-		<a class="navbar-brand" href="#" style="margin-top:-10px">
-			<img class="logo" src="assets/img/logo-head.png" alt="CHAMPION LOGO">
-		</a>
-			<div class="row center-xs">
-				<div class="col-xs-8" >
-					<div class="box">
-						<ul class="nav navbar-nav" style="padding: 0px 40px;">
-							<li>
-							</li>
-							<li class="active"><a href="/">Главная</a></li>
-							<li><a href="/portfolio/">Портфолио</a></li>
-							<li><a onclick="Reformal.widgetOpen();return false;" href="http://champion.reformal.ru">
-								Отзывы
-								</a>
-							</li>
-							<li><a href="/contacts/">Контакты</a></li>
-							<li><a href="/auth/">Вход</a></li>
-						<!--<li>
-								<div class="row">
-									<div class="col-xs"  style="background: cadetblue">
-										<form action="/search" method="post">
-											<input size="10" class="search" name="search">
-											<input class="bnt_search" type="submit" value="🔍">
-										</form>
-									</div>
-								</div>
-							</li>!-->
-							<form action="/search" method="post" >
-							<li>
-								<div class="row">
-										<div class="col-xs" style="padding-top:10px">
-											<div class="input-group">
-												<input type="text" class="form-control" size="150px">
-												<span class="input-group-btn">
-													<button class="btn btn-default" type="button">
-														<span class="glyphicon glyphicon-search"></span>
-													</button>
-												</span>
-											</div><!-- /input-group -->
-										</div><!-- /.col-lg-6 -->
-								</div><!-- /.row -->
-
-							</li>
-							</form>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div><!--/.nav-collapse -->
-	</div>
-</div>
 
 <div class="container" style="width: 100%;">
 	<div class="row" >
@@ -95,7 +22,7 @@
 		<div class="col-xs-9">
 			<div class="box" >
 				<a href="#" >
-					<img src="assets/img/button/stand/1.png" width="19%" height="20%"
+					<img src="assets/img/button/stand/1.png" width="165px" height="170px"
 						 id="1" style="padding-top: 5px"
 						 onMouseUp="document.getElementById(1).src = 'assets/img/button/hover/1.png'"
 						 onMouseDown="document.getElementById(1).src = 'assets/img/button/click/1.png'"
@@ -104,7 +31,7 @@
 					>
 				</a>
 				<a href="/polygraphy" >
-					<img src="assets/img/button/stand/3.png" width="19%" height="20%"
+					<img src="assets/img/button/stand/3.png" width="165px" height="170px"
 						 id="3" style="padding-top: 5px"
 						 onMouseUp="document.getElementById(3).src = 'assets/img/button/hover/3.png'"
 						 onMouseDown="document.getElementById(3).src = 'assets/img/button/click/3.png'"
@@ -113,7 +40,7 @@
 					>
 				</a>
 				<a href="/suveniry" >
-					<img src="assets/img/button/stand/4.png" width="19%" height="20%"
+					<img src="assets/img/button/stand/4.png" width="165px" height="170px"
 						 id="4" style="padding-top: 5px"
 						 onMouseUp="document.getElementById(4).src = 'assets/img/button/hover/4.png'"
 						 onMouseDown="document.getElementById(4).src = 'assets/img/button/click/4.png'"
@@ -122,7 +49,7 @@
 					>
 				</a>
 				<a href="/sayty" >
-					<img src="assets/img/button/stand/2.png" width="19%" height="20%"
+					<img src="assets/img/button/stand/2.png" width="165px" height="170px"
 						 id="2" style="padding-top: 5px"
 						 onMouseUp="document.getElementById(2).src = 'assets/img/button/hover/2.png'"
 						 onMouseDown="document.getElementById(2).src = 'assets/img/button/click/2.png'"
@@ -131,7 +58,7 @@
 					>
 				</a>
 				<a href="/naruzhnaya_reklama" >
-					<img src="assets/img/button/stand/5.png" width="19%" height="20%"
+					<img src="assets/img/button/stand/5.png" width="165px" height="170px"
 						 id="5" style="padding-top: 5px"
 						 onMouseUp="document.getElementById(5).src = 'assets/img/button/hover/5.png'"
 						 onMouseDown="document.getElementById(5).src = 'assets/img/button/click/5.png'"
@@ -140,7 +67,7 @@
 					>
 				</a>
 				<a href="/promo_aktsii" >
-					<img src="assets/img/button/stand/6.png" width="19%" height="20%"
+					<img src="assets/img/button/stand/6.png" width="165px" height="170px"
 						 id="6" style="padding-top: 5px"
 						 onMouseUp="document.getElementById(6).src = 'assets/img/button/hover/6.png'"
 						 onMouseDown="document.getElementById(6).src = 'assets/img/button/click/6.png'"
@@ -149,7 +76,7 @@
 					>
 				</a>
 				<a href="/transport" >
-					<img src="assets/img/button/stand/7.png" width="19%" height="20%"
+					<img src="assets/img/button/stand/7.png" width="165px" height="170px"
 						 id="7" style="padding-top: 5px"
 						 onMouseUp="document.getElementById(7).src = 'assets/img/button/hover/7.png'"
 						 onMouseDown="document.getElementById(7).src = 'assets/img/button/click/7.png'"
@@ -158,7 +85,7 @@
 					>
 				</a>
 				<a href="/media_reklama" >
-					<img src="assets/img/button/stand/8.png" width="19%" height="20%"
+					<img src="assets/img/button/stand/8.png" width="165px" height="170px"
 						 id="8" style="padding-top: 5px"
 						 onMouseUp="document.getElementById(8).src = 'assets/img/button/hover/8.png'"
 						 onMouseDown="document.getElementById(8).src = 'assets/img/button/click/8.png'"
@@ -167,7 +94,7 @@
 					>
 				</a>
 				<a href="/dizayn" >
-					<img src="assets/img/button/stand/9.png" width="19%" height="20%"
+					<img src="assets/img/button/stand/9.png" width="165px" height="170px"
 						 id="9" style="padding-top: 5px"
 						 onMouseUp="document.getElementById(9).src = 'assets/img/button/hover/9.png'"
 						 onMouseDown="document.getElementById(9).src = 'assets/img/button/click/9.png'"
@@ -176,7 +103,7 @@
 					>
 				</a>
 				<a href="/nestandartnaya_reklama" >
-					<img src="assets/img/button/stand/10.png" width="19%" height="20%"
+					<img src="assets/img/button/stand/10.png" width="165px" height="170px"
 						 id="10" style="padding-top: 5px"
 						 onMouseUp="document.getElementById(10).src = 'assets/img/button/hover/10.png'"
 						 onMouseDown="document.getElementById(10).src = 'assets/img/button/click/10.png'"
