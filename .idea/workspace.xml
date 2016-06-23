@@ -75,8 +75,8 @@
       <file leaf-file-name="ii.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ii.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.04292929">
-              <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -311,7 +311,19 @@
       <option name="project" value="LOCAL" />
       <updated>1466695233633</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Gleb: Commit&#10;">
+      <created>1466695723162</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1466695723162</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Gleb: Commit&#10;">
+      <created>1466696330238</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1466696330238</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -745,8 +757,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ii.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.04292929">
-          <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
           <folding />
         </state>
       </provider>
