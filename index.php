@@ -1,7 +1,7 @@
 <?
 include("pages/services/header.php");
 ?>
-<head>-->
+<head>
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.mosaicflow.min.js"></script>
 </head>

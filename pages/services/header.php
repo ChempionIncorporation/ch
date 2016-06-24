@@ -15,7 +15,8 @@
 
 </head>
 <body  style="background: #e8e8e8">
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background:#88212a;color:white">
+<div class="navbar navbar-inverse navbar-default" role="navigation" id="menu"
+     style="border-radius:0px;border: 0px;background:#88212a;color:white">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -26,11 +27,15 @@
             </button>
         </div>
         <div class="collapse navbar-collapse">
-            <a class="navbar-brand" href="#" style="margin-top:-10px">
-                <img class="logo" src="../../../assets/img/logo-head.png" alt="CHAMPION LOGO" style="margin-left:80px;">
-            </a>
-            <div class="row center-xs">
-                <div class="col-xs-7">
+            <div class="row">
+                <div class="col-xs">
+                    <div class="box">
+                        <a class="navbar-brand" href="#" style="margin-top:-10px">
+                            <img class="logo" src="../../../assets/img/logo-head.png" alt="CHAMPION LOGO" style=" ">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-9">
                     <div class="box">
                         <ul class="nav navbar-nav"">
                             <li><a href="/" style="color: white">Главная</a></li>
@@ -67,6 +72,8 @@
         </div><!--/.nav-collapse -->
     </div>
 </div>
+
+
 <script type="text/javascript">
     var reformalOptions = {
         project_id: 973649,
