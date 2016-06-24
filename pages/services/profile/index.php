@@ -13,11 +13,6 @@ if(isset($_GET['quit']) && $_GET['quit'] == 1){
 }
 
 ?>
-<style>
-    span#warning{
-        color: #b20000;
-    }
-</style>
 <form action="?save=1" method="post">
     <div class="container" style="margin-top:100px">
         <div class="row top-xs" style="">
@@ -85,8 +80,8 @@ if(isset($_GET['quit']) && $_GET['quit'] == 1){
                     </div>
                     <div class="row" style="background: white;padding:20px; border: 1px solid silver">
                         <div class="col-xs">
-                            <div class="row">
-                                <div class="col-xs-5" style="padding:10px">
+                            <div class="row" style="padding:10px">
+                                <div class="col-xs-8">
                                     <div class="box">
                                         <button type="button" style="display: block;margin:10px" id="sset"
                                                 class="btn btn-info">Редактировать
@@ -94,6 +89,10 @@ if(isset($_GET['quit']) && $_GET['quit'] == 1){
                                         <button type="button" style="display: none;margin:10px" id="ssave"
                                                 class="btn btn-success">Сохранить
                                         </button>
+                                    </div>
+                                </div>
+                                <div class="col-xs-1">
+                                    <div class="box">
                                         <button type="button" style="display: none;margin:10px" id="uundo"
                                                 class="btn btn-danger">Назад
                                         </button>
@@ -118,7 +117,8 @@ if(isset($_GET['quit']) && $_GET['quit'] == 1){
                                 </div>
                                 <div class="col-xs-4" style="">
                                     <div class="box">
-                                        <input type="text" size="20" id="f" placeholder="Фамилия">
+                                        <input type="text" size="20"
+                                               id="f" placeholder="Фамилия">
                                     </div>
                                 </div>
                             </div>

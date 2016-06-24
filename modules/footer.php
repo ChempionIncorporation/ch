@@ -1,25 +1,20 @@
 <footer class="container-fluid text-center" style="background: #88212a;">
     <div class="row" style="background: #88212a;color: white; height:auto;">
-        <div class="col-xs">
-
-            <div class="row">
-                <div class="col-xs-5">
-                    <div class="box" style="padding:5px">
-                        &copy;&nbspРекламное агенство "Чемпион"<br/>г. Одесса, ул. Княжеская, 3/5
-                    </div>
-                </div>
-                <div class="col-xs-4 start-xs">
-                    <div class="box" style="font-size:10pt;">
-                        <span class="glyphicon glyphicon-earphone"></span>
-                        Позвонить нам<br/>
-                        (048) 795-68-03 / (048) 736-26-49<br/>
-                        </span>
-                        (093) 946-14-95 / (095) 862-61-64 <br/>
-                        (096) 321-58-11<br/>
-                        <span class="glyphicon glyphicon-envelope"></span>
-                        7362649@ukr.net
-                    </div>
-                </div>
+        <div class="col-xs-3">
+            <div class="box" style="padding:5px">
+                &copy;&nbspРекламное агенство "Чемпион"<br/>г. Одесса, ул. Княжеская, 3/5
+            </div>
+        </div>
+        <div class="col-xs-3 start-xs">
+            <div class="box" style="font-size:10pt;">
+                <span class="glyphicon glyphicon-earphone"></span>
+                Позвонить нам<br/>
+                (048) 795-68-03 / (048) 736-26-49<br/>
+                </span>
+                (093) 946-14-95 / (095) 862-61-64 <br/>
+                (096) 321-58-11<br/>
+                <span class="glyphicon glyphicon-envelope"></span>
+                7362649@ukr.net
             </div>
         </div>
         <div class="col-xs start-xs">
@@ -49,6 +44,11 @@
                      onMouseOver="document.getElementById(126).src = 'assets/img/social/2/gp.png'"
                      onMouseOut="document.getElementById(126).src = 'assets/img/social/1/gp.png'"
                 >
+            </div>
+        </div>
+        <div class="col-xs-3 end-xs">
+            <div class="box">
+                v1.1005
             </div>
         </div>
     </div>
