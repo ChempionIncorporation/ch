@@ -85,7 +85,7 @@ else if(!empty($_GET['reg_login']) && !empty($_GET['reg_pass']) && !empty($_GET[
                             $_SESSION['login'] = $_GET['reg_login'];
                             $_SESSION['password']= md5($_GET['reg_login']."|".$_GET['reg_pass']);
                           //  print $_SESSION['password'];
-                            print "<meta http-equiv='refresh' content='0; url=/id".$_SESSION['id']."'>";
+                            print "<meta http-equiv='refresh' content='0; url=/id/" . $_SESSION['id'] . "'>";
                         }
                     }
                 }else{
