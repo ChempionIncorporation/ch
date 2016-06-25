@@ -51,12 +51,11 @@
                             <li class="dropdown">
                                 <? print "<a style='color: white;' class='dropdown-toggle' data-toggle='dropdown' href='#'>"; ?>
                                 <? print $_SESSION['i'] . " " . $_SESSION['o'] ?>
-                                <span class="caret"></span></a>
+                                <span class="caret"></span>
                                 <ul class="dropdown-menu" style="background-color: rgba(255, 255, 255, 0.95)">
-                                    <? print"<li><a href='id" . $_SESSION['id'] . "'>Профиль</a></li>"; ?>
-                                    <li><a href="#">Статистика</a></li>
+                                    <? print"<li><a href='/id" . $_SESSION['id'] . "'>Профиль</a></li>"; ?>
+                                    <? print"<li><a href='/id" . $_SESSION['id'] . "/list'>Список заказов</a></li>"; ?>
                                 </ul>
-                                </a>
                             </li>
                         <? } else { ?>
                             <li>

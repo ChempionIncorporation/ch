@@ -14,7 +14,7 @@ if(isset($_GET['quit']) && $_GET['quit'] == 1){
 
 ?>
 <form action="?save=1" method="post">
-    <div class="container" style=" ">
+    <div class="container" style="">
         <div class="row top-xs" style="">
             <div class="col-xs-3" style=";border: 1px solid silver;background: #fff">
                 <div class="box" >

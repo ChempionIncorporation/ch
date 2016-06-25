@@ -19,30 +19,30 @@
         </div>
         <div class="col-xs start-xs">
             <div class="box">
-                <img src="assets/img/footer-logo.png" style="padding:2px;">
-                <img src="assets/img/social/1/vk.png"
+                <img src="/assets/img/footer-logo.png" style="padding:2px;">
+                <img src="/assets/img/social/1/vk.png"
                      id="123" style="padding-bottom:20px;"
-                     onMouseUp="document.getElementById(123).src = 'assets/img/social/2/vk.png'"
-                     onMouseOver="document.getElementById(123).src = 'assets/img/social/2/vk.png'"
-                     onMouseOut="document.getElementById(123).src = 'assets/img/social/1/vk.png'"
+                     onMouseUp="document.getElementById(123).src = '/assets/img/social/2/vk.png'"
+                     onMouseOver="document.getElementById(123).src = '/assets/img/social/2/vk.png'"
+                     onMouseOut="document.getElementById(123).src = '/assets/img/social/1/vk.png'"
                 >
-                <img src="assets/img/social/1/tw.png"
+                <img src="/assets/img/social/1/tw.png"
                      id="124" style="padding-bottom:20px;"
-                     onMouseUp="document.getElementById(124).src = 'assets/img/social/2/tw.png'"
-                     onMouseOver="document.getElementById(124).src = 'assets/img/social/2/tw.png'"
-                     onMouseOut="document.getElementById(124).src = 'assets/img/social/1/tw.png'"
+                     onMouseUp="document.getElementById(124).src = '/assets/img/social/2/tw.png'"
+                     onMouseOver="document.getElementById(124).src = '/assets/img/social/2/tw.png'"
+                     onMouseOut="document.getElementById(124).src = '/assets/img/social/1/tw.png'"
                 >
-                <img src="assets/img/social/1/fb.png"
+                <img src="/assets/img/social/1/fb.png"
                      id="125" style="padding-bottom:20px;"
-                     onMouseUp="document.getElementById(125).src = 'assets/img/social/2/fb.png'"
-                     onMouseOver="document.getElementById(125).src = 'assets/img/social/2/fb.png'"
-                     onMouseOut="document.getElementById(125).src = 'assets/img/social/1/fb.png'"
+                     onMouseUp="document.getElementById(125).src = '/assets/img/social/2/fb.png'"
+                     onMouseOver="document.getElementById(125).src = '/assets/img/social/2/fb.png'"
+                     onMouseOut="document.getElementById(125).src = '/assets/img/social/1/fb.png'"
                 >
-                <img src="assets/img/social/1/gp.png"
+                <img src="/assets/img/social/1/gp.png"
                      id="126" style="padding-bottom:20px;"
-                     onMouseUp="document.getElementById(126).src = 'assets/img/social/2/gp.png'"
-                     onMouseOver="document.getElementById(126).src = 'assets/img/social/2/gp.png'"
-                     onMouseOut="document.getElementById(126).src = 'assets/img/social/1/gp.png'"
+                     onMouseUp="document.getElementById(126).src = '/assets/img/social/2/gp.png'"
+                     onMouseOver="document.getElementById(126).src = '/assets/img/social/2/gp.png'"
+                     onMouseOut="document.getElementById(126).src = '/assets/img/social/1/gp.png'"
                 >
             </div>
         </div>

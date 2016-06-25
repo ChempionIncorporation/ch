@@ -66,6 +66,8 @@ RewriteRule ^news/?$ /pages/services/news.php [L]
 
 RewriteRule ^offset/?$ /pages/services/offset.php [L]
 RewriteRule ^id([^/]+)/?$ /pages/services/profile/index.php?id=$1 [L,QSA]
+RewriteRule ^id([^/]+)/list/?$ /pages/services/profile/list.php?id=$1 [L,QSA]
+
 RewriteRule ^auth/?$ /pages/services/auth.php [L]
 RewriteRule ^editor/?$ /pages/services/shop/modules/editor/view.php [L]
 
@@ -75,6 +77,7 @@ RewriteRule ^shop/([^/]+)/([^/]+)?$ /pages/services/shop/index.php?prod=2&view=$
 
 RewriteRule ^cart/?$ /pages/services/shop/modules/offormit/index.php [L]
 RewriteRule ^cart/send?$ /pages/services/shop/modules/offormit/send.php [L]
+
 
 
 #RewriteRule ^price/all/?$ /pages/services/price.php [L]
