@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3d78c7a-bcec-46d7-80a1-da32972dfd29" name="Default" comment="Gleb: test&#10;Version: 1.0.1.5">
+    <list default="true" id="e3d78c7a-bcec-46d7-80a1-da32972dfd29" name="Default" comment="Gleb: DB&#10;Version: 1.5.0.1">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/services/shop/modules/cart/view.php" afterPath="$PROJECT_DIR$/pages/services/shop/modules/cart/view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ii.txt" afterPath="$PROJECT_DIR$/ii.txt" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,20 +25,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ii.txt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ii.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ii.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.035639413">
+              <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="view.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/services/shop/modules/cart/view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.64594126">
+            <state vertical-scroll-proportion="0.0">
               <caret line="78" column="94" selection-start-line="78" selection-start-column="94" selection-end-line="78" selection-end-column="94" />
               <folding />
             </state>
@@ -48,7 +48,7 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/services/shop/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="15.653846">
+            <state vertical-scroll-proportion="0.0">
               <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
               <folding>
                 <marker date="1467192508754" expanded="true" signature="1359:1382" placeholder="select * fro... p_catalog" />
@@ -60,7 +60,7 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/services/shop/modules/offormit/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-31.423077">
+            <state vertical-scroll-proportion="0.0">
               <caret line="54" column="81" selection-start-line="54" selection-start-column="81" selection-end-line="54" selection-end-column="81" />
               <folding>
                 <marker date="1466694775202" expanded="true" signature="2110:2121" placeholder="..." />
@@ -73,7 +73,7 @@
       <file leaf-file-name="list.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/services/shop/modules/prod/list.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.846154">
+            <state vertical-scroll-proportion="0.0">
               <caret line="33" column="72" selection-start-line="33" selection-start-column="72" selection-end-line="33" selection-end-column="104" />
               <folding />
             </state>
@@ -96,6 +96,7 @@
         <option value="master" />
       </list>
     </option>
+    <option name="UPDATE_TYPE" value="REBASE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -153,8 +154,8 @@
         <option value="$PROJECT_DIR$/pages/services/header.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/pages/services/profile/modules/functions.php" />
-        <option value="$PROJECT_DIR$/ii.txt" />
         <option value="$PROJECT_DIR$/pages/services/shop/modules/cart/view.php" />
+        <option value="$PROJECT_DIR$/ii.txt" />
       </list>
     </option>
   </component>
@@ -217,7 +218,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -394,7 +395,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -403,7 +404,6 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.toDoOptions" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="FullScreen" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="233" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="242" />
@@ -492,23 +492,29 @@
       <option name="project" value="LOCAL" />
       <updated>1467192616791</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Gleb: DB&#10;Version: 1.5.0.1">
+      <created>1467192995531</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1467192995531</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1522694" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2035139" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20189275" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897604" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -534,7 +540,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="098" />
     <MESSAGE value="Gleb: test&#10;Version: 1.0.1.5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gleb: test&#10;Version: 1.0.1.5" />
+    <MESSAGE value="Gleb: DB&#10;Version: 1.5.0.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gleb: DB&#10;Version: 1.5.0.1" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -860,7 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5284974">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="80" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -868,7 +874,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -876,7 +881,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -884,7 +888,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -892,15 +895,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.576923">
           <caret line="73" column="1" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="1" />
-          <folding>
-            <marker date="1466694775182" expanded="true" signature="761:831" placeholder="SELECT key_p... user_l" />
-            <marker date="1466694775182" expanded="true" signature="1075:1124" placeholder="SELECT name profile" />
-            <marker date="1466694775182" expanded="true" signature="1315:1367" placeholder="SELECT addre... profile" />
-            <marker date="1466694775182" expanded="true" signature="1565:1622" placeholder="SELECT numbe... profile" />
-            <marker date="1466694775182" expanded="true" signature="1824:1873" placeholder="SELECT city profile" />
-            <marker date="1466694775182" expanded="true" signature="2180:2223" placeholder="select * fro... user_l" />
-            <marker date="1466694775182" expanded="true" signature="2289:2344" placeholder="select * fro... profile" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -908,7 +902,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.65384614">
           <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -916,9 +909,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.029360967">
           <caret line="46" column="33" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
-          <folding>
-            <marker date="1466843128861" expanded="true" signature="2763:2776" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -926,11 +916,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1467192508759" expanded="true" signature="94:139" placeholder="select * fro... user_l" />
-            <marker date="1467192508759" expanded="true" signature="267:317" placeholder="Select * fro... profile" />
-            <marker date="1467192508759" expanded="true" signature="872:1126" placeholder="insert into zayavka... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -938,13 +923,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/services/shop/modules/offormit/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-31.423077">
+        <state vertical-scroll-proportion="0.0">
           <caret line="54" column="81" selection-start-line="54" selection-start-column="81" selection-end-line="54" selection-end-column="81" />
           <folding>
             <marker date="1466694775202" expanded="true" signature="2110:2121" placeholder="..." />
@@ -953,17 +937,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ii.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/services/shop/modules/prod/list.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.846154">
+        <state vertical-scroll-proportion="0.0">
           <caret line="33" column="72" selection-start-line="33" selection-start-column="72" selection-end-line="33" selection-end-column="104" />
           <folding />
         </state>
@@ -971,7 +947,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/services/shop/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="15.653846">
+        <state vertical-scroll-proportion="0.0">
           <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
           <folding>
             <marker date="1467192508754" expanded="true" signature="1359:1382" placeholder="select * fro... p_catalog" />
@@ -981,8 +957,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/services/shop/modules/cart/view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64594126">
+        <state vertical-scroll-proportion="0.0">
           <caret line="78" column="94" selection-start-line="78" selection-start-column="94" selection-end-line="78" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ii.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.035639413">
+          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
           <folding />
         </state>
       </provider>
