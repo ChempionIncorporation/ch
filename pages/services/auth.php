@@ -31,6 +31,7 @@
 				require_once("/profile/modules/functions.php");
 				print "<meta http-equiv='refresh' content='0; url=".$_SERVER['document_root']."/pages/services/profile/index.php?id=".getAccount($_POST['login'], $_POST['psw'])."'>";
 				//print "<script> alert('".$_SESSION['gleb'].$_SESSION['login']."');</script>";
+
 		}
 	?>
 <form action="/pages/services/profile/authme.php" method="get">
