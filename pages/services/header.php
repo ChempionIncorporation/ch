@@ -8,7 +8,7 @@ function connect()
 }
 
 if (isset($_GET['quit']) && $_GET['quit'] == 1) {
-    $_SESSION['password'] = null;
+    $_SESSION["password"] = null;
     $_SESSION['id'] = null;
     $_SESSION['login'] = null;
     $_SESSION['f'] = null;
