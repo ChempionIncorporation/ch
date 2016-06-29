@@ -167,6 +167,7 @@ if(isset($_GET['quit']) && $_GET['quit'] == 1){
 
                             <div class="row" style="padding:10px">
                                 <div class="col-xs-4" style="">
+
                                     <div class="box">
                                         Номер телефона
                                     </div>
@@ -177,13 +178,8 @@ if(isset($_GET['quit']) && $_GET['quit'] == 1){
                                 <div class="col-xs-4" style="">
                                     <div class="box">
                                         <?
-
-                                        if (empty($re['number_phone'])) {
-                                            $p = "<font style='font-weight: 900' color='red'>Пусто.</font>";
-                                        } else {
                                             $num = "(0" . substr($re['number_phone'], 0, 2) . ") " . substr($re['number_phone'], 2, 2) . "-" . substr($re['number_phone'], 4, 2) . "-" . substr($re['number_phone'], 6, 3);
                                             $p = "+38 " . $num;
-                                        }
                                         print "<b>" . $p . "</b>"; ?>
                                     </div>
                                 </div>
@@ -260,11 +256,7 @@ if(isset($_GET['quit']) && $_GET['quit'] == 1){
                                 <div class="col-xs-4" style="">
                                     <div class="box"><b>
                                             <?
-                                            if (empty($re['email']))
-                                                print "<font style='font-weight: 900' color='red'>Пусто</font>";
-                                            else
                                                 print $re['email'];
-
                                             ?>
                                         </b></div>
                                 </div>
