@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3d78c7a-bcec-46d7-80a1-da32972dfd29" name="Default" comment="Artem: connect&#10;Verstion: 1.5.0.7">
+    <list default="true" id="e3d78c7a-bcec-46d7-80a1-da32972dfd29" name="Default" comment="Artem: connect&#10;Verstion: 1.5.0.8">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/footer.php" afterPath="$PROJECT_DIR$/modules/footer.php" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,10 +28,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="footer.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.9496982">
+            <state vertical-scroll-proportion="-37.26923">
               <caret line="57" column="6" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="6" />
               <folding>
                 <element signature="n#style#0;n#footer#0;n#div#0;n#!!top" expanded="true" />
@@ -44,6 +43,29 @@
                 <element signature="n#style#0;n#img#2;n#div#0;n#div#2;n#div#0;n#footer#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#3;n#div#0;n#div#2;n#div#0;n#footer#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#4;n#div#0;n#div#2;n#div#0;n#footer#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="authme.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pages/services/profile/authme.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.93158954">
+              <caret line="1" column="5" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="5" />
+              <caret line="26" column="20" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="20" />
+              <caret line="32" column="20" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="20" />
+              <caret line="89" column="40" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="40" />
+              <caret line="94" column="32" selection-start-line="94" selection-start-column="28" selection-end-line="94" selection-end-column="32" />
+              <caret line="100" column="20" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="20" />
+              <caret line="103" column="17" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="17" />
+              <folding>
+                <marker date="1467200372141" expanded="true" signature="308:397" placeholder="select * fro... user_l" />
+                <marker date="1467200372141" expanded="true" signature="480:542" placeholder="SELECT * FRO... profile" />
+                <marker date="1467200372141" expanded="true" signature="1309:1330" placeholder="SELECT * FRO... profile" />
+                <marker date="1467200372141" expanded="true" signature="2034:2161" placeholder="INSERT INTO user_l... " />
+                <marker date="1467200372141" expanded="true" signature="2749:2957" placeholder="INSERT INTO profile... " />
+                <marker date="1467200372141" expanded="true" signature="3153:3174" placeholder="SELECT * FRO... profile" />
               </folding>
             </state>
           </provider>
@@ -126,8 +148,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/pages/services/shop/modules/functions.php" />
         <option value="$PROJECT_DIR$/pages/services/header.php" />
-        <option value="$PROJECT_DIR$/pages/services/profile/authme.php" />
         <option value="$PROJECT_DIR$/modules/footer.php" />
+        <option value="$PROJECT_DIR$/pages/services/profile/authme.php" />
       </list>
     </option>
   </component>
@@ -577,7 +599,13 @@
       <option name="project" value="LOCAL" />
       <updated>1467199852921</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Artem: connect&#10;Verstion: 1.5.0.8">
+      <created>1467200254252</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1467200254252</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -625,7 +653,8 @@
     <MESSAGE value="Gleb: bag-auth&#10;Version: 1.5.0.6" />
     <MESSAGE value="web" />
     <MESSAGE value="Artem: connect&#10;Verstion: 1.5.0.7" />
-    <option name="LAST_COMMIT_MESSAGE" value="Artem: connect&#10;Verstion: 1.5.0.7" />
+    <MESSAGE value="Artem: connect&#10;Verstion: 1.5.0.8" />
+    <option name="LAST_COMMIT_MESSAGE" value="Artem: connect&#10;Verstion: 1.5.0.8" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1014,24 +1043,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/services/profile/authme.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47887325">
-          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="18" selection-end-column="22" />
-          <folding>
-            <marker date="1467199805685" expanded="true" signature="308:397" placeholder="select * fro... user_l" />
-            <marker date="1467199805685" expanded="true" signature="480:542" placeholder="SELECT * FRO... profile" />
-            <marker date="1467199805685" expanded="true" signature="1309:1330" placeholder="SELECT * FRO... profile" />
-            <marker date="1467199805685" expanded="true" signature="2034:2161" placeholder="INSERT INTO user_l... " />
-            <marker date="1467199805685" expanded="true" signature="2749:2957" placeholder="INSERT INTO profile... " />
-            <marker date="1467199805685" expanded="true" signature="3153:3174" placeholder="SELECT * FRO... profile" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.9496982">
+        <state vertical-scroll-proportion="-37.26923">
           <caret line="57" column="6" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="6" />
           <folding>
             <element signature="n#style#0;n#footer#0;n#div#0;n#!!top" expanded="true" />
@@ -1043,6 +1057,27 @@
             <element signature="n#style#0;n#img#2;n#div#0;n#div#2;n#div#0;n#footer#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#3;n#div#0;n#div#2;n#div#0;n#footer#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#4;n#div#0;n#div#2;n#div#0;n#footer#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/services/profile/authme.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.93158954">
+          <caret line="1" column="5" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="5" />
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="20" />
+          <caret line="32" column="20" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="20" />
+          <caret line="89" column="40" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="40" />
+          <caret line="94" column="32" selection-start-line="94" selection-start-column="28" selection-end-line="94" selection-end-column="32" />
+          <caret line="100" column="20" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="20" />
+          <caret line="103" column="17" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="17" />
+          <folding>
+            <marker date="1467200372141" expanded="true" signature="308:397" placeholder="select * fro... user_l" />
+            <marker date="1467200372141" expanded="true" signature="480:542" placeholder="SELECT * FRO... profile" />
+            <marker date="1467200372141" expanded="true" signature="1309:1330" placeholder="SELECT * FRO... profile" />
+            <marker date="1467200372141" expanded="true" signature="2034:2161" placeholder="INSERT INTO user_l... " />
+            <marker date="1467200372141" expanded="true" signature="2749:2957" placeholder="INSERT INTO profile... " />
+            <marker date="1467200372141" expanded="true" signature="3153:3174" placeholder="SELECT * FRO... profile" />
           </folding>
         </state>
       </provider>
