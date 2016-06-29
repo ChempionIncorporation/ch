@@ -28,7 +28,7 @@
                     }
 
                 }else{
-                    $(".insert").css("display", "none");
+                    $(".insert").css("display", "block");
                 }
             }
         });

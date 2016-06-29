@@ -56,14 +56,6 @@ $psw = $_SESSION['password'];?>
                         <div class="box box_cart" style="margin-bottom: 10px;background: #88212a">
                             <?include_once('modules/cart/view.php');?>
                         </div>
-                        <f class="my-fram">
-                            <hr>
-                            <a href="/shop/<?print "/id".$_SESSION['id'];?>">
-                                <div class="box" style="">
-                                    <?print "Профиль"?>
-                                </div>
-                            </a>
-                            </f>
                     </div>
                 </div>
             </div>
