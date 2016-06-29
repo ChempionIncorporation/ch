@@ -88,16 +88,6 @@
 							input.setCustomValidity("");
 					}
 
-					function validatePhone(input) {
-						if (input.value.length < 10) {
-							input.setCustomValidity("Номер должен состоять из 10 цифр.");
-						}
-						else if(input.value.indexOf('a') > 0){
-							input.setCustomValidity("Номер должен состоять из цифр.");
-						}
-						else
-							input.setCustomValidity("");
-					}
 				</script>
 </form>
 <form action="/pages/services/profile/authme.php" id="regForm" method="get">
@@ -127,7 +117,7 @@
 									   required>
 							</a><br/>
 							Введите ФИО:<br>
-							<a href="#" data-toggle="tooltip" data-placement="right" title="Латинские буквы и цифры">
+							<a href="#" data-toggle="tooltip" data-placement="right" title="Русские буквы">
 								<input type="text" name="reg_fio" style="height:30px;width:300px" placeholder="ФИО"
 									   required>
 							</a><br />

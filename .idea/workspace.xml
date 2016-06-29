@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3d78c7a-bcec-46d7-80a1-da32972dfd29" name="Default" comment="Gleb: connect&#10;Verstion: 1.5.0.9">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/services/shop/modules/functions.php" afterPath="$PROJECT_DIR$/pages/services/shop/modules/functions.php" />
+    <list default="true" id="e3d78c7a-bcec-46d7-80a1-da32972dfd29" name="Default" comment="Artem: kod&#10;Verstion: 1.5.0.E">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/services/auth.php" afterPath="$PROJECT_DIR$/pages/services/auth.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/services/profile/index.php" afterPath="$PROJECT_DIR$/pages/services/profile/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="www.iws" />
@@ -31,22 +30,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="auth.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/services/auth.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.245283">
+              <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/services/profile/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="3.3802612">
-              <caret line="291" column="104" selection-start-line="291" selection-start-column="104" selection-end-line="291" selection-end-column="104" />
+            <state vertical-scroll-proportion="0.3207547">
+              <caret line="181" column="63" selection-start-line="181" selection-start-column="63" selection-end-line="181" selection-end-column="63" />
               <folding>
                 <element signature="e#8631#8651#0#HTML" expanded="true" />
-                <marker date="1467202971423" expanded="true" signature="750:855" placeholder="select * fro..profile..." />
-                <marker date="1467202971423" expanded="true" signature="788:828" placeholder="select login..user_l..." />
-                <marker date="1467202971423" expanded="true" signature="10857:10873" placeholder="..." />
-                <marker date="1467202971423" expanded="true" signature="12387:12403" placeholder="..." />
-                <marker date="1467202971423" expanded="true" signature="15216:15232" placeholder="..." />
-                <marker date="1467202971423" expanded="true" signature="16174:16238" placeholder="select * fro..user_l..." />
-                <marker date="1467202971423" expanded="true" signature="16306:16361" placeholder="select * fro..profile..." />
-                <marker date="1467202971423" expanded="true" signature="17405:17626" placeholder="update profi..." />
+                <marker date="1467205616409" expanded="true" signature="750:855" placeholder="select * fro..profile..." />
+                <marker date="1467205616409" expanded="true" signature="788:828" placeholder="select login..user_l..." />
+                <marker date="1467205616409" expanded="true" signature="10857:10873" placeholder="..." />
+                <marker date="1467205616409" expanded="true" signature="12387:12403" placeholder="..." />
+                <marker date="1467205616409" expanded="true" signature="15448:15464" placeholder="..." />
+                <marker date="1467205616409" expanded="true" signature="16406:16470" placeholder="select * fro..user_l..." />
+                <marker date="1467205616409" expanded="true" signature="16538:16593" placeholder="select * fro..profile..." />
+                <marker date="1467205616409" expanded="true" signature="17637:17858" placeholder="update profi..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/services/shop/modules/cart/view.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-14.730769">
+              <caret line="103" column="49" selection-start-line="103" selection-start-column="49" selection-end-line="103" selection-end-column="49" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -82,8 +101,8 @@
             <state vertical-scroll-proportion="-5.8846154">
               <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
               <folding>
-                <marker date="1467201470233" expanded="true" signature="1471:1514" placeholder="select * fro..user_l..." />
-                <marker date="1467201470233" expanded="true" signature="1580:1635" placeholder="select * fro..profile..." />
+                <marker date="1467203430069" expanded="true" signature="1219:1262" placeholder="select * fro..user_l..." />
+                <marker date="1467203430069" expanded="true" signature="1328:1383" placeholder="select * fro..profile..." />
               </folding>
             </state>
           </provider>
@@ -121,7 +140,7 @@
         <entry file="file://$PROJECT_DIR$/modules/footer.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+              <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -190,7 +209,6 @@
         <option value="$PROJECT_DIR$/pages/services/shop/modules/optsell/p_konstr.php" />
         <option value="$PROJECT_DIR$/pages/services/shop/modules/prod/list.js" />
         <option value="$PROJECT_DIR$/bf355267317633308b0d0b27.html" />
-        <option value="$PROJECT_DIR$/pages/services/auth.php" />
         <option value="$PROJECT_DIR$/pages/services/shop/modules/cart/index.php" />
         <option value="$PROJECT_DIR$/pages/services/shop/modules/optsell/index.php" />
         <option value="$PROJECT_DIR$/pages/services/shop/modules/optsell/p_razn.php" />
@@ -220,11 +238,12 @@
         <option value="$PROJECT_DIR$/pages/services/profile/css-profile.css" />
         <option value="$PROJECT_DIR$/pages/services/shop/css-profile.css" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/pages/services/shop/modules/functions.php" />
         <option value="$PROJECT_DIR$/modules/footer.php" />
         <option value="$PROJECT_DIR$/pages/services/profile/authme.php" />
         <option value="$PROJECT_DIR$/pages/services/header.php" />
+        <option value="$PROJECT_DIR$/pages/services/shop/modules/functions.php" />
         <option value="$PROJECT_DIR$/pages/services/profile/index.php" />
+        <option value="$PROJECT_DIR$/pages/services/auth.php" />
       </list>
     </option>
   </component>
@@ -578,8 +597,11 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/css/ChempStyle.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/modules/footer.php</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/pages/services/profile/index.php</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/pages/services/profile/modules/left-bar.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/pages/services/shop/modules/offormit/index.php</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -810,7 +832,13 @@
       <option name="project" value="LOCAL" />
       <updated>1467200881361</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Artem: kod&#10;Verstion: 1.5.0.E">
+      <created>1467203081439</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1467203081439</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -819,6 +847,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20238096" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3280757" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.87223977" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -827,7 +856,6 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3280757" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -861,7 +889,8 @@
     <MESSAGE value="Artem: connect&#10;Verstion: 1.5.0.8" />
     <MESSAGE value="Gleb: connect&#10;Verstion: 1.5.0.8" />
     <MESSAGE value="Gleb: connect&#10;Verstion: 1.5.0.9" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gleb: connect&#10;Verstion: 1.5.0.9" />
+    <MESSAGE value="Artem: kod&#10;Verstion: 1.5.0.E" />
+    <option name="LAST_COMMIT_MESSAGE" value="Artem: kod&#10;Verstion: 1.5.0.E" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1054,13 +1083,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/services/auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/services/shop/modules/offormit/send.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1093,13 +1115,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.9615384">
           <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/services/shop/modules/cart/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.692307">
-          <caret line="24" column="56" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -1174,7 +1189,7 @@
     <entry file="file://$PROJECT_DIR$/modules/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1192,14 +1207,6 @@
             <marker date="1467197587619" expanded="true" signature="1997:2040" placeholder="select * fro..user_l..." />
             <marker date="1467197587619" expanded="true" signature="2106:2161" placeholder="select * fro..profile..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1240,31 +1247,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pages/services/shop/modules/functions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.8846154">
           <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
           <folding>
-            <marker date="1467201470233" expanded="true" signature="1471:1514" placeholder="select * fro..user_l..." />
-            <marker date="1467201470233" expanded="true" signature="1580:1635" placeholder="select * fro..profile..." />
+            <marker date="1467203430069" expanded="true" signature="1219:1262" placeholder="select * fro..user_l..." />
+            <marker date="1467203430069" expanded="true" signature="1328:1383" placeholder="select * fro..profile..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/services/shop/modules/cart/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.730769">
+          <caret line="103" column="49" selection-start-line="103" selection-start-column="49" selection-end-line="103" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/services/auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.245283">
+          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/services/profile/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.3802612">
-          <caret line="291" column="104" selection-start-line="291" selection-start-column="104" selection-end-line="291" selection-end-column="104" />
+        <state vertical-scroll-proportion="0.3207547">
+          <caret line="181" column="63" selection-start-line="181" selection-start-column="63" selection-end-line="181" selection-end-column="63" />
           <folding>
             <element signature="e#8631#8651#0#HTML" expanded="true" />
-            <marker date="1467202971423" expanded="true" signature="750:855" placeholder="select * fro..profile..." />
-            <marker date="1467202971423" expanded="true" signature="788:828" placeholder="select login..user_l..." />
-            <marker date="1467202971423" expanded="true" signature="10857:10873" placeholder="..." />
-            <marker date="1467202971423" expanded="true" signature="12387:12403" placeholder="..." />
-            <marker date="1467202971423" expanded="true" signature="15216:15232" placeholder="..." />
-            <marker date="1467202971423" expanded="true" signature="16174:16238" placeholder="select * fro..user_l..." />
-            <marker date="1467202971423" expanded="true" signature="16306:16361" placeholder="select * fro..profile..." />
-            <marker date="1467202971423" expanded="true" signature="17405:17626" placeholder="update profi..." />
+            <marker date="1467205616409" expanded="true" signature="750:855" placeholder="select * fro..profile..." />
+            <marker date="1467205616409" expanded="true" signature="788:828" placeholder="select login..user_l..." />
+            <marker date="1467205616409" expanded="true" signature="10857:10873" placeholder="..." />
+            <marker date="1467205616409" expanded="true" signature="12387:12403" placeholder="..." />
+            <marker date="1467205616409" expanded="true" signature="15448:15464" placeholder="..." />
+            <marker date="1467205616409" expanded="true" signature="16406:16470" placeholder="select * fro..user_l..." />
+            <marker date="1467205616409" expanded="true" signature="16538:16593" placeholder="select * fro..profile..." />
+            <marker date="1467205616409" expanded="true" signature="17637:17858" placeholder="update profi..." />
           </folding>
         </state>
       </provider>

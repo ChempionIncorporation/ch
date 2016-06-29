@@ -14,18 +14,11 @@ if(isset($_GET['quit']) && $_GET['quit'] == 1){
 }
 
 ?>
-    <style>
-        .affix {
-            top: 0px;
-        }
-    </style>
 <form action="?save=1" method="post">
     <div class="container">
         <div class="row" style="">
             <div class="col-xs-3" style="">
                 <div class="box" >
-                    <div class="row" data-spy="affix" data-offset-top="83"
-                         style="background: white;border: 1px solid silver;width:250px;">
                     <?
                         include_once('modules/left-bar.php');
                         connect();
@@ -35,7 +28,6 @@ if(isset($_GET['quit']) && $_GET['quit'] == 1){
                         $_SESSION['grp'] = $_COOKIE['grp'] = $re['grp'];
                         $_SESSION['id'] = $_COOKIE['id'] = $re['id'];
                     ?>
-                    </div>
                 </div>
             </div>
             <div class="col-xs" style="margin-left:15px;">
@@ -264,7 +256,11 @@ if(isset($_GET['quit']) && $_GET['quit'] == 1){
                                 <div class="col-xs-4" style="">
                                     <div class="box"><b>
                                             <?
+                                            if (empty($re['email']))
+                                                print "<font style='font-weight: 900' color='red'>Пусто</font>";
+                                            else
                                                 print $re['email'];
+
                                             ?>
                                         </b></div>
                                 </div>
