@@ -6,6 +6,8 @@ $enter = false;
 include_once('../header.php');
 connect();
 
+print_r($_GET);
+
 if(!empty($_GET['ent_login']) && !empty($_GET['ent_pass'])){
     $sql = mysql_query("select * from user_l where login='".$_GET['ent_login']."' and psw='".$_GET['ent_pass']."'");
     $res = mysql_fetch_array($sql);
