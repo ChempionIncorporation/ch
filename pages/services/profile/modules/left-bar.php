@@ -1,9 +1,10 @@
 <?include('functions.php');?>
-    <div class="row">
+
+<div class="row" data-spy="affix" data-offset-top="85" style="background: white;border: 1px solid silver;width:250px;">
         <div class="col-xs">
             <div class="box">
                 <h3 style="color: #88212a">Champion</h3>
-                <ul style='list-style: none;line-height: 2.5;width:250px;' class="uul">
+                <ul style='list-style: none;line-height: 2.5;' class="uul">
                     <li><a href='/<? print "id" . $_SESSION['id'] ?>'>Профиль</a></li>
                     <li><a href='/<? print "id" . $_SESSION['id'] ?>/list/'>Список заказов</a></li>
                     <li><a href='/shop/'>Интернет-магазин</a></li>
