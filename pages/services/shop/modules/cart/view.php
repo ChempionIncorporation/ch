@@ -20,19 +20,19 @@
                             var n = sessionStorage.getItem("inf_" + ni + "_" + i);
                             if (n != null || n != undefined) {
                                 var arr = n.split('|');
-                                if (arr[2] != 0) {
-                                    $('.inser_row').append(arr[1]);
-                                    if (arr[3] != 0) {
-                                        gleb = arr[3] * arr[4] + gleb;
-                                        console.log("-----------" + gleb);
-                                    }
+                                if (arr[4] != 0) {
+                                    if (arr[5] == "u" || arr[5] == true || arr[5] == "true")
+                                        if (arr[3] !== 0 && arr[4] !== 0) {
+                                            gleb = arr[3] * arr[4] + gleb;
+//                                            console.log("------[" + arr[3] + "(" + arr[4] + ")]" + gleb);
+                                            sessionStorage.setItem("Gleb", gleb);
+                                            $('.price_res').html("Итого:<b>" + gleb + " грн.</b>");
+                                        }
                                 }
                             }
                         }
                     }
-
-                    $('.box_rp').append(gleb);
-
+                    $('.box_rp').append(sessionStorage.getItem("Gleb"));
                 }else{
                     $(".insert").css("display", "none");
                 }
@@ -75,7 +75,7 @@
         </div>
     </div>
     <div class='row' style="padding:7px">
-        <div class="col-xs">
+        <div class="col-xs center-xs">
             <div class="box">
                 <button type="button" class="btn btn-success"  onclick="location.href='/cart'">Оформить заказ</button>
             </div>

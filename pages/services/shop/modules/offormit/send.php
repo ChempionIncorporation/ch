@@ -11,7 +11,8 @@ function getInDB($profile){
     $s = mysql_query("Select * from profile where login = '".$profile."'");
     return mysql_fetch_array($s);
 }
-include_once('../functions.php');
+
+include_once('../../../header.php');
 connect();
 $o = getVal($_SESSION['password']);
 

@@ -23,35 +23,32 @@ if(!empty($_GET['ent_login']) && !empty($_GET['ent_pass'])){
         $_SESSION['o'] = $row['o'];
         $_SESSION['password'] = md5($_GET['ent_login'] . "|" . $_GET['ent_pass']);
 
-//        print "<meta http-equiv='refresh' content='0; url=/id" . $_SESSION['id'] . "'>";
+        print "<meta http-equiv='refresh' content='0; url=/id" . $_SESSION['id'] . "'>";
 
     }
     else
     {
         print "<script>alert('Неверные данные')</script>";
-//        print "<meta http-equiv='refresh' content='0; url=/auth/?err=1'>";
+        print "<meta http-equiv='refresh' content='0; url=/auth/?err=1'>";
     }
     print "<br />";
-}
-else if(!empty($_GET['reg_login']) && !empty($_GET['reg_pass']) && !empty($_GET['ins_pass'])){
-    print "Регистрация:<br>";
+} else if (!empty($_GET['reg_login'])) {
+    print "<center>Регистрация:<br></center>";
         $sql = mysql_query('SELECT * FROM profile');
-        print "Процесс проверки наличия логина:";
         while($row = mysql_fetch_array($sql)){
             if($_GET['reg_login'] != $row['login']) {
                 $otvet = true;
                 $enter = true;
-            }else {
+                print "+";
+            } else {
                 $otvet = false;
                 $enter = false;
-                break;
+                print "-";
             }
         }
         print $otvet;
         print "<br />";
-    if($_GET['reg_pass'] == $_GET['ins_pass'])
-    {
-        if(!empty($_GET['reg_login']))
+
             if(!empty($_GET['reg_login']))
                 if($enter == true){
                     print "Процесс добавление в БД:<br>";
@@ -59,7 +56,7 @@ else if(!empty($_GET['reg_login']) && !empty($_GET['reg_pass']) && !empty($_GET[
                     if(mysql_query("INSERT INTO user_l values('".$_GET['reg_login']."','".$_GET['reg_pass']."','".md5($_GET['reg_login']."|".$_GET['reg_pass'])."')"))
                     {
                         $otvet = "Успех";
-                        print_r($_GET);
+//                        print_r($_GET);
                     }
                     else
                     {
@@ -77,28 +74,21 @@ else if(!empty($_GET['reg_login']) && !empty($_GET['reg_pass']) && !empty($_GET[
                     else
                         $otvet = "Провал";
                     print $otvet."<br/>";
-                    $sql = mysql_query("SELECT * FROM profile");
+                    $sql = mysql_query("SELECT * FROM profile where login='" . $_GET['reg_login'] . "'");
 
-                    while($row = mysql_fetch_array($sql)){
+                    $row = mysql_fetch_array($sql);
+                    print_r($row);
                         if($_GET['reg_login'] == $row['login']){
                             print "Зарегестрировались!";
                             $_SESSION['id'] = $row['id'];
                             $_SESSION['login'] = $_GET['reg_login'];
                             $_SESSION['password']= md5($_GET['reg_login']."|".$_GET['reg_pass']);
-                          //  print $_SESSION['password'];
-//                            print "<meta http-equiv='refresh' content='0; url=/id" . $_SESSION['id'] . "'>";
+                            print "<meta http-equiv='refresh' content='0; url=/id" . $_SESSION['id'] . "'>";
                         }
-                    }
                 }else{
-                    print "alert('Данные веденые не корректно!')";
+                    print "<script>alert('Не корректные данные')</script>";
 //                    print "<meta http-equiv='refresh' content='0; url=/auth/'>";
                 }
-    }
-    else
-    {
-        print "<script>alert('Пароли не совпадают')</script>";
-//        print "<meta http-equiv='refresh' content='0; url=/auth/'>";
-    }
 }
 //else print "<meta http-equiv='refresh' content='0; url=/auth/'>";
 ?>

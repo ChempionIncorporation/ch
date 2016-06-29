@@ -18,7 +18,6 @@
             </div>
             <div class="modal-body">
                 <div class="ins">
-
                 </div>
             </div>
             <div class="modal-footer">

@@ -85,6 +85,9 @@ console.log("--["+ni+","+i+") "+arr[1]+"|" + arr[2] +"|" +  arr[3] +"|" +arr[4] 
                             var p = "Добавлено!</b></p>";
                         }else if(arr[5] == "u"){
                             var p = "<b>"+arr[4]+"</b>Ед.</p>";
+                            if (p == "<b>1</b>Ед.</p>") {
+                                p = "<b>Добавлено.</b>";
+                            }
                         }
                         if(arr[5] != 'false' && arr[5] != 'undefined') {
                             if (arr[0] != tt) {

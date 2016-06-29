@@ -7,17 +7,26 @@ include_once("../header.php");
 <form action="?save=1" method="post">
     <div class="container" style="">
         <div class="row top-xs" style="">
-            <div class="col-xs-3" style=";border: 1px solid silver;background: #fff">
-                <div class="box" >
-                    <?
+            <div class="col-xs-3">
+                <style>
+                    /* Note: Try to remove the following lines to see the effect of CSS positioning */
+                    .affix {
+                        top: 5px;
+                    }
+                </style>
+                <div class="nav-pills nav-stacked" data-spy="affix" data-offset-top="72"
+                     style="width:250px;border: 1px solid silver;background: #fff">
+                    <div class="box">
+                        <?
                         include_once('modules/left-bar.php');
                         connect();
-                        $z = mysql_query("select * from profile where login in (select login from user_l where key_p = '".$_SESSION['password']."')");
+                        $z = mysql_query("select * from profile where login in (select login from user_l where key_p = '" . $_SESSION['password'] . "')");
                         $re = mysql_fetch_array($z);
                         $_SESSION['name'] = $_COOKIE['name'] = $re['name'];
                         $_SESSION['grp'] = $_COOKIE['grp'] = $re['grp'];
                         $_SESSION['id'] = $_COOKIE['id'] = $re['id'];
-                    ?>
+                        ?>
+                    </div>
                 </div>
             </div>
             <div class="col-xs" style="margin-left:25px;">

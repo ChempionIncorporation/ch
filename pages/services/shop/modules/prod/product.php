@@ -49,26 +49,39 @@ include('/list.php');
             </div><!--/widget-->
         </div>
     </div>
-    <div class="col-xs" style="margin-top:10px;font-size:10pt;">
-        <div class="box" style="">
-            Тип: <b><?print $re['type_price']?></b>
-        </div>
-        <div class="box" style="">
-            Наименование: <b><?print $re['name']?></b>
-        </div>
-        <div class="box" style="">
-            Наличие: <b style="background:yellowgreen;padding:2px;color:#f6f6f6"><?print $re['nalichie']?></b>
-        </div>
-        <div class="box" style="">
-            <?print $full_size?>
-        </div>
-        <div class="box"  >
-            <?
+    <div class="col-xs" style="width:100px;margin-right:20px">
+        <script>
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            console.log(scrollTop);
+        </script>
+        <style>
+            /* Note: Try to remove the following lines to see the effect of CSS positioning */
+            .affix {
+                top: 5px;
+            }
+        </style>
+        <div class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="170" style="width:330px">
+            <div class="box" style="">
+                Тип: <b><? print $re['type_price'] ?></b>
+            </div>
+            <div class="box" style="">
+                Наименование: <b><? print $re['name'] ?></b>
+            </div>
+            <div class="box" style="">
+                Наличие: <b style="background:yellowgreen;padding:2px;color:#f6f6f6"><? print $re['nalichie'] ?></b>
+            </div>
+            <div class="box" style="">
+                <? print $full_size ?>
+            </div>
+            <div class="box">
+                <?
                 include("/modules/optsell/index.php");
-            ?>
-            <div class="col-xs" style="text-align:center;margin-top:10px;">
-                *Все цены указаны с учетом НДС
-                <a type="button" id="pokupka" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Приобрести</a>
+                ?>
+                <div class="col-xs" style="text-align:center;margin-top:10px;">
+                    *Все цены указаны с учетом НДС
+                    <a type="button" id="pokupka" class="btn btn-info btn-lg" data-toggle="modal"
+                       data-target="#myModal">Приобрести</a>
+                </div>
             </div>
         </div>
     </div>
