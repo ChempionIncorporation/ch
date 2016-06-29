@@ -6,7 +6,7 @@
             url: "view.php",
             cache: false,
             async: false,
-            success: function(html){
+            success: function () {
                 //sessionStorage.getItem('count')
 //                alert(sessionStorage.getItem("count"))
                 if(sessionStorage.getItem("count") >0){
@@ -106,7 +106,7 @@ if(isset($_GET['name']))
                     <div class="col-xs">
                         <div class="box res_summ" style="text-align:left;">
                             <!-- Общая сумма !-->
-                            <o style="font-size:10pt" class="price_res"></o>
+                            <!--                            <o style="font-size:10pt" class="price_res"></o>-->
                         </div>
                     </div>
                     <div class="col-xs center-xs">
