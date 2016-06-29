@@ -1,15 +1,9 @@
 
 $( document ).ready(function() {
     var mas = [];
-    var ft = new Array();
     $('#pokupka').click(function() {
-        var op = [];
-        var p_name="",p_price="",p_col="",fullname="";
-        var col_prod = 0;
         var konstr = $('.konstr');
-        var otv = false;
         mas[nn] = [];
-        var res_n = [],res_p = [],res_col = [],p_res = [];
         var mcount=1;
 
         sessionStorage.setItem('Name_'+nn, nname);
@@ -112,9 +106,6 @@ console.log("--[Проверка - окончена]--");
         //alert(mcount);
         sessionStorage.setItem("count", mcount);
 
-
-
-
-
+        show();
     });
 });

@@ -22,13 +22,14 @@
                                 var arr = n.split('|');
                                 if (arr[2] != 0) {
                                     $('.inser_row').append(arr[1]);
+                                    console.log(arr[1]);
                                 }
                             }
                         }
                     }
 
                 }else{
-                    $(".insert").css("display", "block");
+                    $(".insert").css("display", "none");
                 }
             }
         });
@@ -38,17 +39,17 @@
     });
 </script>
 
-<div class="insert" style="padding:10px;color:black">
+<div class="insert" style="border-radius:15%;color:black">
     <h3 style="text-align: center;background: #7e212a;padding:10px;color: white;">
         <b>Корзина</b>
     </h3>
     <div class='row middle-xs' style="background:white;border: 1px solid #e8e8e8;padding:10px;font-weight:700;margin-bottom:5px">
-        <div class="col-xs">
+        <div class="col-xs-4">
             <div class="box">
                 Количество продукций
             </div>
         </div>
-        <div class="col-xs">
+        <div class="col-xs end-xs">
             <div class="box box_col">
                 <?if(isset($_GET['box_col']))
                     print $_GET['box_col'];?>
@@ -56,24 +57,26 @@
         </div>
     </div>
     <div class='row middle-xs' style="background:white;border: 1px solid #e8e8e8;padding:10px;font-weight:700">
-        <div class="col-xs">
+        <div class="col-xs-4">
             <div class="box">
                 Общая стоимость
             </div>
         </div>
-        <div class="col-xs-3">
+        <div class="col-xs end-xs">
             <div class="box box_rp">
                 <?if(isset($_GET['box_rp']))
                     print $_GET['box_rp'];?>
             </div>
         </div>
     </div>
-    <div class='row middle-xs' style="margin-top:10px;">
+    <div class='row' style="padding:7px">
         <div class="col-xs">
             <div class="box">
                 <button type="button" class="btn btn-primary"  data-toggle="modal" data-target="#myModal">Список</button>
             </div>
         </div>
+    </div>
+    <div class='row' style="padding:7px">
         <div class="col-xs">
             <div class="box">
                 <button type="button" class="btn btn-success"  onclick="location.href='/cart'">Оформить заказ</button>
