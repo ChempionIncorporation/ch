@@ -82,7 +82,7 @@ if(isset($_GET['quit']) && $_GET['quit'] == 1){
                     <div class="row" style="background: white;padding:20px; border: 1px solid silver">
                         <div class="col-xs">
                             <div class="row" style="padding:10px">
-                                <div class="col-xs-8">
+                                <div class="col-xs-8 middle-xs">
                                     <div class="box">
                                         <button type="button" style="display: block;margin:10px" id="sset"
                                                 class="btn btn-info">Редактировать

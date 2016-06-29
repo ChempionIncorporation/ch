@@ -1,5 +1,5 @@
 <?
-    include_once('functions.php');
+//    include_once('../functions.php');
 function maxVal(){
     connect();
     $sql = mysql_query("SELECT max(id) from p_shop_montag");
