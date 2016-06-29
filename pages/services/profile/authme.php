@@ -4,8 +4,10 @@
 $enter = false;
 //ent_login=&ent_pass=&reg_login=admin&reg_pass=admin&
 //reg_phone=%2B380933924200&reg_email=yamokasy2%40gmail.com
-    mysql_connect("localhost","root","");
-    mysql_select_db("champ00_db");
+
+include_once('../header.php');
+connect();
+
 
 if(!empty($_GET['ent_login']) && !empty($_GET['ent_pass'])){
     $sql = mysql_query("select * from user_l where login='".$_GET['ent_login']."' and psw='".$_GET['ent_pass']."'");

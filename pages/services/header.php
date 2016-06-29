@@ -1,5 +1,4 @@
-<? session_start(); ?>
-<?
+<? session_start();
 function connect()
 {
     $conn = mysql_connect("champ00.mysql.ukraine.com.ua", "champ00_db", "2UWXvGb2") or die(mysql_error());
