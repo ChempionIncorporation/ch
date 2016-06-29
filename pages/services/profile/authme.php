@@ -65,7 +65,7 @@ else if(!empty($_GET['reg_login']) && !empty($_GET['reg_pass']) && !empty($_GET[
                     {
                         print_r($_GET);
                         print md5($_GET['reg_login']."|".$_GET['reg_pass']);
-                        $otvet = "<a href='/auth/?error=2'>Провал попробовать еще раз</a>>";
+                        $otvet = "<a href='/auth/?error=2'>Провал попробовать еще раз</a>";
                     }
                     print $otvet."<br/>";
                     print "Вторая(Profile): ";
