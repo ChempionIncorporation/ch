@@ -1,11 +1,10 @@
 <?session_start();?>
-<meta charset="utf-8">
+    <!--<meta charset="utf-8">-->
 <?
 $enter = false;
 
 include_once('../header.php');
 connect();
-
 
 if(!empty($_GET['ent_login']) && !empty($_GET['ent_pass'])){
     $sql = mysql_query("select * from user_l where login='".$_GET['ent_login']."' and psw='".$_GET['ent_pass']."'");
@@ -22,13 +21,13 @@ if(!empty($_GET['ent_login']) && !empty($_GET['ent_pass'])){
         $_SESSION['o'] = $row['o'];
         $_SESSION['password'] = md5($_GET['ent_login'] . "|" . $_GET['ent_pass']);
 
-        print "<meta http-equiv='refresh' content='0; url=/id" . $_SESSION['id'] . "'>";
+//        print "<meta http-equiv='refresh' content='0; url=/id" . $_SESSION['id'] . "'>";
 
     }
     else
     {
         print "<script>alert('Неверные данные')</script>";
-        print "<meta http-equiv='refresh' content='0; url=/auth/'>";
+//        print "<meta http-equiv='refresh' content='0; url=/auth/?err=1'>";
     }
     print "<br />";
 }
@@ -64,7 +63,7 @@ else if(!empty($_GET['reg_login']) && !empty($_GET['reg_pass']) && !empty($_GET[
                     {
                         print_r($_GET);
                         print md5($_GET['reg_login']."|".$_GET['reg_pass']);
-                        $otvet = "<a href='/auth/'>Провал попробовать еще раз</a>>";
+                        $otvet = "<a href='/auth/?error=2'>Провал попробовать еще раз</a>>";
                     }
                     print $otvet."<br/>";
                     print "Вторая(Profile): ";
@@ -85,19 +84,19 @@ else if(!empty($_GET['reg_login']) && !empty($_GET['reg_pass']) && !empty($_GET[
                             $_SESSION['login'] = $_GET['reg_login'];
                             $_SESSION['password']= md5($_GET['reg_login']."|".$_GET['reg_pass']);
                           //  print $_SESSION['password'];
-                            print "<meta http-equiv='refresh' content='0; url=/id" . $_SESSION['id'] . "'>";
+//                            print "<meta http-equiv='refresh' content='0; url=/id" . $_SESSION['id'] . "'>";
                         }
                     }
                 }else{
                     print "alert('Данные веденые не корректно!')";
-                    print "<meta http-equiv='refresh' content='0; url=/auth/'>";
+//                    print "<meta http-equiv='refresh' content='0; url=/auth/'>";
                 }
     }
     else
     {
         print "<script>alert('Пароли не совпадают')</script>";
-        print "<meta http-equiv='refresh' content='0; url=/auth/'>";
+//        print "<meta http-equiv='refresh' content='0; url=/auth/'>";
     }
 }
-else print "<meta http-equiv='refresh' content='0; url=/auth/'>";
+//else print "<meta http-equiv='refresh' content='0; url=/auth/'>";
 ?>

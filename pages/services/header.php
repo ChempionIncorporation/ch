@@ -5,7 +5,20 @@ function connect()
     $tbl = mysql_select_db("champ00_db", $conn) or die(mysql_error());
     mysql_query("SET NAMES utf8");
     return $tbl;
-} ?>
+}
+
+if (isset($_GET['quit']) && $_GET['quit'] == 1) {
+    $_SESSION['password'] = null;
+    $_SESSION['id'] = null;
+    $_SESSION['login'] = null;
+    $_SESSION['f'] = null;
+    $_SESSION['i'] = null;
+    $_SESSION['o'] = null;
+    print  "<script>alert('Вы вышли из системы')</script>";
+    print "<meta http-equiv='refresh' content='0; url=/auth/'>";
+}
+
+?>
 <html>
 <head>
     <meta charset="utf-8">
@@ -64,7 +77,7 @@ function connect()
                                 <ul class="dropdown-menu" style="background-color: rgba(255, 255, 255, 0.95)">
                                     <? print"<li><a href='/id" . $_SESSION['id'] . "'>Профиль</a></li>"; ?>
                                     <? print"<li><a href='/id" . $_SESSION['id'] . "/list'>Список заказов</a></li>"; ?>
-                                    <? print"<li><a href='?quit=1'>Выход</a></li>"; ?>
+                                    <? print"<li><a href='/id" . $_SESSION['id'] . "?quit=1'>Выход</a></li>"; ?>
                                 </ul>
                             </li>
                         <? } else { ?>

@@ -18,7 +18,7 @@ include('../../../header.php');
                 </div>
             </div>
             <div class="col-xs"
-                 style="height:1000px;background:white;padding:15px; border: 1px solid silver;margin-right:100px;">
+                 style=";background:white;padding:15px; border: 1px solid silver;margin-right:100px;">
                 <div class="box" style="text-align:center">
                     <h2>Список заказа</h2>
                 </div>
