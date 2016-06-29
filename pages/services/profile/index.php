@@ -285,7 +285,7 @@ include_once("../header.php");
                                 <div class="col-xs-4" style="padding-bottom:20px">
                                     <div class="box"><b>
                                             <?
-                                            if (empty($re['email']))
+                                            if (empty($re['org']))
                                                 print "<font style='font-weight: 900' color='red'>Пусто</font>";
                                             else
                                                 print $re['org'];
