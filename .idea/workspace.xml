@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3d78c7a-bcec-46d7-80a1-da32972dfd29" name="Default" comment="Gleb: connect&#10;Verstion: 1.5.0.8">
+    <list default="true" id="e3d78c7a-bcec-46d7-80a1-da32972dfd29" name="Default" comment="Gleb: connect&#10;Verstion: 1.5.0.9">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/services/profile/authme.php" afterPath="$PROJECT_DIR$/pages/services/profile/authme.php" />
     </list>
@@ -52,15 +52,15 @@
       <file leaf-file-name="authme.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/services/profile/authme.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.25982532">
-              <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.44541484">
+              <caret line="15" column="64" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
               <folding>
-                <marker date="1467200872613" expanded="true" signature="309:398" placeholder="select * fro... user_l" />
-                <marker date="1467200872613" expanded="true" signature="481:543" placeholder="SELECT * FRO... profile" />
-                <marker date="1467200872613" expanded="true" signature="1310:1331" placeholder="SELECT * FRO... profile" />
-                <marker date="1467200872613" expanded="true" signature="2035:2162" placeholder="INSERT INTO user_l... " />
-                <marker date="1467200872613" expanded="true" signature="2750:2958" placeholder="INSERT INTO profile... " />
-                <marker date="1467200872613" expanded="true" signature="3154:3175" placeholder="SELECT * FRO... profile" />
+                <marker date="1467200899529" expanded="true" signature="308:397" placeholder="select * fro... user_l" />
+                <marker date="1467200899529" expanded="true" signature="480:538" placeholder="SELECT * FRO... profile" />
+                <marker date="1467200899529" expanded="true" signature="1305:1326" placeholder="SELECT * FRO... profile" />
+                <marker date="1467200899529" expanded="true" signature="2030:2157" placeholder="INSERT INTO user_l... " />
+                <marker date="1467200899529" expanded="true" signature="2745:2953" placeholder="INSERT INTO profile... " />
+                <marker date="1467200899529" expanded="true" signature="3149:3170" placeholder="SELECT * FRO... profile" />
               </folding>
             </state>
           </provider>
@@ -619,7 +619,13 @@
       <option name="project" value="LOCAL" />
       <updated>1467200524257</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Gleb: connect&#10;Verstion: 1.5.0.9">
+      <created>1467200881361</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1467200881361</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -669,7 +675,8 @@
     <MESSAGE value="Artem: connect&#10;Verstion: 1.5.0.7" />
     <MESSAGE value="Artem: connect&#10;Verstion: 1.5.0.8" />
     <MESSAGE value="Gleb: connect&#10;Verstion: 1.5.0.8" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gleb: connect&#10;Verstion: 1.5.0.8" />
+    <MESSAGE value="Gleb: connect&#10;Verstion: 1.5.0.9" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gleb: connect&#10;Verstion: 1.5.0.9" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1079,15 +1086,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/services/profile/authme.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25982532">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.44541484">
+          <caret line="15" column="64" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
           <folding>
-            <marker date="1467200872613" expanded="true" signature="309:398" placeholder="select * fro... user_l" />
-            <marker date="1467200872613" expanded="true" signature="481:543" placeholder="SELECT * FRO... profile" />
-            <marker date="1467200872613" expanded="true" signature="1310:1331" placeholder="SELECT * FRO... profile" />
-            <marker date="1467200872613" expanded="true" signature="2035:2162" placeholder="INSERT INTO user_l... " />
-            <marker date="1467200872613" expanded="true" signature="2750:2958" placeholder="INSERT INTO profile... " />
-            <marker date="1467200872613" expanded="true" signature="3154:3175" placeholder="SELECT * FRO... profile" />
+            <marker date="1467200899529" expanded="true" signature="308:397" placeholder="select * fro... user_l" />
+            <marker date="1467200899529" expanded="true" signature="480:538" placeholder="SELECT * FRO... profile" />
+            <marker date="1467200899529" expanded="true" signature="1305:1326" placeholder="SELECT * FRO... profile" />
+            <marker date="1467200899529" expanded="true" signature="2030:2157" placeholder="INSERT INTO user_l... " />
+            <marker date="1467200899529" expanded="true" signature="2745:2953" placeholder="INSERT INTO profile... " />
+            <marker date="1467200899529" expanded="true" signature="3149:3170" placeholder="SELECT * FRO... profile" />
           </folding>
         </state>
       </provider>
