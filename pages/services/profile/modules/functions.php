@@ -13,12 +13,6 @@ function onSession($o,$n){
     $_SESSION['login'] = $n;
     return "+";
 }
-function connect()
-{
-    $conn = mysql_connect("localhost","root","") or die(mysql_error());
-    $tbl = mysql_select_db("champ00_db", $conn) or die(mysql_error());
-    return $tbl;
-}
 function getAccount($login, $psw)
 {
     require_once($_SERVER['DOCUMENT_ROOT']."/modules/connect.php");

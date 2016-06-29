@@ -1,4 +1,14 @@
 <? session_start(); ?>
+<?
+function connect()
+{
+    $conn = mysql_connect("localhost", "root", "") or die(mysql_error());
+    $tbl = mysql_select_db("champ00_db", $conn) or die(mysql_error());
+    mysql_query("SET NAMES utf8");
+    return $tbl;
+}
+
+?>
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="/assets/css/flexboxgrid.css"> <!-- Blocks !-->
@@ -12,7 +22,6 @@
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css"><!-- Fraem !-->
     <script src="/assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/pages/services/shop/modules/prod/List_prod.js"></script>
-
 </head>
 <body  style="background: #e8e8e8">
 <div class="navbar navbar-inverse navbar-default" role="navigation" id="menu"
