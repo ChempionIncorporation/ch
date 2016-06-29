@@ -1,4 +1,4 @@
-<footer class="container-fluid text-center" style="background: #88212a;">
+<footer class="container-fluid text-center" style="bottom:0%;position:relative;background: #88212a;">
     <div class="row" style="background: #88212a;color: white; height:auto;">
         <div class="col-xs-3">
             <div class="box" style="padding:5px">
@@ -53,3 +53,4 @@
         </div>
     </div>
 </footer>
+

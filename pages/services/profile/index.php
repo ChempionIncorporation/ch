@@ -1,4 +1,5 @@
 <?session_start()?>
+
 <?
 include_once("../header.php");
 if(isset($_GET['quit']) && $_GET['quit'] == 1){
