@@ -37,11 +37,6 @@
         show();
     });
 </script>
-<?
-if(isset($_GET['name']))
-    print "<script>alert('".$_GET['name']."')</script>";
-
-?>
 
 <div class="insert" style="padding:10px;color:black">
     <h3 style="text-align: center;background: #7e212a;padding:10px;color: white;">
@@ -81,7 +76,7 @@ if(isset($_GET['name']))
         </div>
         <div class="col-xs">
             <div class="box">
-                <button type="button" class="btn btn-success" data-dismiss="modal">Оформить заказ</button>
+                <button type="button" class="btn btn-success"  onclick="location.href='/cart'">Оформить заказ</button>
             </div>
         </div>
     </div>
@@ -111,7 +106,7 @@ if(isset($_GET['name']))
                     </div>
                     <div class="col-xs center-xs">
                         <div class="box">
-                            <button type="button" class="btn btn-danger" disabled>Оформить заказ</button>
+                            <button type="button" class="btn btn-danger"  onclick="location.href='/cart'">Оформить заказ</button>
                         </div>
                     </div>
                     <div class="col-xs center-xs">
