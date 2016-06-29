@@ -16,7 +16,7 @@ if(!empty($_GET['ent_login']) && !empty($_GET['ent_pass'])){
         $sql = mysql_query("SELECT * FROM profile where login='" . $_GET['ent_login'] . "'");
 
         $row = mysql_fetch_array($sql);
-        print_r($row);
+//        print_r($row);
         $_SESSION['id'] = $row['id'];
         $_SESSION['login'] = $_GET['ent_login'];
         $_SESSION['f'] = $row['f'];
