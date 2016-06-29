@@ -1,6 +1,6 @@
-<div class="container">
-    <footer class="footer navbar-bottom text-center"
+<footer class="footer-basic-centered"
             style="background: #88212a;margin-top:10%;">
+    <div class="container">
         <div class="row" style="background: #88212a;color: white; height:auto;">
             <div class="col-xs-3">
                 <div class="box" style="padding:5px">
@@ -56,5 +56,6 @@
         </div>
     </footer>
 </div>
+<link rel="stylesheet" href="demo.css">
+</body>
 </html>
-
