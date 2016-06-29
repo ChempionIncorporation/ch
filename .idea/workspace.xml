@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3d78c7a-bcec-46d7-80a1-da32972dfd29" name="Default" comment="Artem: connect&#10;Verstion: 1.5.0.8">
+    <list default="true" id="e3d78c7a-bcec-46d7-80a1-da32972dfd29" name="Default" comment="Gleb: connect&#10;Verstion: 1.5.0.8">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/services/shop/authme.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="www.iws" />
@@ -51,21 +52,15 @@
       <file leaf-file-name="authme.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/services/profile/authme.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.93158954">
-              <caret line="1" column="5" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="5" />
-              <caret line="26" column="20" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="20" />
-              <caret line="32" column="20" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="20" />
-              <caret line="89" column="40" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="40" />
-              <caret line="94" column="32" selection-start-line="94" selection-start-column="28" selection-end-line="94" selection-end-column="32" />
-              <caret line="100" column="20" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="20" />
-              <caret line="103" column="17" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.27364185">
+              <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
               <folding>
-                <marker date="1467200372141" expanded="true" signature="308:397" placeholder="select * fro... user_l" />
-                <marker date="1467200372141" expanded="true" signature="480:542" placeholder="SELECT * FRO... profile" />
-                <marker date="1467200372141" expanded="true" signature="1309:1330" placeholder="SELECT * FRO... profile" />
-                <marker date="1467200372141" expanded="true" signature="2034:2161" placeholder="INSERT INTO user_l... " />
-                <marker date="1467200372141" expanded="true" signature="2749:2957" placeholder="INSERT INTO profile... " />
-                <marker date="1467200372141" expanded="true" signature="3153:3174" placeholder="SELECT * FRO... profile" />
+                <marker date="1467200518474" expanded="true" signature="308:397" placeholder="select * fro... user_l" />
+                <marker date="1467200518474" expanded="true" signature="480:542" placeholder="SELECT * FRO... profile" />
+                <marker date="1467200518474" expanded="true" signature="1309:1330" placeholder="SELECT * FRO... profile" />
+                <marker date="1467200518474" expanded="true" signature="2034:2161" placeholder="INSERT INTO user_l... " />
+                <marker date="1467200518474" expanded="true" signature="2749:2957" placeholder="INSERT INTO profile... " />
+                <marker date="1467200518474" expanded="true" signature="3153:3174" placeholder="SELECT * FRO... profile" />
               </folding>
             </state>
           </provider>
@@ -84,6 +79,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="Gleb &lt;web_champ@ukr.net&gt;" />
         <option value="master" />
       </list>
     </option>
@@ -611,14 +607,20 @@
       <option name="project" value="LOCAL" />
       <updated>1467200376536</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Gleb: connect&#10;Verstion: 1.5.0.8">
+      <created>1467200384255</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1467200384255</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20278184" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20278184" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.87223977" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -660,7 +662,8 @@
     <MESSAGE value="web" />
     <MESSAGE value="Artem: connect&#10;Verstion: 1.5.0.7" />
     <MESSAGE value="Artem: connect&#10;Verstion: 1.5.0.8" />
-    <option name="LAST_COMMIT_MESSAGE" value="Artem: connect&#10;Verstion: 1.5.0.8" />
+    <MESSAGE value="Gleb: connect&#10;Verstion: 1.5.0.8" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gleb: connect&#10;Verstion: 1.5.0.8" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -976,13 +979,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/services/shop/authme.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.6153846">
-          <caret line="78" column="91" selection-start-line="78" selection-start-column="89" selection-end-line="78" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/services/shop/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.5357144">
@@ -1069,21 +1065,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/services/profile/authme.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.93158954">
-          <caret line="1" column="5" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="5" />
-          <caret line="26" column="20" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="20" />
-          <caret line="32" column="20" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="20" />
-          <caret line="89" column="40" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="40" />
-          <caret line="94" column="32" selection-start-line="94" selection-start-column="28" selection-end-line="94" selection-end-column="32" />
-          <caret line="100" column="20" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="20" />
-          <caret line="103" column="17" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.27364185">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
           <folding>
-            <marker date="1467200372141" expanded="true" signature="308:397" placeholder="select * fro... user_l" />
-            <marker date="1467200372141" expanded="true" signature="480:542" placeholder="SELECT * FRO... profile" />
-            <marker date="1467200372141" expanded="true" signature="1309:1330" placeholder="SELECT * FRO... profile" />
-            <marker date="1467200372141" expanded="true" signature="2034:2161" placeholder="INSERT INTO user_l... " />
-            <marker date="1467200372141" expanded="true" signature="2749:2957" placeholder="INSERT INTO profile... " />
-            <marker date="1467200372141" expanded="true" signature="3153:3174" placeholder="SELECT * FRO... profile" />
+            <marker date="1467200518474" expanded="true" signature="308:397" placeholder="select * fro... user_l" />
+            <marker date="1467200518474" expanded="true" signature="480:542" placeholder="SELECT * FRO... profile" />
+            <marker date="1467200518474" expanded="true" signature="1309:1330" placeholder="SELECT * FRO... profile" />
+            <marker date="1467200518474" expanded="true" signature="2034:2161" placeholder="INSERT INTO user_l... " />
+            <marker date="1467200518474" expanded="true" signature="2749:2957" placeholder="INSERT INTO profile... " />
+            <marker date="1467200518474" expanded="true" signature="3153:3174" placeholder="SELECT * FRO... profile" />
           </folding>
         </state>
       </provider>
