@@ -6,6 +6,7 @@ function connect()
     mysql_query("SET NAMES utf8");
     return $tbl;
 } ?>
+<html style="min-height:100%;position:relative;">
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="/assets/css/flexboxgrid.css"> <!-- Blocks !-->
@@ -20,7 +21,7 @@ function connect()
     <script src="/assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/pages/services/shop/modules/prod/List_prod.js"></script>
 </head>
-<body  style="background: #e8e8e8">
+<body style="min-height:100%;position:relative;background: #e8e8e8">
 <div class="navbar navbar-inverse navbar-default" role="navigation" id="menu"
      style="border-radius:0px;border: 0px;background:#88212a;color:white">
     <div class="container">
@@ -43,14 +44,16 @@ function connect()
                 </div>
                 <div class="col-xs-9">
                     <div class="box">
-                        <ul class="nav navbar-nav"">
-                            <li><a href="/" style="color: white">Главная</a></li>
+                        <ul class="nav navbar-nav"
+                        ">
+                        <li><a href="/" style="color: white">Главная</a></li>
                         <!--                            <li><a href="/portfolio/" style="color: white">Портфолио</a></li>-->
-                            <li>
-                                <a style="color: white" onclick="Reformal.widgetOpen();return false;" href="http://champion.reformal.ru">
-                                    Отзывы
-                                </a>
-                            </li>
+                        <li>
+                            <a style="color: white" onclick="Reformal.widgetOpen();return false;"
+                               href="http://champion.reformal.ru">
+                                Отзывы
+                            </a>
+                        </li>
                         <li><a style="color: white" href="/contacts/">Контакты</a></li>
 
                         <? if (!empty($_SESSION['password'])) { ?>
@@ -74,7 +77,7 @@ function connect()
                         </ul>
                     </div>
                 </div>
-            </div>
+                </div>
         </div><!--/.nav-collapse -->
     </div>
 </div>

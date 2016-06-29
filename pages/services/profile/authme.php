@@ -2,8 +2,6 @@
 <meta charset="utf-8">
 <?
 $enter = false;
-//ent_login=&ent_pass=&reg_login=admin&reg_pass=admin&
-//reg_phone=%2B380933924200&reg_email=yamokasy2%40gmail.com
 
 include_once('../header.php');
 connect();
