@@ -6,9 +6,7 @@ function connect()
     $tbl = mysql_select_db("champ00_db", $conn) or die(mysql_error());
     mysql_query("SET NAMES utf8");
     return $tbl;
-}
-
-?>
+} ?>
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="/assets/css/flexboxgrid.css"> <!-- Blocks !-->
