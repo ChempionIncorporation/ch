@@ -66,7 +66,7 @@ if(isset($_GET['name']))
                 Общая стоимость
             </div>
         </div>
-        <div class="col-xs">
+        <div class="col-xs-3">
             <div class="box box_rp">
                 <?if(isset($_GET['box_rp']))
                     print $_GET['box_rp'];?>
