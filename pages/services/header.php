@@ -6,7 +6,7 @@ function connect()
     mysql_query("SET NAMES utf8");
     return $tbl;
 } ?>
-<html style="min-height:100%;position:relative;">
+<html>
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="/assets/css/flexboxgrid.css"> <!-- Blocks !-->

@@ -1,6 +1,6 @@
 <div class="container">
     <footer class="footer navbar-bottom text-center"
-            style="background: #88212a;">
+            style="background: #88212a;margin-top:10%;">
         <div class="row" style="background: #88212a;color: white; height:auto;">
             <div class="col-xs-3">
                 <div class="box" style="padding:5px">
