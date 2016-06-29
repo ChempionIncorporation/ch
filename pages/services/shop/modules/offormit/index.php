@@ -1,24 +1,24 @@
 <?session_start();
-
 include('../../../header.php');
-
 ?>
-
+<style>
+    .affix {
+        top: 20px;
+    }
+</style>
 <form action="cart/send">
     <div class="container">
-        <div class="row top-xs" style="margin-top:100px; background: none">
-            <div class="col-xs-3" style="background:white; border: 1px solid silver;padding:15px;padding-top:50px;text-align:center;margin-right:5px">
-                <div class="box">
-                    Профиль
-                </div>
-                <div class="box">
-                    Статистика
-                </div>
-                <div class="box">
-                    Статистика
+        <div class="row top-xs" style="background: none">
+            <div class="col-xs-3" style="margin-right:10px;">
+                <div class="row" data-spy="affix" data-offset-top="80"
+                     style="background: white; border:1px solid silver;width:250px">
+                    <?
+                    include_once("../../../profile/modules/left-bar.php");
+                    ?>
                 </div>
             </div>
-            <div class="col-xs" style="background:white;padding:15px; border: 1px solid silver;margin-right:100px;">
+            <div class="col-xs"
+                 style="height:1000px;background:white;padding:15px; border: 1px solid silver;margin-right:100px;">
                 <div class="box" style="text-align:center">
                     <h2>Список заказа</h2>
                 </div>
