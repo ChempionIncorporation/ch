@@ -87,7 +87,28 @@
 						else
 							input.setCustomValidity("");
 					}
-
+					/*
+					 function validatePhone(input) {
+					 var mas = "abcdefghigklmnopqrstuvwxyz/.\\|'\"!@#$%^&*()_+-=?:;~`";
+					 var c = 0;
+					 for(var i = 0;i < input.value.length;i++){
+					 for(var j = 0;j < mas.length;j++){
+					 if(mas[j] == input.value[i])
+					 c++;
+					 }
+					 if(i == 3)
+					 input.value += '-';
+					 }
+					 if (input.value.length < 10) {
+					 input.setCustomValidity("Номер должен состоять из 10 цифр.");
+					 }
+					 else if(c > 0){
+					 input.setCustomValidity("Номер должен состоять из цифр.");
+					 }
+					 else
+					 input.setCustomValidity("");
+					 }
+					 */
 				</script>
 </form>
 <form action="/pages/services/profile/authme.php" id="regForm" method="get">
