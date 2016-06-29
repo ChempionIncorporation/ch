@@ -88,28 +88,31 @@
 						else
 							input.setCustomValidity("");
 					}
-					/*
+
 					 function validatePhone(input) {
-					 var mas = "abcdefghigklmnopqrstuvwxyz/.\\|'\"!@#$%^&*()_+-=?:;~`";
-					 var c = 0;
-					 for(var i = 0;i < input.value.length;i++){
-					 for(var j = 0;j < mas.length;j++){
-					 if(mas[j] == input.value[i])
-					 c++;
+						 var mas = "abcdefghigklmnopqrstuvwxyz/.\\|'\"!@#$%^&*()_+-=?:;~`";
+						 var c = 0;
+						 var k = 0;
+						 for(var i = 0;i < input.value.length;i++){
+							 k++;
+							 for(var j = 0;j < mas.length;j++){
+								 if(mas[j] == input.value[i])
+								 c++;
+						 }
+							 if(k == 3) {
+								 input.value += ')';
+							 }
+						 }
+						 if (input.value.length < 15) {
+						 input.setCustomValidity("Номер должен состоять из 10 цифр.");
+						 }
+						 else if(c > 0){
+						 input.setCustomValidity("Номер должен состоять из цифр.");
+						 }
+						 else
+						 input.setCustomValidity("");
 					 }
-					 if(i == 3)
-					 input.value += '-';
-					 }
-					 if (input.value.length < 10) {
-					 input.setCustomValidity("Номер должен состоять из 10 цифр.");
-					 }
-					 else if(c > 0){
-					 input.setCustomValidity("Номер должен состоять из цифр.");
-					 }
-					 else
-					 input.setCustomValidity("");
-					 }
-					 */
+
 				</script>
 </form>
 <form action="/pages/services/profile/authme.php" id="regForm" method="get">
@@ -131,7 +134,7 @@
 							</a><br />
 				Введите номер телефона:
 							<br />
-							+38<input type="text" id="phone" name="reg_phone" oninput="validatePhone(this)" style="height:30px;width:150px" placeholder="xxx-хх-хх-ххх" maxlength="10" required>
+							+38<input type="text" id="phone" name="reg_phone" oninput="validatePhone(this)" style="height:30px;width:150px" placeholder="xxx-хх-хх-ххх" maxlength="15" required>
 							<br />
 				Введите свою почту:
 							<a href="#" data-toggle="tooltip" data-placement="right" title="Латинские буквы и цифры">
