@@ -14,7 +14,7 @@
                     $(".box_rp").html(sessionStorage.getItem('result_price'));
                     $(".insert").css("display", "block");
 //                    alert("Show() - OK!");
-
+                    var gleb = 0
                     for(var ni=0; ni<=maxVal; ni++) {
                         for(var i=0; i<= maxVal; i++) {
                             var n = sessionStorage.getItem("inf_" + ni + "_" + i);
@@ -22,11 +22,16 @@
                                 var arr = n.split('|');
                                 if (arr[2] != 0) {
                                     $('.inser_row').append(arr[1]);
-                                    console.log(arr[1]);
+                                    if (arr[3] != 0) {
+                                        gleb = arr[3] * arr[4] + gleb;
+                                        console.log("-----------" + gleb);
+                                    }
                                 }
                             }
                         }
                     }
+
+                    $('.box_rp').append(gleb);
 
                 }else{
                     $(".insert").css("display", "none");
@@ -66,13 +71,6 @@
             <div class="box box_rp">
                 <?if(isset($_GET['box_rp']))
                     print $_GET['box_rp'];?>
-            </div>
-        </div>
-    </div>
-    <div class='row' style="padding:7px">
-        <div class="col-xs">
-            <div class="box">
-                <button type="button" class="btn btn-primary"  data-toggle="modal" data-target="#myModal">Список</button>
             </div>
         </div>
     </div>
