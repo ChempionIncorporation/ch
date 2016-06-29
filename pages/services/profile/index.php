@@ -15,9 +15,9 @@ if(isset($_GET['quit']) && $_GET['quit'] == 1){
 
 ?>
 <form action="?save=1" method="post">
-    <div class="container">
-        <div class="row" style="">
-            <div class="col-xs-3" style="">
+    <div class="container" style="">
+        <div class="row top-xs" style="">
+            <div class="col-xs-3" style=";border: 1px solid silver;background: #fff">
                 <div class="box" >
                     <?
                         include_once('modules/left-bar.php');
@@ -30,7 +30,7 @@ if(isset($_GET['quit']) && $_GET['quit'] == 1){
                     ?>
                 </div>
             </div>
-            <div class="col-xs" style="margin-left:15px;">
+            <div class="col-xs" style="margin-left:25px;">
                 <div class="row">
                     <div class="col-xs" style="">
                         <div class="box">
@@ -167,7 +167,6 @@ if(isset($_GET['quit']) && $_GET['quit'] == 1){
 
                             <div class="row" style="padding:10px">
                                 <div class="col-xs-4" style="">
-
                                     <div class="box">
                                         Номер телефона
                                     </div>
@@ -178,8 +177,13 @@ if(isset($_GET['quit']) && $_GET['quit'] == 1){
                                 <div class="col-xs-4" style="">
                                     <div class="box">
                                         <?
+
+                                        if (empty($re['number_phone'])) {
+                                            $p = "<font style='font-weight: 900' color='red'>Пусто.</font>";
+                                        } else {
                                             $num = "(0" . substr($re['number_phone'], 0, 2) . ") " . substr($re['number_phone'], 2, 2) . "-" . substr($re['number_phone'], 4, 2) . "-" . substr($re['number_phone'], 6, 3);
                                             $p = "+38 " . $num;
+                                        }
                                         print "<b>" . $p . "</b>"; ?>
                                     </div>
                                 </div>
@@ -260,7 +264,6 @@ if(isset($_GET['quit']) && $_GET['quit'] == 1){
                                                 print "<font style='font-weight: 900' color='red'>Пусто</font>";
                                             else
                                                 print $re['email'];
-
                                             ?>
                                         </b></div>
                                 </div>
