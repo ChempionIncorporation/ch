@@ -605,7 +605,13 @@
       <option name="project" value="LOCAL" />
       <updated>1467200254252</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Artem: connect&#10;Verstion: 1.5.0.8">
+      <created>1467200376536</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1467200376536</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
