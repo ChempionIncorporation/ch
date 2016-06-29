@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3d78c7a-bcec-46d7-80a1-da32972dfd29" name="Default" comment="Gleb: footer&#10;Version: 1.5.0.2">
+    <list default="true" id="e3d78c7a-bcec-46d7-80a1-da32972dfd29" name="Default" comment="Gleb: db&#10;Version: 1.5.0.3">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/connect.php" afterPath="$PROJECT_DIR$/modules/connect.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/services/profile/index.php" afterPath="$PROJECT_DIR$/pages/services/profile/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/services/shop/modules/cart/functions.php" afterPath="$PROJECT_DIR$/pages/services/shop/modules/cart/functions.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/services/shop/modules/functions.php" afterPath="$PROJECT_DIR$/pages/services/shop/modules/functions.php" />
     </list>
     <ignored path="www.iws" />
@@ -67,31 +65,41 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="connect.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/connect.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.7307692">
+              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/services/profile/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.732143">
-              <caret line="84" column="62" selection-start-line="84" selection-start-column="62" selection-end-line="84" selection-end-column="62" />
+            <state vertical-scroll-proportion="-2.8461537">
+              <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
               <folding>
-                <element signature="e#4252#4286#0#HTML" expanded="true" />
-                <marker date="1467196127708" expanded="true" signature="808:913" placeholder="select * fro... profile" />
-                <marker date="1467196127708" expanded="true" signature="9437:9453" placeholder="..." />
-                <marker date="1467196127708" expanded="true" signature="11200:11216" placeholder="..." />
-                <marker date="1467196127708" expanded="true" signature="12730:12746" placeholder="..." />
-                <marker date="1467196127708" expanded="true" signature="14281:14297" placeholder="..." />
-                <marker date="1467196127708" expanded="true" signature="15791:15807" placeholder="..." />
-                <marker date="1467196127708" expanded="true" signature="16749:16813" placeholder="select * fro... user_l" />
-                <marker date="1467196127708" expanded="true" signature="16881:16936" placeholder="select * fro... profile" />
-                <marker date="1467196127708" expanded="true" signature="17980:18201" placeholder="update profi... " />
+                <element signature="e#4242#4275#0#HTML" expanded="true" />
+                <marker date="1467196655433" expanded="true" signature="808:913" placeholder="select * fro... profile" />
+                <marker date="1467196655433" expanded="true" signature="9426:9442" placeholder="..." />
+                <marker date="1467196655433" expanded="true" signature="11189:11205" placeholder="..." />
+                <marker date="1467196655433" expanded="true" signature="12719:12735" placeholder="..." />
+                <marker date="1467196655433" expanded="true" signature="14270:14286" placeholder="..." />
+                <marker date="1467196655433" expanded="true" signature="15780:15796" placeholder="..." />
+                <marker date="1467196655433" expanded="true" signature="16738:16802" placeholder="select * fro... user_l" />
+                <marker date="1467196655433" expanded="true" signature="16870:16925" placeholder="select * fro... profile" />
+                <marker date="1467196655433" expanded="true" signature="17969:18190" placeholder="update profi... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="functions.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/services/shop/modules/cart/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.035714287">
+            <state vertical-scroll-proportion="6.3846154">
               <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="39" />
               <folding>
                 <marker date="1467196582948" expanded="true" signature="101:134" placeholder="SELECT max(i... p_shop_montag" />
@@ -101,25 +109,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/services/shop/modules/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.807693">
-              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.6">
+              <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
               <folding>
-                <marker date="1467196570848" expanded="true" signature="1469:1512" placeholder="select * fro... user_l" />
-                <marker date="1467196570848" expanded="true" signature="1578:1633" placeholder="select * fro... profile" />
+                <marker date="1467197355538" expanded="true" signature="1472:1515" placeholder="select * fro... user_l" />
+                <marker date="1467197355538" expanded="true" signature="1581:1636" placeholder="select * fro... profile" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="connect.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/connect.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.576923">
-              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -196,10 +194,10 @@
         <option value="$PROJECT_DIR$/pages/services/header.php" />
         <option value="$PROJECT_DIR$/pages/services/shop/modules/prod/List_prod.js" />
         <option value="$PROJECT_DIR$/modules/footer.php" />
-        <option value="$PROJECT_DIR$/pages/services/profile/index.php" />
         <option value="$PROJECT_DIR$/modules/connect.php" />
-        <option value="$PROJECT_DIR$/pages/services/shop/modules/functions.php" />
         <option value="$PROJECT_DIR$/pages/services/shop/modules/cart/functions.php" />
+        <option value="$PROJECT_DIR$/pages/services/profile/index.php" />
+        <option value="$PROJECT_DIR$/pages/services/shop/modules/functions.php" />
       </list>
     </option>
   </component>
@@ -484,21 +482,21 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.toDoOptions" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="190" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="94" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="197" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="98" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="198" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="98" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="738" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="345" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="196" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="99" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="195" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="99" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="196" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="99" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="736" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="351" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
@@ -596,7 +594,13 @@
       <option name="project" value="LOCAL" />
       <updated>1467195959293</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Gleb: db&#10;Version: 1.5.0.3">
+      <created>1467196602079</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1467196602079</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -606,9 +610,9 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2035139" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.87223977" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5583596" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16246057" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5583596" sideWeight="0.49707174" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -641,7 +645,8 @@
     <MESSAGE value="Gleb: DB&#10;Version: 1.5.0.1" />
     <MESSAGE value="Gleb: Exit&#10;Version: 1.5.0.1" />
     <MESSAGE value="Gleb: footer&#10;Version: 1.5.0.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gleb: footer&#10;Version: 1.5.0.2" />
+    <MESSAGE value="Gleb: db&#10;Version: 1.5.0.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gleb: db&#10;Version: 1.5.0.3" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1042,25 +1047,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/services/profile/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.732143">
-          <caret line="84" column="62" selection-start-line="84" selection-start-column="62" selection-end-line="84" selection-end-column="62" />
-          <folding>
-            <element signature="e#4252#4286#0#HTML" expanded="true" />
-            <marker date="1467196127708" expanded="true" signature="808:913" placeholder="select * fro... profile" />
-            <marker date="1467196127708" expanded="true" signature="9437:9453" placeholder="..." />
-            <marker date="1467196127708" expanded="true" signature="11200:11216" placeholder="..." />
-            <marker date="1467196127708" expanded="true" signature="12730:12746" placeholder="..." />
-            <marker date="1467196127708" expanded="true" signature="14281:14297" placeholder="..." />
-            <marker date="1467196127708" expanded="true" signature="15791:15807" placeholder="..." />
-            <marker date="1467196127708" expanded="true" signature="16749:16813" placeholder="select * fro... user_l" />
-            <marker date="1467196127708" expanded="true" signature="16881:16936" placeholder="select * fro... profile" />
-            <marker date="1467196127708" expanded="true" signature="17980:18201" placeholder="update profi... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1071,30 +1057,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/connect.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.576923">
+        <state vertical-scroll-proportion="-3.7307692">
           <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/services/shop/modules/functions.php">
+    <entry file="file://$PROJECT_DIR$/pages/services/profile/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.807693">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        <state vertical-scroll-proportion="-2.8461537">
+          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
           <folding>
-            <marker date="1467196570848" expanded="true" signature="1469:1512" placeholder="select * fro... user_l" />
-            <marker date="1467196570848" expanded="true" signature="1578:1633" placeholder="select * fro... profile" />
+            <element signature="e#4242#4275#0#HTML" expanded="true" />
+            <marker date="1467196655433" expanded="true" signature="808:913" placeholder="select * fro... profile" />
+            <marker date="1467196655433" expanded="true" signature="9426:9442" placeholder="..." />
+            <marker date="1467196655433" expanded="true" signature="11189:11205" placeholder="..." />
+            <marker date="1467196655433" expanded="true" signature="12719:12735" placeholder="..." />
+            <marker date="1467196655433" expanded="true" signature="14270:14286" placeholder="..." />
+            <marker date="1467196655433" expanded="true" signature="15780:15796" placeholder="..." />
+            <marker date="1467196655433" expanded="true" signature="16738:16802" placeholder="select * fro... user_l" />
+            <marker date="1467196655433" expanded="true" signature="16870:16925" placeholder="select * fro... profile" />
+            <marker date="1467196655433" expanded="true" signature="17969:18190" placeholder="update profi... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/services/shop/modules/cart/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.035714287">
+        <state vertical-scroll-proportion="6.3846154">
           <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="39" />
           <folding>
             <marker date="1467196582948" expanded="true" signature="101:134" placeholder="SELECT max(i... p_shop_montag" />
             <marker date="1467196582948" expanded="true" signature="275:321" placeholder="SELECT * fro... p_shop_montag" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/services/shop/modules/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6">
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+          <folding>
+            <marker date="1467197355538" expanded="true" signature="1472:1515" placeholder="select * fro... user_l" />
+            <marker date="1467197355538" expanded="true" signature="1581:1636" placeholder="select * fro... profile" />
           </folding>
         </state>
       </provider>
