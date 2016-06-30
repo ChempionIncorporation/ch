@@ -23,8 +23,8 @@ $o = getVal($_SESSION['password']);
 
 //print "insert into zayavka(status,address,pauthor,key_p,full_my_text, cdate) values( 1, '" . $o['address'] . "','" . $o['f'] . " " . $o['i'] . " " . $o['o'] . " P:" . $o['number_phone'] . "', '" . $_SESSION['password'] . "', '" . $_SESSION['namew'] . "', now())";
 
-
-if (mysql_query("insert into zayavka(status,address,pauthor,key_p,full_my_text, cdate) values( 1, '" . $o['address'] . "','" . $o['f'] . " " . $o['i'] . " " . $o['o'] . " P:" . $o['number_phone'] . "', '" . $_SESSION['password'] . "', '" . $_SESSION['namew'] . "', now())"))
+print "insert into zayavka(status,address,pauthor,key_p,full_my_text, cdate) values( 1, '" . $o['address'] . "','" . $o['f'] . " " . $o['i'] . " " . $o['o'] . " P:" . $o['number_phone'] . "', '" . $_SESSION['password'] . "', '" . $_SESSION['namew'] . "', now())";
+if (mysql_query("insert into zayavka(status, address, pauthor, key_p, full_my_text, cdate) values( 1, '" . $o['address'] . "','" . $o['f'] . " " . $o['i'] . " " . $o['o'] . " P:" . $o['number_phone'] . "', '" . $_SESSION['password'] . "', '" . $_SESSION['namew'] . "', now())"))
 {
 
     print "Заказ успешно оформлен.<br> Вы можете перейти в <a href='/id" . $_SESSION['id'] . "/list/'>\"Список заказов\"(Клик)</a> ";

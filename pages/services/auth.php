@@ -11,7 +11,7 @@
 
 	<?
 	include('header.php');
-	$_SESSION['login'] = $_SESSION['name'] = $_SESSION['password'] = $_SESSION['key'] = null;
+	//	$_SESSION['login'] = $_SESSION['name'] = $_SESSION['password'] = $_SESSION['key'] = null;
 	?>
 	<script type="text/javascript">
 		var reformalOptions = {
@@ -30,13 +30,45 @@
 	if (!empty($_POST['login']) && isset($_POST['psw'])) {
 		require_once("/profile/modules/functions.php");
 		print "<meta http-equiv='refresh' content='0; url=" . $_SERVER['document_root'] . "/pages/services/profile/index.php?id=" . getAccount($_POST['login'], $_POST['psw']) . "'>";
-		//print "<script> alert('".$_SESSION['gleb'].$_SESSION['login']."');</script>";
-
 	}
 	?>
 	<form action="/pages/services/profile/authme.php" method="get">
 		<div class="container" style="margin-top: 0px;">
 			<div class="row center-xs" style="margin:8%">
+				<?
+				if (!empty($_GET['err'])) {
+					switch ($_GET['err']) {
+						case 0:
+							print "
+					<div class='alert alert-danger'>
+						<strong>Ошибка!</strong> Нужно подтвердить свой аккаунт по почте.Если вам не пришло подтверждение, позвоните нам.
+					</div>";
+							break;
+						case 1:
+							print "
+					<div class='alert alert-danger'>
+						<strong>Ошибка!</strong> Таких пользователей.
+					</div>";
+							break;
+						case 777:
+							print "
+					<div class='alert alert-success'>
+						<strong>Успешно!</strong> Зайдите на почту и подтвердите свои данные.
+					</div>";
+							break;
+					}
+				}
+				if (!empty($_GET['gr0me'])) {
+					connect();
+					mysql_query("update user_l set successful=1 where key_p='" . $_GET['gr0me'] . "'");
+					$s = mysql_query("select * from user_l where key_p='" . $_GET['gr0me'] . "'");
+					$r = mysql_fetch_array($s);
+					print "
+			<div class='alert alert-success'>
+				<strong>Успешно!</strong> Аккаунт: " . $r['login'] . " подтвержден.
+			</div>";
+				}
+				?>
 				<div class="span12">
 					<h1>Вход в систему</h1>
 					<div class="row">
@@ -56,22 +88,21 @@
 									<button class="btn btn-large btn-primary" type="submit" style="margin-top:10px">
 										Авторизоваться
 									</button>
-						</div>
+								</div>
 							</div> <!--!, $, #, %-->
 						</div>
-
 						<script type="text/javascript">
 							var prov = null;
 							function validateLogin(input) {
 								if (input.value.length < 5) {
 									input.setCustomValidity("Логин должен быть больше 5 символов.");
-						}
+								}
 								else if (input.value.indexOf('.') != -1 || input.value.indexOf('!') != -1 || input.value.indexOf('@') != -1 || input.value.indexOf('#') != -1 || input.value.indexOf('$') != -1 || input.value.indexOf('^') != -1 || input.value.indexOf('&') != -1 || input.value.indexOf('?') != -1 || input.value.indexOf('-') != -1 || input.value.indexOf('+') != -1 || input.value.indexOf('=') != -1 || input.value.indexOf(';') != -1 || input.value.indexOf(':') != -1 || input.value.indexOf('.') != -1 || input.value.indexOf(', ') != -1 || input.value.indexOf('|') != -1 || input.value.indexOf('~') != -1 || input.value.indexOf('`') != -1 || input.value.indexOf('<') != -1 || input.value.indexOf('>') != -1 || input.value.indexOf('\'') != -1 || input.value.indexOf('\"') != -1 || input.value.indexOf(' ') != -1 || input.value.indexOf(')') != -1 || input.value.indexOf('(') != -1) {
 									input.setCustomValidity("Пароль не может содержать специальные символы !@#$^&.");
-						}
+								}
 								else {
 									input.setCustomValidity("");
-						}
+								}
 							}
 							function validatePassword1(input) {
 								prov = input.value;
@@ -136,12 +167,8 @@
 					<br/>
 					<button type="submit" class="btn btn-large btn-primary" style="margin-top:10px">Зарегестрироваться
 					</button>
-						</div>
-					</div>
 				</div>
 			</div>
-		</div>
-	</div>
 		</div>
 	</form>
 	</body>
