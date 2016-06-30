@@ -196,7 +196,10 @@ include("pages/services/header.php");
 <div class="container">
 	<div class="row start-md">
 		<div class="col-xs" style="background: white; font-size:30pt;border: 2px solid #eee;">
-			<div class="box"  style="height:100%; background: #88212a; width: 350px; padding-left: 20px;color: white;z-index:1">Галерея работ</div>
+			<div class="box"
+				 style="height:80px; background: #88212a; width: 350px; padding-left: 20px;color: white;z-index:1">
+				Галерея работ
+			</div>
 		</div>
 	</div>
 	<div class="row" >
@@ -336,7 +339,8 @@ include("pages/services/header.php");
 <div class="container">
 	<div class="row">
 		<div class="col-xs" style="background: white; font-size:30pt;border: 2px solid #eee;margin-top:10px;">
-			<div class="box" style="height:100%; background: #88212a; width: 350px; padding-left: 20px;color: white;z-index:1">
+			<div class="box"
+				 style="height:80px; background: #88212a; width: 350px; padding-left: 20px;color: white;z-index:1">
 				О нас
 			</div>
 		</div>

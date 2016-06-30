@@ -57,7 +57,7 @@ if (isset($_GET['quit']) && $_GET['quit'] == 1) {
                         </a>
                     </div>
                 </div>
-                <div class="col-xs-6">
+                <div class="col-xs-9">
                     <div class="box">
                         <ul class="nav navbar-nav"
                         ">

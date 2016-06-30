@@ -12,20 +12,19 @@ function reg_me($l, $p, $arr, $ph, $email)
         $vval = "'" . $a[0] . "','" . $a[1] . "','" . $a[2] . "','" . $l . "'," . $ph . ",'" . $email . "', 2";
         if (mysql_query("INSERT INTO profile(f,i,o,login, number_phone, email, grp) values(" . $vval . ")")) {
 
-            print "<script>alert('" . $key . "')</script>";
             include_once('mail.php');
             print sendMail($email, $key);
 
 
-            print "<meta http-equiv='refresh' content='115; url=/auth/?reg=01'>";
+            print "<meta http-equiv='refresh' content='0; url=/auth/?reg=01'>";
             //Аккаунт добавлен
         } else {
             mysql_query("delete from user_l where login = '" . $l . "'");
-            print "<meta http-equiv='refresh' content='115; url=/auth/?err=01'>";
+            print "<meta http-equiv='refresh' content='0; url=/auth/?err=01'>";
             //Ошибка добавления
         }
     } else {
-        print "<meta http-equiv='refresh' content='115; url=/auth/?err=02'>";
+        print "<meta http-equiv='refresh' content='0; url=/auth/?err=02'>";
         //Ошибка добавления
 
     }
