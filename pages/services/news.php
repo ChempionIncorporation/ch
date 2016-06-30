@@ -51,6 +51,7 @@ $arr = mysql_fetch_object($sql);
 	?>
 	</div>
 	</div>
+	</body>
 <?php } ?>
 <?php 
 require_once($_SERVER['DOCUMENT_ROOT']."/modules/footer.php");
