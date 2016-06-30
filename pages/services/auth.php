@@ -91,6 +91,82 @@
 								else
 									input.setCustomValidity("");
 							}
+							function validatePhone(input) {
+								var mas = "abcdefghigklmnopqrstuvwxyz/.\\|'\"!@#$%^&*()_+-=?:;~`";
+								var c = 0;
+								for (var i = 0; i < input.value.length; i++) {
+									for (var j = 0; j < mas.length; j++) {
+										if (mas[j] == input.value[i])
+											c++;//asdasdasdasd
+									}
+								}
+								if (input.value.length < 10) {
+									input.setCustomValidity("Номер должен состоять из 10 цифр.");
+								}
+								else if (c > 0) {
+									input.setCustomValidity("Номер должен состоять из цифр.");
+								}
+								else
+									input.setCustomValidity("");
+							}
+							function validateMail(input) {
+								var mas = "/.\\|'\"!@#$% ^&*()_+-=?:;~`";
+								var c = 0;
+								var sb = 0;
+								var tb = 0;
+								var sp = 0;
+								var tp = 0;
+								var temp = 0;
+								var len = input.value.length;
+								for (var i = 0; i < mas.length; i++)
+									if (mas[i] == input.value[0] || mas[i] == input.value[len - 1])
+										c++;
+								for (var i = 0; i < input.value.length; i++) {
+									if (input.value[i] == '@')
+										sb++;
+									if (input.value[i] == '.')
+										tb++;
+								}
+								for (var i = 0; i < len; i++) {
+									if (input.value.indexOf('@') != -1) {
+										temp = input.value.indexOf('@');
+										if (input.value[temp + 1] == '.' || input.value[temp - 1] == '.')
+											tp++;
+									}
+								}
+								if (tp > 1)
+									input.setCustomValidity("Сразу после '@' или '.' не может стоять ещё '@' или '.'");
+								else if (sb > 1 || tb > 1 || sb == 0 || tb == 0)
+									input.setCustomValidity("E-mail должен содержать только один символ '@' и '.'");
+								else if (c > 0)
+									input.setCustomValidity("E-mail не может начинатся или заканчиваться специальным символом .!@#$^&,");
+								else
+									input.setCustomValidity("");
+							}
+							function validateFIO(input) {
+								var mas = "abcdefghigklmnopqrstuvwxyz/.\\|'\"!@#$%^&*()_+-=?:;~`1234567890";
+								var c = 0;
+								var k = 0;
+								for (var i = 0; i < input.value.length; i++) {
+									for (var j = 0; j < mas.length; j++) {
+										if (mas[j] == input.value[i])
+											c++;
+									}
+								}
+								for (var i = 0; i < input.value.length; i++) {
+									if (input.value[i] == ' ')
+										k++;
+								}
+								input.setCustomValidity(k);
+								if (c > 0) {
+									input.setCustomValidity("ФИО не может содержать цифры, спец. символы и буквы латинского алфавита.");
+								}
+								else if (k != 2) {
+									input.setCustomValidity("Это поле должно содержать Фамилию, Имя и Отчество.");
+								}
+								else
+									input.setCustomValidity("");
+							}
 						</script>
 	</form>
 	<form action="/pages/services/profile/authme.php" id="regForm" method="get">
