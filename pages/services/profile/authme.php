@@ -4,7 +4,7 @@
 error_reporting();
 include_once('../header.php');
 
-print "1";
+//print "1";
 if (!empty($_GET['ent_login']) && !empty($_GET['ent_pass'])) {
     $ent_l = mb_strtolower($_GET['ent_login'], 'UTF-8');
     $ent_p = mb_strtolower($_GET['ent_pass'], 'UTF-8');

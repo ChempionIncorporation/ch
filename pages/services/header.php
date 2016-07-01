@@ -51,7 +51,7 @@ if (isset($_GET['quit']) && $_GET['quit'] == 1) {
             <div class="row">
                 <div class="col-xs">
                     <div class="box">
-                        <a class="navbar-brand" href="#" style="margin-top:-10px">
+                        <a class="navbar-brand" href="" style="margin-top:-10px">
                             <img class="logo" src="../../../assets/img/logo-head.png" alt="CHAMPION LOGO"
                                  style="padding-left:50px">
                         </a>
