@@ -69,7 +69,7 @@ RewriteRule ^id([^/]+)/?$ /pages/services/profile/index.php?id=$1 [L,QSA]
 RewriteRule ^id([^/]+)/list/?$ /pages/services/profile/list.php?id=$1 [L,QSA]
 
 RewriteRule ^auth/?$ /pages/services/auth.php [L]
-RewriteRule ^editor/?$ /pages/services/shop/modules/editor/view.php [L]
+RewriteRule ^editor/?$ /pages/services/shop/modules/editor/view.php?view=editor [L]
 
 RewriteRule ^shop/?$ /pages/services/shop/index.php [L]
 RewriteRule ^shop/([^/]+)/?$ /pages/services/shop/index.php?prod=1&view=$1 [L]

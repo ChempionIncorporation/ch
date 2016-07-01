@@ -79,7 +79,8 @@ $r = mysql_fetch_array($s);
                     </div>
                 </form>
             </li>
-            <? if ($_SESSION['group'] == "Админ") { ?>
+            <? print "<script>alert('" . $_SESSION['group'] . "')</script>"; ?>
+            <? if ($_SESSION['group'] == "Администратор") { ?>
                 <hr>
                 <li><a href='/editor/'>Добавить товар</a></li>
             <? } ?>

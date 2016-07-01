@@ -5,7 +5,6 @@ function reg_me($l, $p, $arr, $ph, $email)
     $key = md5($l . "|" . $p);
     $rq = mysql_query("INSERT INTO user_l(login, psw, key_p, cdate) values('" . $l . "','" . $p . "','" . $key . "', now())") or die("Invalid query: " . mysql_error());
 
-
     print $rq;
     if ($rq) {
         $a = explode(" ", $arr);
@@ -15,16 +14,15 @@ function reg_me($l, $p, $arr, $ph, $email)
             include_once('mail.php');
             print sendMail($email, $key);
 
-
             print "<meta http-equiv='refresh' content='0; url=/auth/?reg=01'>";
-            //Аккаунт добавлен
+            //Аккаунт добавлен подтвердите по почте
         } else {
             mysql_query("delete from user_l where login = '" . $l . "'");
-            print "<meta http-equiv='refresh' content='0; url=/auth/?err=01'>";
+            print "<meta http-equiv='refresh' content='0; url=/auth/?err=2'>";
             //Ошибка добавления
         }
     } else {
-        print "<meta http-equiv='refresh' content='0; url=/auth/?err=02'>";
+        print "<meta http-equiv='refresh' content='0; url=/auth/?err=3'>";
         //Ошибка добавления
 
     }

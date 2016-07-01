@@ -37,6 +37,57 @@
 	<form action="/pages/services/profile/authme.php" method="get">
 		<div class="container" style="margin-top: 0px;">
 			<div class="row center-xs" style="margin:8%">
+
+				<?
+				if (!empty($_GET['err']))
+					switch ($_GET['err']) {
+						case 0:
+							print "
+                    <div class='alert alert-danger'>
+                        <strong>Ошибка!</strong> Подтверждение по почте не произошло.
+                    </div>";
+							break;
+						case 1:
+							print "
+                    <div class='alert alert-danger'>
+                        <strong>Ошибка!</strong> В системе нет логин или пароля повторите ввод.
+                    </div>";
+							break;
+						case 2:
+							print "
+                    <div class='alert alert-danger'>
+                        <strong>Ошибка!</strong> Ошибка добавление в базу повторите попытку.
+                    </div>";
+							break;
+						case 3:
+							print "
+                    <div class='alert alert-danger'>
+                        <strong>Ошибка!</strong> Ошибка добавление в базу повторите попытку.
+                    </div>";
+							break;
+					}
+
+				if (!empty($_GET['reg']))
+					switch ($_GET['reg']) {
+						case 1:
+							print "
+                    <div class='alert alert-success'>
+                        <strong>Успешно!</strong> Акаунт добавлен, подтвердите по почте.
+                    </div>";
+							break;
+					}
+				if (!empty($_GET['gr0me'])) {
+					$key = $_GET['gr0me'];
+					connect();
+					mysql_query("update user_l set successful = 1 where key_p = '" . $key . "'") or die("1");
+					print "
+                    <div class='alert alert-success'>
+                        <strong>Успешно!</strong> Акаунт добавлен и подтвержден.
+                    </div>";
+				}
+				?>
+
+
 				<div class="span12">
 					<h1>Вход в систему</h1>
 					<div class="row">

@@ -189,7 +189,7 @@ include("change_pass.php");
                                 </div>
                                 <div class="col-xs-4" style="">
                                     <div class="box">
-                                        <input type="text" size="20" style="display: none" id="np"
+                                        <input type="text" size="20" maxlength="13" style="display: none" id="np"
                                                placeholder="Номер телефона">
                                     </div>
                                 </div>

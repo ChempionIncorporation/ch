@@ -83,4 +83,45 @@ function checkuser($key){
     return $r['name'];
 }
 //
+function MyAccErr($num)
+{
+    switch ($num) {
+        case 0:
+            return "
+                    <div class='alert alert-danger'>
+                        <strong>Ошибка!</strong> Подтверждение по почте не произошло.
+                    </div>";
+            break;
+        case 1:
+            return "
+                    <div class='alert alert-danger'>
+                        <strong>Ошибка!</strong> В системе нет логин или пароля повторите ввод.
+                    </div>";
+            break;
+        case 2:
+            return "
+                    <div class='alert alert-danger'>
+                        <strong>Ошибка!</strong> Ошибка добавление в базу повторите попытку.
+                    </div>";
+            break;
+        case 3:
+            return "
+                    <div class='alert alert-danger'>
+                        <strong>Ошибка!</strong> Ошибка добавление в базу повторите попытку.
+                    </div>";
+            break;
+    }
+}
+
+function MyAccSuc($num)
+{
+    switch ($num) {
+        case 1:
+            return "
+                    <div class='alert alert-success'>
+                        <strong>Успешно!</strong> Акаунт добавлен, подтвердите по почте.
+                    </div>";
+            break;
+    }
+}
 ?>

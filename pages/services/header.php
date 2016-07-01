@@ -15,7 +15,8 @@ if (isset($_GET['quit']) && $_GET['quit'] == 1) {
     $_SESSION['f'] = null;
     $_SESSION['i'] = null;
     $_SESSION['o'] = null;
-    print  "<script>alert('Вы вышли из системы')</script>";
+    $_SESSION['group'] = null;
+//    print  "<script>alert('Вы вышли из системы')</script>";
     print "<meta http-equiv='refresh' content='0; url=/auth/'>";
 }
 
@@ -34,6 +35,7 @@ if (isset($_GET['quit']) && $_GET['quit'] == 1) {
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css"><!-- Fraem !-->
     <script src="/assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/pages/services/shop/modules/prod/List_prod.js"></script>
+
 </head>
 <body style="min-height:100%;position:relative;background: #e8e8e8">
 <div class="navbar navbar-inverse navbar-default" role="navigation" id="menu"
@@ -53,7 +55,7 @@ if (isset($_GET['quit']) && $_GET['quit'] == 1) {
                     <div class="box">
                         <a class="navbar-brand" href="" style="margin-top:-10px">
                             <img class="logo" src="../../../assets/img/logo-head.png" alt="CHAMPION LOGO"
-                                 style="padding-left:50px">
+                                 style="">
                         </a>
                     </div>
                 </div>

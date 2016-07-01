@@ -1,10 +1,7 @@
 <?php
-//include('../functions.php');
 connect();
-//print "<script>alert('".$_GET['id']."')</script>";
 $z = mysql_query("select * from p_shop_montag where id=".$_GET['id']);
 $re = mysql_fetch_array($z);
-//$res = mysql_fetch_array($z);
 $fill_size = "";
 if($re['height'] != 0 && $re['width'] != 0) {
     $size = $re['height'] . "x" . $re['width'] . " см.";
@@ -55,12 +52,12 @@ include('/list.php');
             console.log(scrollTop);
         </script>
         <style>
-            /* Note: Try to remove the following lines to see the effect of CSS positioning */
             .affix {
                 top: 5px;
+                width: 300px;
             }
         </style>
-        <div class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="170" style="width:330px">
+        <div class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="170">
             <div class="box" style="">
                 Тип: <b><? print $re['type_price'] ?></b>
             </div>
