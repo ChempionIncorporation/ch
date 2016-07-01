@@ -86,13 +86,13 @@
 									input.setCustomValidity("Пароль должен быть больше 5 символов.");
 								}
 								else if (input.value != prov) {
-									input.setCustomValidity("Парололи не совпадают!");
+									input.setCustomValidity("Пароли не совпадают!");
 								}
 								else
 									input.setCustomValidity("");
 							}
 							function validatePhone(input) {
-								var mas = "abcdefghigklmnopqrstuvwxyz/.\\|'\"!@#$%^&*()_+-=?:;~`";
+								var mas = "абвгдеёжзийклмнопрстуфхцчшщъыьэюяabcdefghigklmnopqrstuvwxyz/.\\|'\"!@#$%^&*()_+-=?:;~`";
 								var c = 0;
 								for (var i = 0; i < input.value.length; i++) {
 									for (var j = 0; j < mas.length; j++) {
@@ -114,7 +114,6 @@
 								var c = 0;
 								var sb = 0;
 								var tb = 0;
-								var sp = 0;
 								var tp = 0;
 								var temp = 0;
 								var len = input.value.length;
@@ -196,12 +195,14 @@
 					<br/>
 					Введите свою почту:
 					<a href="#" data-toggle="tooltip" data-placement="right" title="Латинские буквы и цифры">
-						<input type="text" name="reg_email" style="height:30px;width:250px" placeholder="Почта"
+						<input type="text" name="reg_email" oninput="validateMail(this)" style="height:30px;width:250px"
+							   placeholder="Почта"
 							   required>
 					</a><br/>
 					Введите ФИО:<br>
 					<a href="#" data-toggle="tooltip" data-placement="right" title="Русские буквы">
-						<input type="text" name="reg_fio" style="height:30px;width:300px" placeholder="ФИО"
+						<input type="text" name="reg_fio" oninput="validateFIO(this)" style="height:30px;width:300px"
+							   placeholder="ФИО"
 							   required>
 					</a><br/>
 					<script>
