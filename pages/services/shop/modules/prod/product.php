@@ -1,6 +1,6 @@
 <?php
 connect();
-$z = mysql_query("select * from p_shop_montag where id=".$_GET['id']);
+$z = mysql_query("select * from stend_pn where id=" . $_GET['id']);
 $re = mysql_fetch_array($z);
 $fill_size = "";
 if($re['height'] != 0 && $re['width'] != 0) {
@@ -18,8 +18,9 @@ include('/list.php');
         </div>
     </div>
     <div class="col-xs-7" >
-        <div class="box" style="border: 2px solid #f7f7f7;height:300px;margin-top:10px">
-            <center><img src="../../../../../img/upload/montaj/<?print $re['photo']?>" height="295px"></center>
+        <div class="box" style="border: 2px solid #f7f7f7;height:300px;margin-top:10px;padding:20px;">
+            <center><img src="/pages/services/shop/modules/editor/modules/uploads/<? print $re['img'] ?>"
+                         height="255px"></center>
         </div>
 
         <div class="box">
@@ -30,16 +31,16 @@ include('/list.php');
                     <li><a href="#featured">Требования</a></li>
                 </ul>
                 <div id="popular" class="tabdiv">
-                    <b style="font-size:15pt">Описание:</b><br> <?print $re['desc']?><br>
+                    <b style="font-size:15pt">Описание:</b><br> <? print $re['description'] ?><br>
                 </div><!--/popular-->
 
                 <div id="recent" class="tabdiv">
-                    <br> <?print $re['charac']?>
+                    <br> <? print $re['char'] ?>
                 </div><!--/recent-->
 
                 <div id="featured" class="tabdiv">
                     <?
-                        print $re['requi'];
+                    print $re['req'];
                     ?>
                 </div><!--featured-->
 
@@ -69,6 +70,28 @@ include('/list.php');
             </div>
             <div class="box" style="">
                 <? print $full_size ?>
+            </div>
+            <div class="box">
+                <div class='row'>
+                    <div class="col-xs">
+                        <div class="box"><?
+                            print "
+                <div class='row'>
+                    <div class='col-xs' style='font-size:13pt;'>
+                        <div class='box'>
+                            Цена конструкции:
+                        </div>
+                        <div class='box' style='font-size:10pt;padding-left:10px;'>
+                            Цена: " . $re['price'] . " грн.
+                        </div>
+                    </div>
+                    <div class='col-xs end-xs'>
+                        <input type='text' class='konstr' id='konstr' name='price' size='5' maxlength='3' value='1'><br>
+                    </div>
+                </div>";
+                            ?></div>
+                    </div>
+                </div>
             </div>
             <div class="box">
                 <?

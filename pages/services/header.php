@@ -1,7 +1,7 @@
 <? session_start();
 function connect()
-{
-    $conn = mysql_connect("champ00.mysql.ukraine.com.ua", "champ00_db", "2UWXvGb2") or die(mysql_error());
+{//2UWXvGb2
+    $conn = mysql_connect("champ00.mysql.ukraine.com.ua", "champ00_db", "222222") or die(mysql_error());
     $tbl = mysql_select_db("champ00_db", $conn) or die(mysql_error());
     mysql_query("SET NAMES utf8");
     return $tbl;
@@ -17,7 +17,7 @@ if (isset($_GET['quit']) && $_GET['quit'] == 1) {
     $_SESSION['o'] = null;
     $_SESSION['group'] = null;
 //    print  "<script>alert('Вы вышли из системы')</script>";
-    print "<meta http-equiv='refresh' content='0; url=/auth/'>";
+    print "<meta http-equiv='refresh' content='0; url=/'>";
 }
 
 ?>
@@ -81,11 +81,11 @@ if (isset($_GET['quit']) && $_GET['quit'] == 1) {
                                 <ul class="dropdown-menu" style="background-color: rgba(255, 255, 255, 0.95)">
                                     <? print"<li><a href='/id" . $_SESSION['id'] . "'>Профиль</a></li>"; ?>
                                     <? print"<li><a href='/id" . $_SESSION['id'] . "/list'>Список заказов</a></li>"; ?>
-                                    <? print"<li><a href='/id" . $_SESSION['id'] . "?quit=1'>Выход</a></li>"; ?>
+                                    <? print"<li><a href='?quit=1'>Выход</a></li>"; ?>
                                 </ul>
                             </li>
                         <? } else { ?>
-                            <li>
+                            <li <? if ($_GET['auth'] == 1) print "class='active'" ?>>
                                 <a style="color: white" href="/auth/">
                                     Вход
                                 </a>

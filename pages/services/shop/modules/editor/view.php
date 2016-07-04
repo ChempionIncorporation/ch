@@ -6,38 +6,47 @@ if (checkName('grp', $_SESSION['password']) == 'Администратор') {
     $re['name'] = $_SESSION['name'] = checkName('name', $_SESSION['password']);
     $key = $_SESSION['password'];
     ?>
+    <script type="text/javascript" src="/pages/services/shop/modules/editor/inps.js"></script>
     <div class="container" style="background:white;padding:20px">
         <div class="row">
-        <div class="col-xs">
-            <div class="box">
-                <div class="gallery" id="images_preview">
-
+            <div class="col-xs">
+                <div class="box">
+                    <?
+                    include_once('modules/index.php');
+                    //Загрузка картинки
+                    ?>
+                    <form action="#" name="formName" method="post">
                 </div>
-                <?
-                include_once('modules/index.php');
-                //Загрузка картинки
-                ?>
+                </div>
+            <div class="col-xs">
+                <div class="box">
+                </div>
             </div>
-        </div>
-        </div>
+            <div class="col-xs">
+                <div class="box">
+                    <div class="gallery" id="images_preview">
+                    </div>
+                </div>
+            </div>
+            </div>
         <div class="row start-xs">
-        <div class="col-xs">
-            <div class="box">
-                <?
-                include_once('blocks/name.php');
-                //NAME
-                include_once('blocks/catalog.php');
-                //CARALOG
-                ?>
-                <div class="form-group">
-                    <label for="sel1">Наличие:</label>
-                    <select class="form-control" id="sel1">
-                        <option>Есть в наличии</option>
-                        <option>Нет в наличии</option>
-                    </select>
+            <div class="col-xs">
+                <div class="box">
+                    <?
+                    include_once('blocks/name.php');
+                    //NAME
+                    include_once('blocks/catalog.php');
+                    //CARALOG
+                    ?>
+                    <div class="form-group">
+                        <label for="sel1">Наличие:</label>
+                        <select class="form-control" id="nal">
+                            <option value="1">Есть в наличии</option>
+                            <option value="2">Нет в наличии</option>
+                        </select>
+                    </div>
                 </div>
             </div>
-        </div>
 
             <div class="col-xs-4">
                 <?
@@ -47,16 +56,16 @@ if (checkName('grp', $_SESSION['password']) == 'Администратор') {
                 //Размер
                 ?>
             </div>
-        </div>
-        <div class="row">
-        <div class="col-xs">
-            <div class="box">
-                <?
-                include_once('blocks/desc.php');
-                //Описание
-                ?>
             </div>
-        </div>
+        <div class="row">
+            <div class="col-xs">
+                <div class="box">
+                    <?
+                    include_once('blocks/desc.php');
+                    //Описание
+                    ?>
+                </div>
+            </div>
             <div class="col-xs">
                 <div class="box">
                     <?
@@ -65,15 +74,15 @@ if (checkName('grp', $_SESSION['password']) == 'Администратор') {
                     ?>
                 </div>
             </div>
-        <div class="col-xs">
-            <div class="box">
-                <?
-                include_once('blocks/req.php');
-                //Требования
-                ?>
+            <div class="col-xs">
+                <div class="box">
+                    <?
+                    include_once('blocks/req.php');
+                    //Требования
+                    ?>
+                </div>
             </div>
         </div>
-    </div>
 
 
         <div class="row center-xs">
@@ -82,16 +91,17 @@ if (checkName('grp', $_SESSION['password']) == 'Администратор') {
                      style="background: black; color: white;border-bottom:2px solid white;;font-weight:900;border-radius:10px 10px 0px 0px">
                     Дополнительные функции
                 </div>
+                </div>
             </div>
-        </div>
 
-        <div class="raznoe">
+        <div id="raznoe">
             <?
             include_once('blocks/reznoe.php');
             ?>
         </div>
         <div style="padding:20px;">
-            <button type="button" class="btn btn-success btn-block">Добавить товар!</button>
+            <button id="btn_aad" type="button" class="btn btn-success btn-block">Добавить товар!</button>
         </div>
+        </form>
     </div>
 <?}?>

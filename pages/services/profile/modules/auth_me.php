@@ -15,6 +15,7 @@ function auth_me($l, $p)
             $_SESSION['f'] = $row['f'];
             $_SESSION['i'] = $row['i'];
             $_SESSION['o'] = $row['o'];
+            $_SESSION['group'] = $row['grp'];
 
             print "<script>console.log('successful - 1')</script>";
             ?>

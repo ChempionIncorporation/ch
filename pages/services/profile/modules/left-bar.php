@@ -19,67 +19,8 @@ $r = mysql_fetch_array($s);
             <li>Оформить покупку</li>
             <li>Сообщения</li>
             <li>
-                <script>
-                    var prov = null;
-                    function validatePassword(input) {
-                        var test1 = "<?print $r['psw']?>";
-                        if (input.value != test1) {
-                            input.setCustomValidity("Старый пароль неверный.");
-                        }
-                        else
-                            input.setCustomValidity("");
-                    }
-                    function validatePassword1(input) {
-                        prov = input.value;
-                        if (input.value.length < 5) {
-                            input.setCustomValidity("Пароль должен быть больше 5 символов.");
-                        }
-                        else
-                            input.setCustomValidity("");
-                    }
-                    function validatePassword2(input) {
-                        if (input.value.length < 5) {
-                            input.setCustomValidity("Пароль должен быть больше 5 символов.");
-                        }
-                        else if (input.value != prov) {
-                            input.setCustomValidity("Пароли не совпадают!");
-                        }
-                        else
-                            input.setCustomValidity("");
-                    }
-                </script>
-                <form action="<? print "/id" . $_SESSION['id'] . "" ?>?chan=1" method="post">
-                    <a href="#win2" class="button button-red">Изменить пароль</a>
-                    <a href="#x" class="overlay" id="win2"></a>
-
-                    <div class="popup">
-                        <h3 align="center">Редактирование пароля</h3>
-
-                        <div class="row center-xs" style="margin-top:50px;">
-                            <div class="col-xs-12">
-                                <input type="password" name="old_pass" oninput="validatePassword(this)"
-                                       style="height:30px;width:300px"
-                                       placeholder="Старый пароль" required>
-                                <hr style="border-radius: 110px; width: 400px">
-                                <input type="password" name="new_pass1" oninput="validatePassword1(this)"
-                                       style="height:30px;width:300px"
-                                       placeholder="Новый пароль" required>
-                                <hr style="border-radius: 110px; width: 400px">
-                                <input type="password" name="new_pass2" oninput="validatePassword2(this)"
-                                       style="height:30px;width:300px"
-                                       placeholder="Повторите пароль" required>
-                                <br/>
-                                <button class="btn btn-large btn-primary" type="submit" style="margin-top:10px">
-                                    Изменить
-                                </button>
-                            </div>
-                        </div>
-
-                        <a class="close" title="Закрыть" href="#close"></a>
-                    </div>
-                </form>
+                <a style="cursor: pointer" data-toggle="modal" data-target="#myModal">Изменить пароль</a>
             </li>
-            <? print "<script>alert('" . $_SESSION['group'] . "')</script>"; ?>
             <? if ($_SESSION['group'] == "Администратор") { ?>
                 <hr>
                 <li><a href='/editor/'>Добавить товар</a></li>
@@ -87,3 +28,55 @@ $r = mysql_fetch_array($s);
         </ul>
         </div>
     </div>
+
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h3 align="center">Редактирование пароля</h3>
+            </div>
+            <div class="modal-body">
+                <form action="<? print "/id" . $_SESSION['id'] . "" ?>?chan=1" method="post">
+                    <div class="row center-xs" style="margin-top:50px;">
+                        <div class="col-xs-12">
+                            <input type="password" name="old_pass" oninput="validatePassword(this)"
+                                   style="height:30px;width:300px"
+                                   placeholder="Старый пароль" required>
+                            <hr style="border-radius: 110px; width: 400px">
+                            <input type="password" name="new_pass1" oninput="validatePassword1(this)"
+                                   style="height:30px;width:300px"
+                                   placeholder="Новый пароль" required>
+                            <hr style="border-radius: 110px; width: 400px">
+                            <input type="password" name="new_pass2" oninput="validatePassword2(this)"
+                                   style="height:30px;width:300px"
+                                   placeholder="Повторите пароль" required>
+                            <br/>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div class="row middle-xs">
+                    <div class="col-xs start-xs">
+                        <div class="box">
+                            <button class="btn btn-large btn-primary" type="submit" style="margin-top:10px">
+                                Изменить
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-xs">
+                        <div class="box"
+                        <button type="button" class="btn btn-large btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>

@@ -1,9 +1,9 @@
 <div class="form-group">
     <label for="sel1">Каталог:</label>
-    <select class="form-control" id="sel1">
+    <select class="form-control" id="cat">
         <?
         foreach (getCatalog('name') as $val):
-            print "<option>" . $val . "</option>";
+            print "<option value='" . $val . "'>" . $val . "</option>";
         endforeach;
         ?>
     </select>
