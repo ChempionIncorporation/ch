@@ -1,3 +1,4 @@
+<? session_start(); ?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -16,7 +17,7 @@
 <body>
 <?php 
 require_once($_SERVER['DOCUMENT_ROOT']."/modules/connect.php");
-require_once($_SERVER['DOCUMENT_ROOT']."/modules/menu_top.php");
+require_once($_SERVER['DOCUMENT_ROOT'] . "/pages/services/header.php");
 $category = "portfolio";
 //mysql_query("INSERT INTO reviews_U_1254(name,reviews,date) VALUES('coc','coc',now())") or die(mysql_error());
 ?>

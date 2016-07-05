@@ -1,4 +1,5 @@
-<? session_start();
+<? session_start(); ?>
+<?
 function connect()
 {//2UWXvGb2
     $conn = mysql_connect("champ00.mysql.ukraine.com.ua", "champ00_db", "222222") or die(mysql_error());
@@ -30,7 +31,6 @@ if (isset($_GET['quit']) && $_GET['quit'] == 1) {
     <link rel="stylesheet" href="/assets/css/font-awesome.css"><!-- MyStyle !-->
     <link rel="stylesheet" href="/assets/css/style.css"><!-- MyStyle !-->
     <script type="text/javascript" src="/assets/js/sprinkle.js"></script>
-
     <script type="text/javascript" src="/assets/js/jquery.js"></script>
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css"><!-- Fraem !-->
     <script src="/assets/js/bootstrap.min.js"></script>
@@ -38,7 +38,7 @@ if (isset($_GET['quit']) && $_GET['quit'] == 1) {
 
 </head>
 <body style="min-height:100%;position:relative;background: #e8e8e8">
-<div class="navbar navbar-inverse navbar-default" role="navigation" id="menu"
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="menu"
      style="border-radius:0px;border: 0px;background:#88212a;color:white">
     <div class="container">
         <div class="navbar-header">
@@ -52,18 +52,19 @@ if (isset($_GET['quit']) && $_GET['quit'] == 1) {
         <div class="collapse navbar-collapse">
             <div class="row">
                 <div class="col-xs">
-                    <div class="box">
-                        <a class="navbar-brand" href="" style="margin-top:-10px">
-                            <img class="logo" src="../../../assets/img/logo-head.png" alt="CHAMPION LOGO"
-                                 style="">
+                    <div class="box ">
+                        <a class="navbar-brand" href="/?ch=1" style="margin-top:-10px">
+                            <img class="logo" src="../../../assets/img/logo-head.png" width="130px" alt="CHAMPION LOGO"
+                                 style="position: absolute;left: 20px">
                         </a>
                     </div>
                 </div>
-                <div class="col-xs-9">
+                <div class="col-xs-7">
                     <div class="box">
-                        <ul class="nav navbar-nav"
-                        ">
-                        <li><a href="/" style="color: white">Главная</a></li>
+                        <ul class="nav navbar-nav" style="position:absolute">
+                            <li <? if ($_GET['ch'] == 1) print "class='active'" ?>><a href="/?ch=1 "
+                                                                                      style="color: white ">Главная</a>
+                            </li>
                         <!--                            <li><a href="/portfolio/" style="color: white">Портфолио</a></li>-->
                         <li>
                             <a style="color: white" onclick="Reformal.widgetOpen();return false;"
@@ -71,8 +72,9 @@ if (isset($_GET['quit']) && $_GET['quit'] == 1) {
                                 Отзывы
                             </a>
                         </li>
-                        <li><a style="color: white" href="/contacts/">Контакты</a></li>
-
+                            <li <? if ($_GET['ch'] == 2) print "class='active'" ?>><a style="color: white"
+                                                                                      href="/contacts/?ch=2">Контакты</a>
+                            </li>
                         <? if (!empty($_SESSION['password'])) { ?>
                             <li class="dropdown">
                                 <? print "<a style='color: white;' class='dropdown-toggle' data-toggle='dropdown' href='#'>"; ?>
@@ -91,6 +93,25 @@ if (isset($_GET['quit']) && $_GET['quit'] == 1) {
                                 </a>
                             </li>
                         <? } ?>
+                            <form action="/search" method="post">
+                                <li>
+                                    <div class="row">
+                                        <div class="col-xs-10" style="padding-top:10px">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" size="150px">
+												<span class="input-group-btn">
+													<button class="btn btn-group-xs" type="submit">
+                                                        <span class="glyphicon glyphicon-search"></span>
+                                                    </button>
+												</span>
+                                            </div>
+                                            <!-- /input-group -->
+                                        </div>
+                                        <!-- /.col-lg-6 -->
+                                    </div>
+                                    <!-- /.row -->
+                                </li>
+                            </form>
                         </ul>
                     </div>
                 </div>

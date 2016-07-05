@@ -1,4 +1,6 @@
 <?session_start();?>
+<!DOCTYPE html>
+<? include("header.php"); ?>
 <?php
 $url = $_GET['url'];
 //echo "<span style='color: #ffffff;font-size: 2rem'>".$url."</span>";
@@ -119,6 +121,7 @@ $a_fin = substr($a,$a_n);
 	<!-- <link rel="stylesheet" type="text/css" href="../../css-styles/champ.css" /> !-->
 	<link rel="stylesheet" type="text/css" href="/css-styles/body.css">
 	<!-- <link rel="stylesheet" type="text/css" href="../../css-styles/body.css"> -->
+
 	<link rel="stylesheet" type="text/css" href="/css-styles/css-1.css">
 	<!-- <link rel="stylesheet" type="text/css" href="../../css-styles/css-1.css"> -->
 	<!-- <script src="../../js/menu.js"></script> -->
@@ -146,14 +149,7 @@ $a_fin = substr($a,$a_n);
 
 <body style="background: #eee">
 
-
-
-
-<?php
-require_once($_SERVER['DOCUMENT_ROOT']."/modules/menu_top.php");
-?>
-   
-	<div id="list-menu" style="margin-top:80px"> 
+<div id="list-menu" style="margin-top:0px">
 		<?php
 		echo "
 							<a href='/polygraphy' title='Полиграфия'><span class='list-top-menu-icon poligraf-top ".$btn_1."'>Полиграфия</span></a>
@@ -181,10 +177,8 @@ require_once($_SERVER['DOCUMENT_ROOT']."/modules/menu_top.php");
 		echo "</div>";
 	}
 	?>
-
 	<?php
-	require_once($_SERVER['DOCUMENT_ROOT']."/modules/menu_left.php");
-
+	include_once '../../modules/menu_left.php';
 	if(empty($_SESSION['i'])){
 		$i = $_SESSION['i'] = 0;
 		$_SESSION['uri'] = "";
@@ -199,23 +193,21 @@ require_once($_SERVER['DOCUMENT_ROOT']."/modules/menu_top.php");
 	foreach($u as $value=>$key):
 	//	print "<script>alert('".$u.") ".$key."[".$_SESSION['uri']."]')</script>";
 	endforeach;
-
 	?>
 
 
-
 	<div id="content-left_menu">
+
 		<?if($_GET['url'] == "ofsetnayaitsifrovayapechat")
 			print "<a class='back-fu'  href='/pages/services/offset.php'>Прайс</a>";
 
 ?>
-
 		<div id="crumbs">
 
 		<div class="row" style=" margin-left: 0px;">
 			<div class="col-xs" >
 				<a href="/">Главная</a>
-			<?php 
+				<?php
 			$uri = explode("/", $_SERVER[REQUEST_URI]);
 			$i = 0;
 			foreach ($uri as $v):
@@ -247,15 +239,9 @@ require_once($_SERVER['DOCUMENT_ROOT']."/modules/menu_top.php");
 					</div>
 				</div>
 			<?}?>
-
 	</div>
-			
-				
-			
-		</div> 
+		</div>
 	</div>
-
-
 
 
 		<div id="content-left_menu">

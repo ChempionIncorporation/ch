@@ -1,9 +1,6 @@
 <div id="left_menu">
 <?php
 require_once($_SERVER['DOCUMENT_ROOT']."/modules/connect.php");
-
-
-
 if(isset($_GET['under'])) {
 	$under = $_GET['under'];
 	print "<h3>ПОДРАЗДЕЛЫ</h3>\n<ul>";
