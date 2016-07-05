@@ -1,22 +1,52 @@
+<? session_start(); ?>
+<?
+function connect()
+{//2UWXvGb2
+	$conn = mysql_connect("champ00.mysql.ukraine.com.ua", "champ00_db", "222222") or die(mysql_error());
+	$tbl = mysql_select_db("champ00_db", $conn) or die(mysql_error());
+	mysql_query("SET NAMES utf8");
+	return $tbl;
+}
 
+
+if (isset($_GET['quit']) && $_GET['quit'] == 1) {
+	$_SESSION["password"] = null;
+	$_SESSION['id'] = null;
+	$_SESSION['login'] = null;
+	$_SESSION['f'] = null;
+	$_SESSION['i'] = null;
+	$_SESSION['o'] = null;
+	$_SESSION['group'] = null;
+//    print  "<script>alert('Вы вышли из системы')</script>";
+	print "<meta http-equiv='refresh' content='0; url=/'>";
+}
+
+?>
+<html>
 <head>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="../assets/css/flexboxgrid.css"> <!-- Blocks !-->
-	<link rel="stylesheet" href="../assets/css/bootstrap-theme.min.css"><!-- Fraem !-->
-	<link rel="stylesheet" href="../assets/css/bootstrap.min.css"><!-- Fraem !-->
-	<link rel="stylesheet" href="../assets/css/ekko-lightbox.min.css"><!-- Library !-->
-	<link rel="stylesheet" href="../assets/css/ChempStyle.css"><!-- MyStyle !-->
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="/assets/css/flexboxgrid.css">
+	<!-- Blocks !-->
+	<link rel="stylesheet" href="/assets/css/bootstrap-theme.min.css">
+	<!-- Fraem !-->
+	<link rel="stylesheet" href="/assets/css/ChempStyle.css">
+	<!-- MyStyle !-->
+	<link rel="stylesheet" href="/assets/css/font-awesome.css">
+	<!-- MyStyle !-->
+	<link rel="stylesheet" href="/assets/css/style.css">
+	<!-- MyStyle !-->
+	<script type="text/javascript" src="/assets/js/sprinkle.js"></script>
+	<script type="text/javascript" src="/assets/js/jquery.js"></script>
+	<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+	<!-- Fraem !-->
+	<script src="/assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/pages/services/shop/modules/prod/List_prod.js"></script>
 
-	<script src="../assets/js/jquery.min.js"></script>
-	<script src="../assets/js/bootstrap.min.js"></script>
-	<script src="../assets/js/jquery.mosaicflow.min.js"></script>
-	<script type="text/javascript" src="../assets/js/jquery.js"></script>
 </head>
-<body>
-
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background:#88212a;color:white">
-	<div class="container" style="color: white">
+<body style="min-height:100%;position:relative;background: #e8e8e8">
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="menu"
+	 style="border-radius:0px;border: 0px;background:#88212a;color:white">
+	<div class="container">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 				<span class="sr-only">Toggle navigation</span>
@@ -26,50 +56,68 @@
 			</button>
 		</div>
 		<div class="collapse navbar-collapse">
-			<a class="navbar-brand" href="#" style="margin-top:-10px">
-				<img class="logo" src="../assets/img/logo-head.png" alt="CHAMPION">
-			</a>
-			<div class="row center-xs">
-				<div class="col-xs-8" >
+			<div class="row">
+				<div class="col-xs">
+					<div class="box ">
+						<a class="navbar-brand" href="/?ch=1" style="margin-top:-10px">
+							<img class="logo" src="../../../assets/img/logo-head.png" alt="CHAMPION LOGO"
+								 style="position: absolute;left: 20px">
+						</a>
+					</div>
+				</div>
+				<div class="col-xs-7">
 					<div class="box">
-						<ul class="nav navbar-nav" style="padding: 0px 40px;">
-							<li>
+						<ul class="nav navbar-nav"
+						">
+						<li <? if ($_GET['ch'] == 1) print "class='active'" ?>><a href="/?ch=1 " style="color: white">Главная</a>
+						</li>
+						<!--                            <li><a href="/portfolio/" style="color: white">Портфолио</a></li>-->
+						<li>
+							<a style="color: white" onclick="Reformal.widgetOpen();return false;"
+							   href="http://champion.reformal.ru">
+								Отзывы
+							</a>
+						</li>
+						<li <? if ($_GET['ch'] == 2) print "class='active'" ?>><a style="color: white"
+																				  href="/contacts/?ch=2">Контакты</a>
+						</li>
+						<? if (!empty($_SESSION['password'])) { ?>
+							<li class="dropdown">
+								<? print "<a style='color: white;' class='dropdown-toggle' data-toggle='dropdown' href='#'>"; ?>
+								<? print $_SESSION['i'] . " " . $_SESSION['o'] ?>
+								<span class="caret"></span>
+								<ul class="dropdown-menu" style="background-color: rgba(255, 255, 255, 0.95)">
+									<? print"<li><a href='/id" . $_SESSION['id'] . "'>Профиль</a></li>"; ?>
+									<? print"<li><a href='/id" . $_SESSION['id'] . "/list'>Список заказов</a></li>"; ?>
+									<? print"<li><a href='?quit=1'>Выход</a></li>"; ?>
+								</ul>
 							</li>
-							<li class="active"><a href="/">Главная</a></li>
-							<li><a href="/portfolio/">Портфолио</a></li>
-							<li><a onclick="Reformal.widgetOpen();return false;" href="http://champion.reformal.ru">
-									Отзывы
+						<? } else { ?>
+							<li <? if ($_GET['auth'] == 1) print "class='active'" ?>>
+								<a style="color: white" href="/auth/">
+									Вход
 								</a>
 							</li>
-							<li><a href="/contacts/">Контакты</a></li>
-							<li><a href="/auth/">Вход</a></li>
-							<!--<li>
-                                    <div class="row">
-                                        <div class="col-xs"  style="background: cadetblue">
-                                            <form action="/search" method="post">
-                                                <input size="10" class="search" name="search">
-                                                <input class="bnt_search" type="submit" value="🔍">
-                                            </form>
-                                        </div>
-                                    </div>
-                                </li>!-->
-							<form action="/search" method="post" >
-								<li>
-									<div class="row">
-										<div class="col-xs" style="padding-top:10px">
-											<div class="input-group">
-												<input type="text" class="form-control" size="150px">
+						<? } ?>
+						<form action="/search" method="post">
+							<li>
+								<div class="row">
+									<div class="col-xs-10" style="padding-top:10px">
+										<div class="input-group">
+											<input type="text" class="form-control" size="150px">
 												<span class="input-group-btn">
-													<button class="btn btn-default" type="button">
+													<button class="btn btn-group-xs" type="submit">
 														<span class="glyphicon glyphicon-search"></span>
 													</button>
 												</span>
-											</div><!-- /input-group -->
-										</div><!-- /.col-lg-6 -->
-									</div><!-- /.row -->
-
-								</li>
-							</form>
+										</div>
+										<!-- /input-group -->
+									</div>
+									<!-- /.col-lg-6 -->
+								</div>
+								<!-- /.row -->
+							</li>
+						</form>
 						</ul>
 					</div>
 				</div>
@@ -77,6 +125,8 @@
 		</div><!--/.nav-collapse -->
 	</div>
 </div>
+
+
 <script type="text/javascript">
 	var reformalOptions = {
 		project_id: 973649,
@@ -90,45 +140,3 @@
 	document.getElementsByTagName('body')[0].appendChild(script);
 	script.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'media.reformal.ru/widgets/v3/reformal.js';
 </script>
-<!--
-<div id="topMenuVertBackground">
-	<div class="width-1024">
-				<div class="regLog">
-					<ul>
-						<li>
-							<a href="/"><img class="logo" width="100px" src="/img/logo-head.png" alt="CHAMPION LOGO" /></a>
-						</li>
-						<?
-/*
-						if($_SESSION['gleb'] != "" || $_SESSION['login'] != "g")
-							print "<li>
-								<a target='_blank' href='".$_SERVER['document_root']."/pages/services/profile/?id=".$_SESSION['gleb']."&i=".$_SESSION['login']."'>".$_SESSION['login']."</a>
-							</li>";
-*/
-						?>
-						<li>
-						<li><a href="/">Главная</a></li>
-						<li><a href="/portfolio/">Портфолио</a></li>
-						<li><a href="/clients">Клиенты</a></li>
-						<li><a href="/help">Помощь</a>
-						</li>
-						<li><a href="/contacts/">Контакты</a></li>
-						<li>
-
-							<div class="search">
-								<form action="/search" method="post">
-									<input size="10" class="search" name="search">
-									<input class="bnt_search" type="submit" value="🔍">
-								</form>
-							</div>
-						</li>
-					</ul>
-
-				</div>
-	</div>
-</div>
-!-->
-
-
-
-

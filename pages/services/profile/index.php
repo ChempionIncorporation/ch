@@ -1,10 +1,13 @@
-<?session_start()?>
+<?session_start();?>
+    <!DOCTYPE html>
     <meta charset="utf-8">
 <?
-include_once("../header.php");
 include("change_pass.php");
 //<form action="/id226?chan=1" method="post">
 ?>
+</br>
+</br>
+</br>
     <form action="<? print "/id" . $_SESSION['id'] . "" ?>?chan=1" method="post">
     <div class="container" style="">
         <div class="row top-xs" style="">

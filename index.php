@@ -1,10 +1,6 @@
-<?
-include("pages/services/header.php");
-?>
-<head>
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.mosaicflow.min.js"></script>
-</head>
+<? session_start(); ?>
+<!DOCTYPE html>
+<? include("pages/services/header.php"); ?>
 <body>
 
 <div class="container" style="width: 100%;">
@@ -119,9 +115,12 @@ include("pages/services/header.php");
 	<div class="row center-xs">
 		<div class="col-xs-4" style="background: #fff;border: 2px solid #eee;margin:10px;">
 			<div class="col-xs-0">
-				<div class="box" style="text-align: center;padding:10px; font-size: 20pt;background:#88212A;color: #fff;font-weight:900">
+				<a href="test1.php">
+					<div class="box"
+						 style="text-align: center;padding:10px; font-size: 20pt;background:#88212A;color: #fff;font-weight:900">
 					Почему именно мы
-				</div>
+					</div>
+				</a>
 
 				<div class="row middle-xs" style="padding:20px;font-size:12pt;text-align:left;">
 					<span class="glyphicon glyphicon-user" style="font-size:30pt;"></span>
