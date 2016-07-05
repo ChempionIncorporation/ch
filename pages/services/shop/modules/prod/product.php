@@ -1,4 +1,4 @@
-<?php
+<?php session_start();
 connect();
 $z = mysql_query("select * from stend_pn where id=" . $_GET['id']);
 $re = mysql_fetch_array($z);
@@ -11,6 +11,17 @@ if($re['height'] != 0 && $re['width'] != 0) {
 }
 include('/list.php');
 ?>
+<script>
+    var image = "/pages/services/shop/modules/editor/modules/uploads/<? print $re['img'] ?>";
+    var k_p = "<?print $re['price']?>";
+    var k_n = "<?print $re['name']?>";
+    var input = "<?print $re['inp']?>";
+    var radio = "<?print $re['rad']?>";
+    var check = "<?print $re['che']?>";
+
+
+</script>
+<script src="/pages/services/shop/modules/prod/AjaxListGet.js"></script>
 <div class="row" style="">
     <div class="col-xs-12" style="">
         <div class="box" style="font-weight:900;font-size:20pt;text-align:center">
@@ -60,7 +71,7 @@ include('/list.php');
         </style>
         <div class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="170">
             <div class="box" style="">
-                Тип: <b><? print $re['type_price'] ?></b>
+                Тип: <b><? print $re['catalog'] ?></b>
             </div>
             <div class="box" style="">
                 Наименование: <b><? print $re['name'] ?></b>
@@ -86,7 +97,7 @@ include('/list.php');
                         </div>
                     </div>
                     <div class='col-xs end-xs'>
-                        <input type='text' class='konstr' id='konstr' name='price' size='5' maxlength='3' value='1'><br>
+                        <input type='number' class='konstr' id='konstr' name='price' size='5' maxlength='3' value='1'><br>
                     </div>
                 </div>";
                             ?></div>
@@ -105,7 +116,7 @@ include('/list.php');
             </div>
         </div>
     </div>
-
 </div>
+
 
 

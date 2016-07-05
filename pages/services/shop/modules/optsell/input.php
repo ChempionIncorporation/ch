@@ -1,6 +1,7 @@
 <div class='row'>
     <div class="col-xs">
         <div class="box"><?php
+            $count_inp = 0;
             $in = explode("+", $re['inp']);
             foreach ($in as $val):
                 $arr = explode("|", $val);
@@ -15,9 +16,10 @@
                         </div>
                     </div>
                     <div class='col-xs end-xs'>
-                        <input type='text' class='konstr' id='konstr' name='price' size='5' maxlength='3' value='1'><br>
+                        <input type='number' id='input_" . $count_inp . "' name='price' size='5' maxlength='3' value='0'><br>
                     </div>
                 </div>";
+                $count_inp++;
             endforeach;
             ?>
         </div>
