@@ -5,9 +5,9 @@ $z = mysql_query("select * from p_catalog");
 while($re = mysql_fetch_array($z)){
 ?>
 <!-- !-->
-<div class="col-xs-4" style="border-bottom:1px solid #e8e8e8;margin: 10px 0px;border-radius: 10px;" >
+    <div class="col-xs" style="border-bottom:1px solid #e8e8e8;margin: 10px 0px;border-radius: 10px;">
     <div class="box">
-        <img src="/../../img/upload/montaj/razdel/<?print $re["foto"];?>" width="200px">
+        <img src="/../../img/upload/montaj/razdel/<? print $re["foto"]; ?>" width="250px">
     </div>
     <div class="box" style="text-align:center;min-height:50px;">
         <a href="/shop/<?print $re["name"];?>">

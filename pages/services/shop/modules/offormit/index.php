@@ -25,118 +25,91 @@ include('../../../header.php');
                     <!--                    -->
                     <script>
                         $(function(){
-                            var g = sessionStorage.getItem('Gleb');
-//                            alert(g);
-                            var gl = g.split("†");
-                            var o = 0;
-                            var i = gl.length - 1;
-//                            for(var i = gl.length;i > 0;i--) {
+                            var mc = sessionStorage.getItem('Count');
+                            var totalPrice = 0;
+                            for (var i = 1; i <= mc; i++) {
+                                var g = sessionStorage.getItem('Gleb_' + i);
+                                var gl = g.split("†");
+                                var gl_i = gl.length - 1;
 
-                            var gleb = gl[4].split("|");
-                            $('.Prod_name').html(
-                                "<div class='row'>" +
-                                "<div class='col-xs'>" +
-                                "<div class='box'>" +
-                                "<font style='font-size:25pt;margin:-60px;font-weight: 800;text-decoration: underline'>" + gleb[1] + "</font>" +
-                                "</div>" +
-                                "<div class='box'>" +
-                                "<font style='font-size:15pt;margin-left:-20px'>Цена конструкции: " + gleb[2] + " грн.</font>" +
-                                "</div>" +
-                                "<div class='box'>" +
-                                "<font style='font-size:15pt;margin-left:-20px'>Количество: " + gleb[3] + " ед.</font>" +
-                                "</div>" +
-                                "</div>" +
-                                "</div>"
-                            );
+                                var gleb = gl[gl.length - 1].split("|");
+                                //Проверка на одинаковое имя, если присутствует тогда слд строка не пишеться .
+                                var gg = "";
+                                if (gg[i] != gleb[1]) {
+                                    gg[i] = gleb[1];
+                                }
+                                if (gleb[1] != undefined || gleb[1] != null) {
+                                    $('.Form_Products').append(
+                                        "<div onclick='clo(" + i + ",2)' class='pod" + i + "' style='color:red;cursor:pointer'>Подтвердить</div>" +
+                                        "<div class='mclo_" + i + "' style='border:1px solid #e8e8e8'>" +
+                                        "<div class='row' style='padding:20px;'>" +//gl_img_name
+                                        "<div class=col-xs-4>" +
+                                        "<div class='box'><img src='" + gleb[0] + "' height='250px' width='200px'></div>" +
+                                        "</div>" +
+                                        "<div class='col-xs-8'>" +
+                                        "<div onclick='clo(" + i + ",1)' class='close clo_" + i + "' style='font-weight:900;color:red;text-align:left'>X</div>" +
+                                        "<div class=box' style=font-size:24pt;padding:10px>" + gleb[1] + "</div>" +
+                                        "<div class=box>Цена конструкции: " + gleb[2] + " грн.</div>" +
+                                        "<div class=box>Количество: " + gleb[3] + " ед.</div>" +
+                                        "<div class=box>" +
+                                        "<table border=1 class='fora_" + i + "' style='margin:15px;' width='100%'>" +
+                                        "<tr>" +
+                                        "<th>Наименование</th>" +
+                                        "<th> Цена</th>" +
+                                        "<th>Кол</th>" +
+                                        "<th>Итого</th>" +
+                                        "</tr>" +
+                                        "</table>" +
+                                        "</div>" +
+                                        "<div class=bolt></div>" +
+                                        "</div>" +
+                                        "</div>" +
+                                        "</div>");
+                                    totalPrice = totalPrice * 1 + gleb[2] * 1;
 
-                            $('.Select_prod').append("<div class='row' style='border-bottom:1px solid silver'>" +
-                                "<div class='col-xs-2'>" +
-                                "<div class='box'>Ном.</div>" +
-                                "</div>" +
-                                "<div class='col-xs'>" +
-                                "<div class='box'>Наименование</div>" +
-                                "</div>" +
-                                "<div class='col-xs'>" +
-                                "<div class='box'>Цена</div>" +
-                                "</div>" +
-                                "<div class='col-xs'>" +
-                                "<div class='box'>Количество</div>" +
+                                    var otpri = gleb[2];
+                                    for (var j = 0; j < gl.length - 1; j++) {
+                                        var gleb_sub = gl[j].split("|");
+
+                                        if (gleb_sub[4] == undefined || gleb_sub[4] == "") {
+                                            gleb_sub[4] = 1;
+                                        }
+                                        $('.fora_' + i).append(
+                                            "<tr>" +
+                                            "<td>" + gleb_sub[2] + "</td>" +
+                                            "<td>" + gleb_sub[3] + "</td>" +
+                                            "<td>" + gleb_sub[4] + "</td>" +
+                                            "<td>" + gleb_sub[3] * gleb_sub[4] + " грн.</td>" +
+                                            "</tr>"
+                                        );
+                                        otpri = gleb_sub[3] * gleb_sub[4] + otpri * 1;
+                                        totalPrice = gleb_sub[3] * gleb_sub[4] + totalPrice;
+                                    }
+                                    $(".pod" + i).css("display", "none");
+                                }
+                            }
+                            $('.Form_Products').append(
+                                "<div class='row  center-xs'>" +
+                                "<div class=col-xs>" +
+                                "<div class=box style='font-size:20pt'>Общий итого: " + totalPrice + " грн.</div>" +
                                 "</div>" +
                                 "</div>");
-                            while (i >= 0) {
-                                i--;
-                                o++;
-                                var gle = gl[i].split("|");
-                                $('.Select_img').html("<img src='" + gle[0] + "' height='250px' width='265px' style='border-radius: 50%'>");
-
-                                if (gle[4] == "" || gle[4] == undefined)
-                                    var tt =
-                                        "<div class='row'>" +
-                                        "<div class='col-xs-2' style='border-right:1px solid silver'>" +
-                                        "<div class='box'>" + o + "</div>" +
-                                        "</div>" +
-                                        "<div class='col-xs' style='border-right:1px solid silver'>" +
-                                        "<div class='box'>" + gle[2] + "</div>" +
-                                        "</div>" +
-                                        "<div class='col-xs' style='border-right:1px solid silver'>" +
-                                        "<div class='box'>" + gle[3] + "</div>" +
-                                        "</div>" +
-                                        "<div class='col-xs'>" +
-                                        "<div class='box'>Добавлено</div>" +
-                                        "</div>" +
-                                        "</div>";
-                                else
-
-                                    var tt =
-                                        "<div class='row'>" +
-                                        "<div class='col-xs-2' style='border-right:1px solid silver'>" +
-                                        "<div class='box'>" + o + "</div>" +
-                                        "</div>" +
-                                        "<div class='col-xs' style='border-right:1px solid silver'>" +
-                                        "<div class='box'>" + gle[2] + "</div>" +
-                                        "</div>" +
-                                        "<div class='col-xs' style='border-right:1px solid silver'>" +
-                                        "<div class='box'>" + gle[3] + "</div>" +
-                                        "</div>" +
-                                        "<div class='col-xs-5'>" +
-                                        "<div class='box'>" + gle[4] + "</div>" +
-                                        "</div>" +
-                                        "</div>";
-
-                                $('.Select_prod').append(tt);
-                            }
-//                            $.ajax({
-//                                url: "l.php",
-//                                type: 'get',
-//                                data:{'val': c},
-//                                response:'text',
-//                                cache: false,
-//                                async: false,
-//                                success: function(data){
-//                                   console.log("ok!");
-//                                }
-//                            });
                         });
+                        function clo(num, stad) {
+                            if (stad == 1) {
+                                $('.mclo_' + num).css("display", "none");
+                                $('.pod' + num).css("display", "block");
+                            }
+                            if (stad == 2) {
+                                $('.pod' + num).css("display", "none");
+//                                alert("OK!");
+                                sessionStorage.setItem("Gleb_" + num, null);
+                            }
+                        }
                     </script>
                     <!--                    -->
-                    <div class="row">
-                        <div class="col-xs-5 start-xs">
-                            <div class="box">
-                                <div class="Select_img"></div>
-                            </div>
-                        </div>
-                        <div class="col-xs">
-                            <div class="box">
-                                <div class="Prod_name"></div>
-                            </div>
-                            <div class="box">
-                                <div class="Select_prod"
-                                     style='padding:5px;border: 2px solid silver;overflow: hidden'></div>
-                            </div>
-                        </div>
-                    </div>
-                        <div class="zcart">
-                        </div>
+                    <div class="clo" style="font-weight:900;color: red;text-align:right"></div>
+                    <div class="Form_Products"></div>
                     <div class="row" style="padding:20px;">
                         <div class="col-xs center-xs">
                             <div class="box">

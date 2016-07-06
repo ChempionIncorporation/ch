@@ -1,11 +1,12 @@
 <? session_start(); ?>
 <?
 function connect()
-{//2UWXvGb2
-    $conn = mysql_connect("champ00.mysql.ukraine.com.ua", "champ00_db", "222222") or die(mysql_error());
+{//2UWXvGb2   champ00.mysql.ukraine.com.ua
+//    $conn = mysql_connect("91.206.201.169", "champ00_db", "222222") or die(mysql_error());
+    $conn = mysql_connect("91.206.201.169", "champ00_db", "222222") or die(mysql_error());
     $tbl = mysql_select_db("champ00_db", $conn) or die(mysql_error());
     mysql_query("SET NAMES utf8");
-    return $tbl;
+//    return $tbl;
 }
 if (isset($_GET['quit']) && $_GET['quit'] == 1) {
     $_SESSION["password"] = null;
@@ -47,11 +48,6 @@ if (isset($_GET['quit']) && $_GET['quit'] == 1) {
                 <span class="icon-bar"></span>
             </button>
         </div>
-
-
-        <?
-        print "<script>alert('')</script>";
-        ?>
 
         <div class="collapse navbar-collapse">
             <div class="row">

@@ -1,7 +1,6 @@
 <?php
 include('/list.php');
 connect();
-print "<script>alert('" . $_GET['view'] . "')</script>";
 $z = mysql_query("select * from stend_pn where cat='" . $_GET['view'] . "'");
 
 //$res = mysql_fetch_array($z);
@@ -9,9 +8,9 @@ while($re = mysql_fetch_array($z)){
 ?>
 
 <!-- !-->
-<div class="col-xs-4" style="border-bottom:1px solid #e8e8e8;margin: 10px 0px;border-radius: 10px;" >
+    <div class="col-xs" style="border-bottom:1px solid #e8e8e8;margin: 10px 0px;border-radius: 10px;">
     <div class="box">
-        <img src="/pages/services/shop/modules/editor/modules/uploads/<? print $re["img"]; ?>" width="200px">
+        <img src="/pages/services/shop/modules/editor/modules/uploads/<? print $re["img"]; ?>" width="250px">
     </div>
     <div class="box" style="text-align:center;min-height:50px;">
     <a href="/shop/<?print $_GET['view']."/".$re["id"];?>">

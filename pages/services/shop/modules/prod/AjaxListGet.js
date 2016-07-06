@@ -33,7 +33,7 @@ $(function () {
                 if (list_name_input !== "")//image+"|"+k_n + "|" +
                     list_name_input = image + "|" + k_n + "|" + ii[0] + "|" + ii[1] + "|" + my_input[q] + "†" + list_name_input;
                 else
-                    list_name_input = image + "|" + k_n + "|" + inp[q] + "|" + my_input[q];
+                    list_name_input = image + "|" + k_n + "|" + ii[0] + "|" + ii[1] + "|" + my_input[q];
                 insert.append(
                     "<div class='row'>" +
                     "<div class='col-xs'>" +
@@ -108,8 +108,20 @@ $(function () {
         }
         if (list_name_check != "")
             ft = list_name_check + "†" + ft;
+        var my_count = 0;
+        if (sessionStorage.getItem("Count") <= 0) {
+            my_count = sessionStorage.getItem("Count");
+            my_count++;
+            sessionStorage.setItem("Count", my_count);
+            alert(sessionStorage.getItem("Count"));
+        } else {
+            my_count = sessionStorage.getItem("Count");
+            my_count++;
+            sessionStorage.setItem("Count", my_count);
+            alert(sessionStorage.getItem("Count"));
+        }
 
-        sessionStorage.setItem("Gleb", ft);
-        alert(ft);
+        sessionStorage.setItem("Gleb_" + sessionStorage.getItem("Count"), ft);
+        //alert(sessionStorage.getItem("Gleb"));
     });
 });
