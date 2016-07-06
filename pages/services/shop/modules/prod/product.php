@@ -9,7 +9,7 @@ if($re['height'] != 0 && $re['width'] != 0) {
 }else if($re['height'] > 0 && $re['width'] <= 0) {
     $size = "(" . $re['height'] . "см.)";
 }
-include('/list.php');
+include('list.php');
 ?>
 <script>
     var image = "/pages/services/shop/modules/editor/modules/uploads/<? print $re['img'] ?>";
@@ -106,7 +106,7 @@ include('/list.php');
             </div>
             <div class="box">
                 <?
-                include("/modules/optsell/index.php");
+                include("../optsell/index.php");
                 ?>
                 <div class="col-xs" style="text-align:center;margin-top:10px;">
                     *Все цены указаны с учетом НДС
