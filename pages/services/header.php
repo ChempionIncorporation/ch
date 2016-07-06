@@ -7,8 +7,6 @@ function connect()
     mysql_query("SET NAMES utf8");
     return $tbl;
 }
-
-
 if (isset($_GET['quit']) && $_GET['quit'] == 1) {
     $_SESSION["password"] = null;
     $_SESSION['id'] = null;
