@@ -10,13 +10,14 @@ $(function () {
             "<div class='col-xs-4 start-xs'>" +
             "<div class='box'><img src='" + image + "' width='180'></div>" +
             "</div>" +
-
             "<div class='col-xs'>" +
             "<div class='box center-xs'><b style='font-size:14pt;'>" + k_n + "</b></div>" +
             "<div class='box start-xs'>Цена конструкции: " + k_p + " грн.</div>" +
             "<div class='box start-xs'>Количество: " + k_col + " ед.</div>" +
+            "<div class='box start-xs'>Итого: " + k_p * k_col + " ед.</div>" +
             "</div>" +
             "</div>");
+        k_p = k_p * k_col;
         if (ft == "")
             ft = image + "|" + k_n + "|" + k_p + "|" + k_col;
         else
@@ -30,7 +31,7 @@ $(function () {
                 ////alert(q+"|"+$('#input_'+q).val()+"|"+my_input[q]);
                 var ii = inp[q].split("|");
                 if (list_name_input !== "")//image+"|"+k_n + "|" +
-                    list_name_input = image + "|" + k_n + "|" + ii[0] + "|" + ii[1] + "|" + my_input[q] + "+" + list_name_input;
+                    list_name_input = image + "|" + k_n + "|" + ii[0] + "|" + ii[1] + "|" + my_input[q] + "†" + list_name_input;
                 else
                     list_name_input = image + "|" + k_n + "|" + inp[q] + "|" + my_input[q];
                 insert.append(
@@ -62,7 +63,7 @@ $(function () {
         for (var r = 0; r < ra.length; r++) {
             if ($("#radio_" + r).prop('checked')) {
                 if (list_name_radio !== "")
-                    list_name_radio = image + "|" + rad[0] + "|" + ra[r] + "+" + list_name_radio;
+                    list_name_radio = image + "|" + rad[0] + "|" + ra[r] + "†" + list_name_radio;
                 else
                     list_name_radio = image + "|" + rad[0] + "|" + ra[r] + "|";
                 var ra2 = ra[r].split("|");
@@ -89,7 +90,7 @@ $(function () {
         for (var e = 0; e < che.length; e++) {
             if ($("#check_" + e).prop('checked')) {
                 if (list_name_check !== "")
-                    list_name_check = image + "|" + c[0] + "|" + che[e] + "+" + list_name_check;
+                    list_name_check = image + "|" + c[0] + "|" + che[e] + "†" + list_name_check;
                 else
                     list_name_check = image + "|" + c[0] + "|" + che[e] + "|";
                 var cq = che[e].split("|");

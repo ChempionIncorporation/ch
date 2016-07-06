@@ -24,7 +24,7 @@ if (isset($_GET['quit']) && $_GET['quit'] == 1) {
 ?>
 <html>
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" type="html">
     <link rel="stylesheet" href="/assets/css/flexboxgrid.css"> <!-- Blocks !-->
     <link rel="stylesheet" href="/assets/css/bootstrap-theme.min.css"><!-- Fraem !-->
     <link rel="stylesheet" href="/assets/css/ChempStyle.css"><!-- MyStyle !-->
