@@ -2,7 +2,7 @@
 <?
 function connect()
 {//2UWXvGb2   champ00.mysql.ukraine.com.ua
-//    $conn = mysql_connect("91.206.201.169", "champ00_db", "222222") or die(mysql_error());
+//    $conn = mysql_connect("91.206.201.169", "champ00_db", "222222") or die(mysql_error(123123123123123));
     $conn = mysql_connect("91.206.201.169", "champ00_db", "222222") or die(mysql_error());
     $tbl = mysql_select_db("champ00_db", $conn) or die(mysql_error());
     mysql_query("SET NAMES utf8");
