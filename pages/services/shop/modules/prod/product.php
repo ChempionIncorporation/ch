@@ -106,7 +106,7 @@ include('list.php');
             </div>
             <div class="box">
                 <?
-                include("../optsell/index.php");
+                include("/../optsell/index.php");
                 ?>
                 <div class="col-xs" style="text-align:center;margin-top:10px;">
                     *Все цены указаны с учетом НДС

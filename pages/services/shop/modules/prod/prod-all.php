@@ -1,5 +1,5 @@
 <?php
-include('list.php');
+include('/list.php');
 connect();
 print "<script>alert('" . $_GET['view'] . "')</script>";
 $z = mysql_query("select * from stend_pn where cat='" . $_GET['view'] . "'");

@@ -49,6 +49,12 @@ if (isset($_GET['quit']) && $_GET['quit'] == 1) {
                 <span class="icon-bar"></span>
             </button>
         </div>
+
+
+        <?
+        print "<script>alert('')</script>";
+        ?>
+
         <div class="collapse navbar-collapse">
             <div class="row">
                 <div class="col-xs">
