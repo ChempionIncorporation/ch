@@ -1,10 +1,4 @@
 
-
-
-
-
-
-
 var p1 = true;
 var p2 = true;
 var p3 = true;

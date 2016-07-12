@@ -1,4 +1,3 @@
-
 $(function () {
     $('#pokupka').click(function () {
         var k_col = $('.konstr').val();
@@ -77,7 +76,7 @@ $(function () {
                     "<div class='box'> (+" + ra2[1] + " грн.)</div>" +
                     "</div>" +
                     "</div>");
-                al = ra2[r] * 1 + al;
+                al = ra2[1] * 1 + al;
             }
         }
         if (list_name_radio != "")
@@ -114,12 +113,10 @@ $(function () {
             my_count = sessionStorage.getItem("Count");
             my_count++;
             sessionStorage.setItem("Count", my_count);
-            //alert(sessionStorage.getItem("Count"));
         } else {
             my_count = sessionStorage.getItem("Count");
             my_count++;
             sessionStorage.setItem("Count", my_count);
-            //alert(sessionStorage.getItem("Count"));
         }
         sessionStorage.setItem("Gleb_" + sessionStorage.getItem("Count"), ft);
         sessionStorage.setItem("APrice_" + sessionStorage.getItem("Count"), al);
@@ -128,13 +125,6 @@ $(function () {
         for(var i=0; i< sessionStorage.getItem("Count"); i++){
             all_p = sessionStorage.getItem("APrice_"+i)*1 + all_p;
         }
-
-        $('itog').html("Товаров: ("+sessionStorage.getItem("Count")+":"+all_p+ " грн.)");
-
-
-
-
-        //alert(sessionStorage.getItem("Gleb_" + sessionStorage.getItem("Count")));
-        //alert(sessionStorage.getItem("Gleb"));
+        ShowCart();
     });
 });

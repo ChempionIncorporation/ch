@@ -40,38 +40,52 @@ if(checkuser($_SESSION['password']) < 70){
     }
 </style>
 <div class="container" style="margin-top:100px">
-    <div class="row middle-xs" style="background: #88212a;border:2px solid silver;">
+    <div class="row middle-xs" style="height:70px;background: #88212a;border:2px solid silver;">
         <div class="col-xs">
             <div class="box" >
                 <h2 style="font-weight:800;text-align: center;">Мобильные стэнды</h2>
             </div>
         </div>
         <script>
-            $(function(){
-                var po = 0, count = 0;
-                for(var i=0; i <= sessionStorage.getItem("Count"); i++){
-                    po = sessionStorage.getItem("APrice_"+i)*1 + po*1;
-                }
-                if(sessionStorage.getItem("Count") == null)
-                    count = 0;
-                else
-                    count = sessionStorage.getItem("Count");
-               $('itog').html("Товаров: ("+count+":"+po+ " грн.)");
-            });
+            function ShowCart()
+            {
+                    var po = 0, count = 0;
+                    for (var i = 0; i <= sessionStorage.getItem("Count"); i++) {
+                        po = sessionStorage.getItem("APrice_" + i) * 1 + po;
+                    }
+                    if (sessionStorage.getItem("Count") == null)
+                        count = 0;
+                    else
+                        count = sessionStorage.getItem("Count");
+                    setTimeout(function () {
+                        $('itog').html(
+                            "<gleb style='font-size:10pt'>" +
+                            "<span  class='glyphicon glyphicon-shopping-cart' aria-hidden='true'></span> " +
+                            "Товар(ов): "
+                            + count +
+                            " ед.<p style='font-size:8pt'>Сумма: " + po + " грн.</p>" +
+                            "</gleb>");
+                    }, 400);
+            }
+            ShowCart();
         </script>
         <div class="col-xs">
             <div class="box end-xs">
                 <?
                 if($_SESSION['ssuc'] == 0) {
                     ?>
-                    <a type="button" style="display:none" class="btn btn-info btn-lg" data-toggle="modal" data-target="" disabled>
-                        <itog>Товаров: (0:0 грн.)</itog>
+                    <a type="button" style="px;display:none" class="btn btn-success btn-sm" data-toggle="modal" data-target="" disabled>
+                        <itog>
+                            <img src='/img/load.gif' style="widht:10px">
+                        </itog>
                     </a>
                     <?
                 }else{
                     ?>
-                    <a type="button"  class="btn btn-info btn-lg" data-toggle="modal" data-target="#cart">
-                        <itog>Товаров: (0:0 грн.)</itog>
+                    <a type="button" style="height:45px;" class="btn btn-success btn-sm" data-toggle="modal" data-target="#cart">
+                        <itog>
+                            <img src="/img/load.gif" width="30px" style="text-align: center;">
+                        </itog>
                     </a>
                 <?}?>
             </div>
