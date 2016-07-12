@@ -70,6 +70,7 @@ $psw = $_SESSION['password'];?>
             <div class="row">
                 <?
                 switch($_GET['prod']) {
+
                     case '1':
                         include_once('modules/prod/prod-all.php');
                         break;
