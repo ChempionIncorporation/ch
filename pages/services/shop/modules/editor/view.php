@@ -1,6 +1,3 @@
-<?session_start();?>
-<!DOCTYPE html>
-<br><br><br>
 <?
 include_once('../../../header.php');
 include_once('control.php');
@@ -39,7 +36,6 @@ if (checkName('grp', $_SESSION['password']) == 'Администратор') {
                     include_once('blocks/name.php');
                     //NAME
                     include_once('blocks/catalog.php');
-
                     //CARALOG
                     ?>
                     <div class="form-group">
@@ -88,6 +84,7 @@ if (checkName('grp', $_SESSION['password']) == 'Администратор') {
             </div>
         </div>
 
+
         <div class="row center-xs">
             <div class="col-xs">
                 <div class="box"
@@ -103,11 +100,8 @@ if (checkName('grp', $_SESSION['password']) == 'Администратор') {
             ?>
         </div>
         <div style="padding:20px;">
-            <button id="btn_aad" type="submit" class="btn btn-success btn-block">Добавить товар!</button>
+            <button id="btn_aad" type="button" class="btn btn-success btn-block">Добавить товар!</button>
         </div>
         </form>
     </div>
-<?}
-    else if(!empty($_SESSION['id']))print "<meta http-equiv='refresh' content='0; url=/id".$_SESSION['id']."/'>";
-    else print "<meta http-equiv='refresh' content='0; url=/auth/'>";
-?>
+<?}?>

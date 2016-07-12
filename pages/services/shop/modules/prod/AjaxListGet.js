@@ -1,10 +1,10 @@
+
 $(function () {
     $('#pokupka').click(function () {
         var k_col = $('.konstr').val();
         var insert = $('.ins');
-        var al = k_p * 1;
+        var al = 0;
         var ft = "";
-
         insert.html(
             "<div class='row' style='padding:5px'>" +
             "<div class='col-xs-4 start-xs'>" +
@@ -17,11 +17,11 @@ $(function () {
             "<div class='box start-xs'>Итого: " + k_p * k_col + " ед.</div>" +
             "</div>" +
             "</div>");
-        k_p = k_p * k_col;
+        al = k_p * k_col + al;
         if (ft == "")
-            ft = image + "|" + k_n + "|" + k_p + "|" + k_col;
+            ft = image + "|" + k_n + "|" + "Конструкция" + "|" +  k_p + "|" + k_col;
         else
-            ft = image + "|" + k_n + "|" + k_p + "|" + k_col + "†" + ft;
+            ft = image + "|" + k_n + "|"+ "Конструкция" + "|" + k_p + "|" + k_col + "†" + ft;
         var my_input = [];
         var inp = input.split("+");
         var list_name_input = "";
@@ -34,6 +34,7 @@ $(function () {
                     list_name_input = image + "|" + k_n + "|" + ii[0] + "|" + ii[1] + "|" + my_input[q] + "†" + list_name_input;
                 else
                     list_name_input = image + "|" + k_n + "|" + ii[0] + "|" + ii[1] + "|" + my_input[q];
+
                 insert.append(
                     "<div class='row'>" +
                     "<div class='col-xs'>" +
@@ -49,7 +50,7 @@ $(function () {
                     "<div class='box'>Итого: " + my_input[q] * ii[1] + " грн.</div>" +
                     "</div>" +
                     "</div>");
-                al = my_input[q] * ii[1] + al;
+                al = (my_input[q] * ii[1]) + al;
 
             }
         }
@@ -63,9 +64,9 @@ $(function () {
         for (var r = 0; r < ra.length; r++) {
             if ($("#radio_" + r).prop('checked')) {
                 if (list_name_radio !== "")
-                    list_name_radio = image + "|" + rad[0] + "|" + ra[r] + "†" + list_name_radio;
+                    list_name_radio = image + "|" + rad[0] + "|" + ra[r]+"|"+ 1 + "†" + list_name_radio;
                 else
-                    list_name_radio = image + "|" + rad[0] + "|" + ra[r] + "|";
+                    list_name_radio = image + "|" + rad[0] + "|" + ra[r] + "|" + 1;
                 var ra2 = ra[r].split("|");
                 insert.append(
                     "<div class='row'>" +
@@ -76,7 +77,7 @@ $(function () {
                     "<div class='box'> (+" + ra2[1] + " грн.)</div>" +
                     "</div>" +
                     "</div>");
-                al = ra2[1] * 1 + al;
+                al = ra2[r] * 1 + al;
             }
         }
         if (list_name_radio != "")
@@ -90,9 +91,9 @@ $(function () {
         for (var e = 0; e < che.length; e++) {
             if ($("#check_" + e).prop('checked')) {
                 if (list_name_check !== "")
-                    list_name_check = image + "|" + c[0] + "|" + che[e] + "†" + list_name_check;
+                    list_name_check = image + "|" + c[0] + "|" + che[e]+ "|" + 1 + "†" + list_name_check;
                 else
-                    list_name_check = image + "|" + c[0] + "|" + che[e] + "|";
+                    list_name_check = image + "|" + c[0] + "|" + che[e] + "|" + 1;
                 var cq = che[e].split("|");
                 insert.append(
                     "<div class='row'>" +
@@ -103,7 +104,7 @@ $(function () {
                     "<div class='box'> (+" + cq[1] + " грн.)</div>" +
                     "</div>" +
                     "</div>");
-                al = c[1] * 1 + al;
+                al = cq[1] *1 + al;
             }
         }
         if (list_name_check != "")
@@ -113,15 +114,27 @@ $(function () {
             my_count = sessionStorage.getItem("Count");
             my_count++;
             sessionStorage.setItem("Count", my_count);
-            alert(sessionStorage.getItem("Count"));
+            //alert(sessionStorage.getItem("Count"));
         } else {
             my_count = sessionStorage.getItem("Count");
             my_count++;
             sessionStorage.setItem("Count", my_count);
-            alert(sessionStorage.getItem("Count"));
+            //alert(sessionStorage.getItem("Count"));
+        }
+        sessionStorage.setItem("Gleb_" + sessionStorage.getItem("Count"), ft);
+        sessionStorage.setItem("APrice_" + sessionStorage.getItem("Count"), al);
+
+        var all_p = 0;
+        for(var i=0; i< sessionStorage.getItem("Count"); i++){
+            all_p = sessionStorage.getItem("APrice_"+i)*1 + all_p;
         }
 
-        sessionStorage.setItem("Gleb_" + sessionStorage.getItem("Count"), ft);
+        $('itog').html("Товаров: ("+sessionStorage.getItem("Count")+":"+all_p+ " грн.)");
+
+
+
+
+        //alert(sessionStorage.getItem("Gleb_" + sessionStorage.getItem("Count")));
         //alert(sessionStorage.getItem("Gleb"));
     });
 });

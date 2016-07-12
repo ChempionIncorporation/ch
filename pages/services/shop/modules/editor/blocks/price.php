@@ -3,7 +3,7 @@
         <div class="box">
             <div class="form-group">
                 <label for="email">Цена конструкции:</label>
-                <input type="number" name="price_k" class="form-control" id="pri" required>
+                <input type="number" name="price_k" class="form-control" id="pri">
             </div>
         </div>
     </div>

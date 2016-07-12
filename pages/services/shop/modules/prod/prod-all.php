@@ -10,12 +10,10 @@ while($re = mysql_fetch_array($z)){
 <!-- !-->
     <div class="col-xs" style="border-bottom:1px solid #e8e8e8;margin: 10px 0px;border-radius: 10px;">
     <div class="box">
-        <a href="/shop/<?print $_GET['view']."/".$re["id"];?>?ch=2">
-            <img src="/pages/services/shop/modules/editor/modules/uploads/<? print $re["img"]; ?>" width="250px">
-        </a>
+        <img src="/pages/services/shop/modules/editor/modules/uploads/<? print $re["img"]; ?>" width="250px">
     </div>
     <div class="box" style="text-align:center;min-height:50px;">
-    <a href="/shop/<?print $_GET['view']."/".$re["id"];?>?ch=2">
+    <a href="/shop/<?print $_GET['view']."/".$re["id"];?>">
         <b>
             <?
             if((!empty($re['width']) && !empty($re['height'])) || ($re['width'] != 0) && ($re['height'] != 0))
@@ -41,7 +39,7 @@ while($re = mysql_fetch_array($z)){
         <a href="#" class="btn btn-large btn btn-danger disabled">
             <? print "Цена: <b>" . $re["price"] . ".00</b>"; ?>
         </a>
-    <a href="/shop/<?print $_GET['view']."/".$re["id"];?>?ch=2" class="btn btn-large btn-primary ">Подробнее</a>
+    <a href="/shop/<?print $_GET['view']."/".$re["id"];?>" class="btn btn-large btn-primary ">Подробнее</a>
     </div>
 </div>
 <!-- !-->

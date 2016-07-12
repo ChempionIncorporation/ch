@@ -1,14 +1,4 @@
 <?
-if($_SESSION['gleb'] == null || $_SESSION['login'] == "" || $_SESSION['login'] == "g"){
-        $_SESSION['gleb']       = "";
-        $_SESSION['login']      = "g";
-        $_SESSION['name']       = "";
-        $_SESSION['address']    = "";
-        $_SESSION['np']         = "";
-        $_SESSION['city']       = "";
-        $_SESSION['cart'][255]  = "";
-}
-//
 
 //
 function lat($st)
@@ -31,13 +21,40 @@ function checkuser($key){
     $ssql = mysql_query("select * from profile where login = '".$res['login']."'");
     $r = mysql_fetch_array($ssql);
     $ident = 0;
-    if(empty($r['name'])){
+    if(!empty($r['f'])){
+        $ident += 10;
+    }
+    if(!empty($r['i'])){
+        $ident += 10;
+    }
+    if(!empty($r['o'])){
+        $ident += 10;
+    }
+    if(!empty($r['number_phone'])){
+        $ident += 10;
+    }
+    if(!empty($r['city'])){
+        $ident += 10;
+    }
+    if(!empty($r['address'])){
+        $ident += 10;
+    }
+    if(!empty($r['email'])){
         $ident += 10;
     }
 
-    return $r['name'];
+    return $ident;
 }
 //
 
+//function getText($key,$t){
+//    $sql = mysql_query("select * from user_l where key_p='".$key."'");
+//    $res = mysql_fetch_array($sql);
+//
+//    $ssql = mysql_query("select * from profile where login = '".$res['login']."'");
+//    $r = mysql_fetch_array($ssql);
+//
+//    return $r[$t];
+//}
 
 ?>

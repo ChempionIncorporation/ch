@@ -3,36 +3,30 @@
     <meta charset="utf-8">
 <?
 include("change_pass.php");
-if(empty($_SESSION['id']))
-    print "<meta http-equiv='refresh' content='0; url=/auth/'>";
 //<form action="/id226?chan=1" method="post">
 ?>
-</br>
-</br>
-</br>
+
+    <div class="wrapper">
     <form action="<? print "/id" . $_SESSION['id'] . "" ?>?chan=1" method="post">
-    <div class="container" style="">
+    <div class="container" style="margin-top:100px">
         <div class="row top-xs" style="">
             <div class="col-xs-3">
                 <style>
-                    /* Note: Try to remove the following lines to see the effect of CSS positioning */
                     .affix {
                         top: 5px;
                     }
                 </style>
-                <div class="nav-pills nav-stacked" data-spy="affix" data-offset-top="72"
-                     style="width:250px;border: 1px solid silver;background: #fff">
-                    <div class="box">
+                <div
+                     style="">
                         <?
-                        include_once('modules/left-bar.php');
-                        connect();
-                        $z = mysql_query("select * from profile where login in (select login from user_l where key_p = '" . $_SESSION['password'] . "')");
-                        $re = mysql_fetch_array($z);
-                        $_SESSION['name'] = $_COOKIE['name'] = $re['name'];
-                        $_SESSION['grp'] = $_COOKIE['grp'] = $re['grp'];
-                        $_SESSION['id'] = $_COOKIE['id'] = $re['id'];
+                            connect();
+                            $z = mysql_query("select * from profile where login in (select login from user_l where key_p = '" . $_SESSION['password'] . "')");
+                            $re = mysql_fetch_array($z);
+                            $_SESSION['name'] = $_COOKIE['name'] = $re['name'];
+                            $_SESSION['grp'] = $_COOKIE['grp'] = $re['grp'];
+                            $_SESSION['id'] = $_COOKIE['id'] = $re['id'];
+                            include_once('modules/left-bar.php');
                         ?>
-                    </div>
                 </div>
             </div>
             <div class="col-xs" style="margin-left:25px;">
@@ -123,7 +117,7 @@ if(empty($_SESSION['id']))
                                 </div>
                                 <div class="col-xs-4" style="">
                                     <div class="box">
-                                        <input type="text" size="20"
+                                        <input type="text" size="20" style="display: none"
                                                id="f" placeholder="Фамилия">
                                     </div>
                                 </div>
@@ -144,7 +138,7 @@ if(empty($_SESSION['id']))
                                 </div>
                                 <div class="col-xs-4" style="">
                                     <div class="box">
-                                        <input type="text" size="20" id="i" placeholder="Имя">
+                                        <input type="text" size="20" style="display: none" id="i" placeholder="Имя">
                                     </div>
                                 </div>
                             </div>
@@ -295,13 +289,12 @@ if(empty($_SESSION['id']))
                                                 print "<font style='font-weight: 900' color='red'>Пусто</font>";
                                             else
                                                 print $re['org'];
-
                                             ?>
                                         </b></div>
                                 </div>
                                 <div class="col-xs-4" style="">
                                     <div class="box">
-                                        <input type="text" size="20" id="org" placeholder="Организация">
+                                        <input type="text" size="20" id="org" style="display: none" placeholder="Организация">
                                     </div>
                                 </div>
                             </div>
@@ -313,73 +306,8 @@ if(empty($_SESSION['id']))
             </div>
         </div>
     </div>
-    <?
-
-    if ($_GET['set'] == 1) {
-        connect();
-        $s = mysql_query("select * from user_l where key_p='" . $_SESSION['password'] . "'");
-        $r = mysql_fetch_array($s);
-
-        $ss = mysql_query("select * from profile where login='" . $r['login'] . "'");
-        $rr = mysql_fetch_array($ss);
-
-        if (!isset($_GET['f'])) {
-            $f = $rr['f'];
-        } else {
-            $f = $_GET['f'];
-        }
-        if (!isset($_GET['i'])) {
-            $i = $rr['i'];
-        } else {
-            $i = $_GET['i'];
-        }
-        if (!isset($_GET['o'])) {
-            $o = $rr['o'];
-        } else {
-            $o = $_GET['o'];
-        }
-
-
-        if (!isset($_GET['np'])) {
-            $np = $rr['number_phone'];
-        } else {
-            $np = $_GET['np'];
-        }
-        if (!isset($_GET['c'])) {
-            $c = $rr['city'];
-        } else {
-            $c = $_GET['c'];
-        }
-        if (!isset($_GET['a'])) {
-            $a = $rr['address'];
-        } else {
-            $a = $_GET['a'];
-        }
-        if (!isset($_GET['m'])) {
-            $m = $rr['email'];
-        } else {
-            $m = $_GET['m'];
-        }
-        if (!isset($_GET['org'])) {
-            $org = $rr['org'];
-        } else {
-            $org = $_GET['org'];
-        }
-        if (mysql_query("update profile set f = '" . $f . "', i = '" . $i . "', o = '" . $o . "', number_phone= '" . $np . "', city = '" . $c . "', address = '" . $a . "', email = '" . $m . "', org='" . $org . "' where login='" . $r['login'] . "'")) {
-//        print "<script>alert('Редактирование было внесено и сохранено')</script>";
-
-            $_SESSION['f'] = $f;
-            $_SESSION['i'] = $i;
-            $_SESSION['o'] = $o;
-
-            print "<script>window.location.assign('?set=ok');</script>";
-        } else {
-            print "<script>alert('Извините, но измененые данные не были отредактированны(Error: 0x012)')</script>";
-            print "<script>window.location.assign('?set=error0x012');</script>";
-        }
-    }
-    ?>
 </form>
 <?
-include("../../..//modules/footer.php");
+include("../../../modules/footer.php");
 ?>
+    </div>

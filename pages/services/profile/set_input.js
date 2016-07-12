@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 var p1 = true;
 var p2 = true;
 var p3 = true;
@@ -5,7 +12,7 @@ var p4 = true;
 var p5 = true;
 var p6 = true;
 var p7 = true;
-var p8 = true
+var p8 = true;
     $("#f").css("display","none");
     $('#i').css("display","none");
     $('#o').css("display","none");
@@ -83,7 +90,6 @@ var p8 = true
         if($("#org").val() != ""){
             op = "&org="+$("#org").val() + op;
         }
-        window.location.assign("?set=1"+op);
     });
 
     $('#f').keyup(function(e) {
@@ -402,3 +408,32 @@ var p8 = true
             $("#set_org").html("");
         }
     });
+
+
+$('#ssave').click(function(){
+    setTimeout(function () {
+        $.ajax({
+            url: "pages/services/profile/send_edit.php",
+            context: document.body,
+            method: "POST",
+            async: false,
+            cache: false,
+            dataType: 'html',
+            data: {
+                razdel: "Edit_Profile",
+                f: $('#f').val(),
+                i: $('#i').val(),
+                o: $('#o').val(),
+                n: $('#np').val(),
+                c: $('#c').val(),
+                a: $('#a').val(),
+                m: $('#m').val(),
+                org:$('#org').val()
+            }
+        }).done(function(data) {
+            window.location.assign("/id"+$(data).filter('.o').html());
+        }).fail(function(){
+            alert('fail');
+        });
+    }, 800);
+});

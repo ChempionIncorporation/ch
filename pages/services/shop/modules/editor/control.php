@@ -15,7 +15,6 @@ function getCatalog($n)
     while ($r = mysql_fetch_array($z)) {
         $t[$i++] = $r[$n];
     }
-    print_r($t);
     return $t;
 }
 ?>

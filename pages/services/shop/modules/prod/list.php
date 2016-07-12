@@ -1,9 +1,4 @@
-<script type="text/javascript">
-    //    var myImage = "<?php //print $re['photo']?>//";
-    //    var maxVal = "<?php //print MaxVal()?>//";
-    //    var nn = "<?php //echo $re['id'];?>//";
-    //    var nname = "<?php //echo getName($re['id'], 'name');?>//";
-</script>
+
 <!-- Modal -->
 <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog  modal-xs">

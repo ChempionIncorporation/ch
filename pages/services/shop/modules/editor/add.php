@@ -5,7 +5,6 @@ if (!empty($_POST['name']))
     $n = $_POST['name'];
 if (!empty($_POST['img']))
     $img = $_POST['img'];
-
 if (!empty($_POST['cat']))
     $cat = $_POST['cat'];
 if (!empty($_POST['nal']))

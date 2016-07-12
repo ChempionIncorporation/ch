@@ -1,5 +1,10 @@
 <footer class="footer-basic-centered"
-            style="background: #88212a;margin-top:10%;">
+            style="
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px; ">
     <div class="container">
         <div class="row" style="background: #88212a;color: white; height:auto;">
             <div class="col-xs-3">

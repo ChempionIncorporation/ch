@@ -18,8 +18,6 @@ include('list.php');
     var input = "<?print $re['inp']?>";
     var radio = "<?print $re['rad']?>";
     var check = "<?print $re['che']?>";
-
-
 </script>
 <script src="/pages/services/shop/modules/prod/AjaxListGet.js"></script>
 <div class="row" style="">
@@ -29,9 +27,9 @@ include('list.php');
         </div>
     </div>
     <div class="col-xs-7" >
-        <div class="box" style="border: 2px solid #f7f7f7;height:300px;margin-top:10px;padding:20px;">
-            <center><img src="/pages/services/shop/modules/editor/modules/uploads/<? print $re['img'] ?>"
-                         height="255px"></center>
+        <div class="box" style="border: 2px solid #f7f7f7;height:400px;margin-top:10px;padding:20px;">
+            <center><img src="/pages/services/shop/modules/editor/modules/uploads/<? print $re['img'] ?>" height="350px"
+                         width="600px"></center>
         </div>
 
         <div class="box">
@@ -69,50 +67,89 @@ include('list.php');
                 width: 300px;
             }
         </style>
-        <div class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="170">
-            <div class="box" style="">
-                Тип: <b><? print $re['catalog'] ?></b>
-            </div>
-            <div class="box" style="">
-                Наименование: <b><? print $re['name'] ?></b>
-            </div>
-            <div class="box" style="">
-                Наличие: <b style="background:yellowgreen;padding:2px;color:#f6f6f6"><? print $re['nalichie'] ?></b>
-            </div>
-            <div class="box" style="">
-                <? print $full_size ?>
-            </div>
-            <div class="box">
-                <div class='row'>
-                    <div class="col-xs">
-                        <div class="box"><?
-                            print "
-                <div class='row'>
-                    <div class='col-xs' style='font-size:13pt;'>
-                        <div class='box'>
-                            Цена конструкции:
+        <div >
+            <div class="center-xs" style="padding:10px">
+                <div class="box" style="">
+                    <div class="row">
+                        <div class="col-xs start-xs">
+                            <div class="box">
+                                Наименование:
+                            </div>
                         </div>
-                        <div class='box' style='font-size:10pt;padding-left:10px;'>
-                            Цена: " . $re['price'] . " грн.
+                        <div class="col-xs end-xs">
+                            <div class="box">
+                                <? print $re['name'] ?>
+                            </div>
                         </div>
                     </div>
-                    <div class='col-xs end-xs'>
-                        <input type='number' class='konstr' id='konstr' name='price' size='5' maxlength='3' value='1'><br>
+                </div>
+                <div class="row">
+                    <div class="col-xs start-xs">
+                        <div class="box">
+                            Наличие:
+                        </div>
                     </div>
-                </div>";
-                            ?></div>
+                    <div class="col-xs end-xs">
+                        <div class="box">
+                            <b style="background:yellowgreen;padding:2px;color:#f6f6f6"><? print $re['nalichie'] ?></b>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="box">
-                <?
-                include("../optsell/index.php");
-                ?>
-                <div class="col-xs" style="text-align:center;margin-top:10px;">
+            <hr>
+            <div style="">
+                <div class="box">
+                    <div class='row'>
+                        <div class="col-xs">
+                            <div class="box">
+                                <div class='row middle-xs'>
+                                    <div class='col-xs' style='font-size:14pt;'>
+                                        <div class='box'>
+                                            <?= "Цена конструкции:"?>
+                                        </div>
+                                        <div class='box' style='font-size:10pt;padding-left:10px;'>
+                                            <?= "Цена: " . $re['price'] . " грн."?>
+                                        </div>
+                                    </div>
+                                    <div class='col-xs end-xs'>
+                                        <input type='number' class='konstr' id='konstr' name='price' style='width:50px' maxlength='3' value='1'><br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
                     <?
-                        if(!empty($_SESSION['id']))
-                            print "*Все цены указаны с учетом НДС<br><br><a type=\"button\" id=\"pokupka\" class=\"btn btn-info btn-lg\" data-toggle=\"modal\" data-target=\"#myModal\">Приобрести</a>";
+//                    print "<script>console.log('".$_SERVER['DOCUMENT_ROOT']."/pages/services/shop/modules/optsell/input.php')</script>";
+                    if (!empty($re['inp'])) {
+                        include_once($_SERVER['DOCUMENT_ROOT'].'/pages/services/shop/modules/optsell/input.php');
+                    }
+                    if (!empty($re['rad'])) {
+                        include_once($_SERVER['DOCUMENT_ROOT'].'/pages/services/shop/modules/optsell/radio.php');
+                    }
+                    if (!empty($re['che'])) {
+                        include_once($_SERVER['DOCUMENT_ROOT'].'/pages/services/shop/modules/optsell/checkbox.php');
+                    }
+//                    include_once("/../optsell/index.php");
                     ?>
+                    <div class="col-xs" style="text-align:center;margin-top:10px;">
+                        <?
+                            if($_SESSION['ssuc'] == 0) {
+                                ?>
+                                <a type="button" id="pokupka" style="display: none" class="btn btn-info btn-lg" data-toggle="modal"
+                                   data-target="#myModal">Приобрести</a>
+                                <?
+                            }else{
+                                ?>
+                                <p><span style="color:red">*</span>Все цены указаны с учетом НДС</p>
+                                <a type="button" id="pokupka" class="btn btn-info btn-lg" data-toggle="modal"
+                                   data-target="#myModal">Приобрести</a>
+                                <?
+
+                            }
+                        ?>
+                    </div>
                 </div>
             </div>
         </div>
