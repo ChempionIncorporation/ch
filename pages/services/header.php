@@ -1,5 +1,6 @@
 <? session_start(); ?>
 <?
+$test = $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 function connect()
 {//2UWXvGb2   champ00.mysql.ukraine.com.ua
 //    $conn = mysql_connect("91.206.201.169", "champ00_db", "222222") or die(mysql_error(123123123123123));
@@ -8,7 +9,8 @@ function connect()
     mysql_query("SET NAMES utf8");
 //    return $tbl;
 }
-if (isset($_GET['quit']) && $_GET['quit'] == 1) {
+if(($test[strlen($test)-1] == 1 && $test[strlen($test)-3] == 't') || (isset($_GET['quit']) && $_GET['quit'] == 1))
+{
     $_SESSION["password"] = null;
     $_SESSION['id'] = null;
     $_SESSION['login'] = null;
@@ -16,10 +18,9 @@ if (isset($_GET['quit']) && $_GET['quit'] == 1) {
     $_SESSION['i'] = null;
     $_SESSION['o'] = null;
     $_SESSION['group'] = null;
-//    print  "<script>alert('Вы вышли из системы')</script>";
-    print "<meta http-equiv='refresh' content='0; url=/'>";
+    print  "<script>alert('Вы вышли из системы')</script>";
+    print "<meta http-equiv='refresh' content='0; url=/?ch='>";
 }
-
 ?>
 <html>
 <head>
@@ -55,25 +56,33 @@ if (isset($_GET['quit']) && $_GET['quit'] == 1) {
                     <div class="box ">
                         <a class="navbar-brand" href="/?ch=1" style="margin-top:-10px">
                             <img class="logo" src="../../../assets/img/logo-head.png" width="130px" alt="CHAMPION LOGO"
-                                 style="position: absolute;left: 20px">
+                                 style="position: absolute;left: 450px">
                         </a>
                     </div>
                 </div>
-                <div class="col-xs-7">
+                <div class="col-xs-8">
                     <div class="box">
                         <ul class="nav navbar-nav" style="position:absolute">
-                            <li <? if ($_GET['ch'] == 1) print "class='active'" ?>><a href="/?ch=1 "
-                                                                                      style="color: white ">Главная</a>
+                            <li <? if ($_GET['ch'] == 1) print "class='active'" ?>><a href="/?ch=1 " style="color: white ">Главная</a>
                             </li>
                         <!--                            <li><a href="/portfolio/" style="color: white">Портфолио</a></li>-->
+                            <li
+                                <?
+                                if((int)[strlen($test)-2].$test[strlen($test)-1] > 9){
+                                    $t = (int)$test[strlen($test)-2].$test[strlen($test)-1];
+                                }else $t = (int)$test[strlen($test)-1];
+                                    if ($_GET['ch'] != 1 && $_GET['ch']!= 3 && $test[strlen($test)-4] != 'd' && ($_GET['ch'] == 2 || ($test[strlen($test)-1] == 2 && $test[strlen($test)-3] == 'h') || $t > 0)) print "class='active'"
+                                ?>
+                                ><a style="color: white" href="/shop?ch=2/">Магазин</a>
+                            </li>
                         <li>
                             <a style="color: white" onclick="Reformal.widgetOpen();return false;"
                                href="http://champion.reformal.ru">
                                 Отзывы
                             </a>
                         </li>
-                            <li <? if ($_GET['ch'] == 2) print "class='active'" ?>><a style="color: white"
-                                                                                      href="/contacts/?ch=2">Контакты</a>
+                            <li
+                                <? if ($_GET['ch'] == 3) print "class='active'" ?>><a style="color: white" href="/contacts/?ch=3">Контакты</a>
                             </li>
                         <? if (!empty($_SESSION['password'])) { ?>
                             <li class="dropdown">

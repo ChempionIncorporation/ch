@@ -1,4 +1,4 @@
-<footer class="footer-basic-centered navbar-fixed-bottom"
+<footer class="footer-basic-centered"
             style="background: #88212a;margin-top:10%;">
     <div class="container">
         <div class="row" style="background: #88212a;color: white; height:auto;">

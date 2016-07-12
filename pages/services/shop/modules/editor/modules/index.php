@@ -33,7 +33,7 @@
               action="/pages/services/shop/modules/editor/modules/upload.php">
             <input type="hidden" name="image_form_submit" value="1"/>
             <label class="ll">Загрузить картинку</label>
-            <input type="file" name="images[]" id="images" multiple>
+            <input type="file" name="images[]" id="images" multiple required>
             <div class="uploading">
                 <label>&nbsp;</label>
                 <img src="/pages/services/shop/modules/editor/modules/uploading.gif"/>

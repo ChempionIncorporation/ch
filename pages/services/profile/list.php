@@ -1,6 +1,8 @@
+<!DOCTYPE html>
 <?
 include_once("../header.php");
 ?>
+<br><br><br>
 <div class="container">
     <div class="row">
 

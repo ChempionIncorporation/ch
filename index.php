@@ -17,7 +17,7 @@
 	<div class="row center-md">
 		<div class="col-xs-9">
 			<div class="box" >
-				<a href="#" >
+				<a href="/polygraphy" >
 					<img src="assets/img/button/stand/1.png" width="165px" height="170px"
 						 id="1" style="padding-top: 5px"
 						 onMouseUp="document.getElementById(1).src = 'assets/img/button/hover/1.png'"
@@ -115,13 +115,10 @@
 	<div class="row center-xs">
 		<div class="col-xs-4" style="background: #fff;border: 2px solid #eee;margin:10px;">
 			<div class="col-xs-0">
-				<a href="test1.php">
 					<div class="box"
 						 style="text-align: center;padding:10px; font-size: 20pt;background:#88212A;color: #fff;font-weight:900">
 					Почему именно мы
 					</div>
-				</a>
-
 				<div class="row middle-xs" style="padding:20px;font-size:12pt;text-align:left;">
 					<span class="glyphicon glyphicon-user" style="font-size:30pt;"></span>
 					<div class="col-xs-10">
@@ -331,7 +328,7 @@
 					</div>
 				</div>
 			</div>
-		</div> 
+		</div>
 	</div>
 </div>
 
