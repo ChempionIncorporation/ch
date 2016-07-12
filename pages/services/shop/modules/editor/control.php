@@ -10,11 +10,11 @@ connect();
 function getCatalog($n)
 {
     $z = mysql_query("select * from p_catalog");
-    $t = [];
+    $t[] = null;
     $i = 0;
     while ($r = mysql_fetch_array($z)) {
         $t[$i++] = $r[$n];
     }
-    return $t;
+    print_r($t);
 }
 ?>

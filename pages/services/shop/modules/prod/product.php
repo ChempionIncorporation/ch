@@ -27,11 +27,9 @@ include('list.php');
         </div>
     </div>
     <div class="col-xs-7" >
-        <div class="box" style="border: 2px solid #f7f7f7;height:400px;margin-top:10px;padding:20px;">
-            <center>
-                <img src="/pages/services/shop/modules/editor/modules/uploads/<? print $re['img'] ?>"
-                    style="width:500px;height:350px">
-            </center>
+            <div class="box" style="border: 2px solid #f7f7f7;height:300px;margin-top:10px;padding:20px;">
+                <center><img src="/pages/services/shop/modules/editor/modules/uploads/<? print $re['img'] ?>" \
+                             height="255px"></center>
         </div>
 
         <div class="box">
@@ -70,7 +68,7 @@ include('list.php');
             }
         </style>
         <div >
-            <div class="center-xs" style="padding-top:10px">
+            <div class="center-xs" style="padding:10px">
                 <div class="box" style="">
                     <div class="row">
                         <div class="col-xs start-xs">
@@ -93,23 +91,7 @@ include('list.php');
                     </div>
                     <div class="col-xs end-xs">
                         <div class="box">
-                            <b style="background:yellowgreen;padding:2px;color:#f6f6f6">
-                                <? print $re['nalichie'] ?>
-                            </b>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs start-xs">
-                        <div class="box">
-                            Количество дней до отправки:
-                        </div>
-                    </div>
-                    <div class="col-xs end-xs">
-                        <div class="box">
-                            <b style="font-size:14pt">
-                                <? print $re['ex_date'] ?>
-                            </b>суток.
+                            <b style="background:yellowgreen;padding:2px;color:#f6f6f6"><? print $re['nalichie'] ?></b>
                         </div>
                     </div>
                 </div>
@@ -161,7 +143,7 @@ include('list.php');
                             }else{
                                 ?>
                                 <p><span style="color:red">*</span>Все цены указаны с учетом НДС</p>
-                                <a type="button" id="pokupka"  class="btn btn-info btn-lg" data-toggle="modal"
+                                <a type="button" id="pokupka" class="btn btn-info btn-lg" data-toggle="modal"
                                    data-target="#myModal">Приобрести</a>
                                 <?
 

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <?
 include_once("../header.php");
 connect();

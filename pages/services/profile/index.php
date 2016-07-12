@@ -3,6 +3,8 @@
     <meta charset="utf-8">
 <?
 include("change_pass.php");
+if(empty($_SESSION['id']))
+print "<meta http-equiv='refresh' content='0; url=/auth/'>";
 //<form action="/id226?chan=1" method="post">
 ?>
 

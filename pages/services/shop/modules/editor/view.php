@@ -1,3 +1,5 @@
+<?session_start();?>
+<!DOCTYPE html>
 <?
 include_once('../../../header.php');
 include_once('control.php');
@@ -110,8 +112,11 @@ if (checkName('grp', $_SESSION['password']) == 'Администратор') {
             ?>
         </div>
         <div style="padding:20px;">
-            <button id="btn_aad" type="button" class="btn btn-success btn-block">Добавить товар!</button>
+            <button id="btn_aad" type="submit" class="btn btn-success btn-block">Добавить товар!</button>
         </div>
         </form>
     </div>
-<?}?>
+<?}
+    else if(!empty($_SESSION['id']))print "<meta http-equiv='refresh' content='0; url=/id".$_SESSION['id']."/'>";
+    else print "<meta http-equiv='refresh' content='0; url=/auth/'>";
+?>

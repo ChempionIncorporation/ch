@@ -17,7 +17,7 @@
 	<div class="row center-md">
 		<div class="col-xs-9">
 			<div class="box" >
-				<a href="#" >
+				<a href="/polygraphy" >
 					<img src="assets/img/button/stand/1.png" width="165px" height="170px"
 						 id="1" style="padding-top: 5px"
 						 onMouseUp="document.getElementById(1).src = 'assets/img/button/hover/1.png'"
