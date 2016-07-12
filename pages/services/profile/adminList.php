@@ -49,7 +49,7 @@ $s = mysql_query(
 </div>
 <script>
     function search(v){
-//        $('.pp_'+c).html("<img width='50px' src='/img/load.gif'>");
+//        $('.pp_'+c).html("sss<img width='50px' src='/img/load.gif'>");
 
         setTimeout(function (){
             $.ajax({
