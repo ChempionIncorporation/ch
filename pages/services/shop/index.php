@@ -50,7 +50,7 @@ if(checkuser($_SESSION['password']) < 70){
         <div class="col-xs">
             <div class="box" >
                 <a href="/shop?ch=2" style="text-decoration: none">
-                    <h2 style="font-weight:800;text-align: center; color: white;font-family: monospace;">Champ-Shop</h2>
+                    <h2 style="font-weight:800;text-align: center; color: white;font-family: monospace;">Мобильные стэнды</h2>
                 </a>
             </div>
         </div>
@@ -84,7 +84,7 @@ if(checkuser($_SESSION['password']) < 70){
                     ?>
                     <a type="button" style="px;display:none" class="btn btn-success btn-sm" data-toggle="modal" data-target="" disabled>
                         <itog>
-                            <img src='/img/load.gif' style="widht:10px">
+                            <img src='/assets/img/load.gif' style="widht:10px">
                         </itog>
                     </a>
                     <?
@@ -92,7 +92,7 @@ if(checkuser($_SESSION['password']) < 70){
                     ?>
                     <a type="button" style="height:45px;" class="btn btn-success btn-sm" data-toggle="modal" data-target="#cart">
                         <itog>
-                            <img src="/img/load.gif" width="30px" style="text-align: center;">
+                            <img src="/assets/img/load.gif" width="30px" style="text-align: center;">
                         </itog>
                     </a>
                 <?}?>

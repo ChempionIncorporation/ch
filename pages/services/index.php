@@ -7,7 +7,7 @@ $url = $_GET['url'];
 //echo "<span style='color: #ffffff'>".$_GET['under']."</span>";
 require_once($_SERVER['DOCUMENT_ROOT']."/modules/connect.php");
 $textLong = '
-<span class="coc"><img src="../../img/viz.jpg"></span><span class="coc"><img src="../../img/viz.jpg"></span>
+<span class="coc"><img src="../../assets/img/viz.jpg"></span><span class="coc"><img src="../../assets/img/viz.jpg"></span>
 <p>Рекламное агентство «Чемпион» предлагает печать визиток в Одессе. Старая поговорка о том, что по одежке встречают, подтверждена не одним поколением. Впечатление о любом человеке начинает складываться с первых мгновений знакомства. Костюм, рукопожатие, первая фраза. И визитка. Конечно она! Сегодня многим необходима печать визиток в Одессе. Ведь без них сегодня не может обойтись ни одно мероприятие, ни одна деловая встреча.</p>
 
 <p>Печать визиток в Одессе у рекламного агентства «Чемпион» позволит вам сэкономить и время и деньги. Если у вас нет макета или вы хотите его изменить – наши дизайнеры с удовольствием вам помогут! Макет визитки будет разработан по всем вашим требованиям и пожеланиям. Что поможет вам добиться уникальности и подчеркнуть ваш стиль.</p>
@@ -20,8 +20,8 @@ $textLong = '
 <div id="buttons_content">
 <!---<span class="button"><img src="../../img/price.jpg"></span>
 <span class="button"><img src="../../img/portfolio.jpg"></span>-->
-<span><a href="/">СКАЧАТЬ ПРАЙС<img src="../../img/pdf.png" /></a></span>
-<span><a href="/">ПОРТФОЛИО<img src="../../img/pdf.png" /></a></span>
+<span><a href="/">СКАЧАТЬ ПРАЙС<img src="../../assets/img/pdf.png" /></a></span>
+<span><a href="/">ПОРТФОЛИО<img src="../../assets/img/pdf.png" /></a></span>
 </div>
 ';
 //mysql_query("INSERT INTO text_U_1253(category,description,keywords,text,title,url) VALUES('polygraphy','Полиграфия туда сюда','полиграфия,визитки,туда сюда','".$textLong."','Полиграфия','polygraphy')");
@@ -115,17 +115,17 @@ $a_fin = substr($a,$a_n);
 <head>
 	<meta charset="utf-8">
 	<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
-	<link rel="shortcut icon" href="/img/favicon.png" type="image/png">
+	<link rel="shortcut icon" href="/assets/img/favicon.png" type="image/png">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="/css-styles/champ.css" />
+	<link rel="stylesheet" type="text/css" href="/assets/css-styles/champ.css" />
 	<!-- <link rel="stylesheet" type="text/css" href="../../css-styles/champ.css" /> !-->
-	<link rel="stylesheet" type="text/css" href="/css-styles/body.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css-styles/body.css">
 	<!-- <link rel="stylesheet" type="text/css" href="../../css-styles/body.css"> -->
 
-	<link rel="stylesheet" type="text/css" href="/css-styles/css-1.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css-styles/css-1.css">
 	<!-- <link rel="stylesheet" type="text/css" href="../../css-styles/css-1.css"> -->
 	<!-- <script src="../../js/menu.js"></script> -->
-	<script src="/js/menu.js"></script>
+	<script src="/assets/js/menu.js"></script>
 	<title>
 		<?php echo $text_object->title ?>
 	</title>

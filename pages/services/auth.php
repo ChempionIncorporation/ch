@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
-		<link rel="shortcut icon" href="/img/favicon.png" type="image/png">
+		<link rel="shortcut icon" href="/assets/img/favicon.png" type="image/png">
 
 		<title>АВТОРИЗАЦИЯ</title>
 	</head>
@@ -28,7 +28,7 @@
 	</script>
 	<?
 	if (!empty($_POST['login']) && isset($_POST['psw'])) {
-		require_once("/profile/modules/functions.php");
+		require_once("profile/modules/functions.php");
 		print "<meta http-equiv='refresh' content='0; url=" . $_SERVER['document_root'] . "/pages/services/profile/index.php?id=" . getAccount($_POST['login'], $_POST['psw']) . "'>";
 		//print "<script> alert('".$_SESSION['gleb'].$_SESSION['login']."');</script>";
 

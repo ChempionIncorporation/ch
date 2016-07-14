@@ -13,7 +13,7 @@
 /*global jQuery:false, define:false*/
 (function(factory) {  // Try to register as an anonymous AMD module
 	if (typeof define === 'function' && define.amd) {
-		define(['jquery'], factory);
+		define(['jquery.mosaicflow'], factory);
 	}
 	else {
 		factory(jQuery);

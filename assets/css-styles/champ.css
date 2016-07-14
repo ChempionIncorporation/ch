@@ -54,19 +54,19 @@ blockquote, q {
 /********************************************** IMPORT FONTS ******************************/
 @font-face {
 	font-family: Roboto-BoldCondensed;
-	src: url(../fonts/Roboto/Roboto-BoldCondensed.ttf);
+	src: url(../assets/fonts/Roboto/Roboto-BoldCondensed.ttf);
 }
 @font-face {
 	font-family: Roboto Bold;
-	src: url(../fonts/Roboto/Roboto-Bold.ttf);
+	src: url(../assets/fonts/Roboto/Roboto-Bold.ttf);
 }
 @font-face {
 	font-family: Roboto Light;
-	src: url(../fonts/Roboto/Roboto-Light.ttf);
+	src: url(../assets/fonts/Roboto/Roboto-Light.ttf);
 }
 @font-face {
 	font-family: Roboto Condensed;
-	src: url(../fonts/Roboto/Roboto-Condensed.ttf);
+	src: url(../assets/fonts/Roboto/Roboto-Condensed.ttf);
 }
 /********************************************** / IMPORT FONTS ******************************/
 .tbl-post th {

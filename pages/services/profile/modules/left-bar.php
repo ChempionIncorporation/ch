@@ -10,7 +10,7 @@ $r = mysql_fetch_array($s);
 
 <div class="col-xs">
     <div class="box" style="padding:10px; background: white;border:1px solid silver;">
-        <h3 style="color: #88212a">Champion</h3>
+        <h3 style="color: #88212a;text-align: center">Champion</h3>
         <ul style='list-style: none;line-height: 2.5;' class="uul">
             <li><a href='/<? print "id" . $_SESSION['id'] ?>'>Профиль</a></li>
             <?
@@ -31,7 +31,7 @@ $r = mysql_fetch_array($s);
     </div>
         <? if ($_SESSION['group'] == "Администратор") { ?>
             <div class="box" style="padding:10px;margin:10px 0px;border:1px solid silver; background: white;">
-                <h3 style="color: #88212a">Админ.Панель</h3>
+                <h3 style="color: #88212a;text-align: center">Админ. Панель</h3>
                     <ul style='list-style: none;line-height: 2.5;' class="uul">
                         <li><a href='/editor/'>Добавить товар</a></li>
                         <li><a href='/<?= "id" . $_SESSION['id'] ?>/list/'>Список заказов</a></li>

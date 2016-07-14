@@ -61,6 +61,12 @@ include('list.php');
             var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
             console.log(scrollTop);
         </script>
+        <script type="text/javascript">
+            function validateField(input) {
+                if (input.value <= 0)
+                    input.value = 1;
+            }
+        </script>
         <style>
             .affix {
                 top: 5px;
@@ -105,14 +111,14 @@ include('list.php');
                                 <div class='row middle-xs'>
                                     <div class='col-xs' style='font-size:14pt;'>
                                         <div class='box'>
-                                            <?= "Цена конструкции:"?>
+                                            <?= "Кол. конструкций:"?>
                                         </div>
                                         <div class='box' style='font-size:10pt;padding-left:10px;'>
-                                            <?= "Цена: " . $re['price'] . " грн."?>
+                                            <?= "Цена одной: " . $re['price'] . " грн."?>
                                         </div>
                                     </div>
                                     <div class='col-xs end-xs'>
-                                        <input type='number' class='konstr' id='konstr' name='price' style='width:50px' maxlength='3' value='1'><br>
+                                        <input type='number' class='konstr' maxlength="3" id='konstr' name='price' oninput="validateField(this)" style='width:50px'  value='1'><br>
                                     </div>
                                 </div>
                             </div>
@@ -138,15 +144,14 @@ include('list.php');
                             if($_SESSION['ssuc'] == 0) {
                                 ?>
                                 <a type="button" id="pokupka" style="display: none" class="btn btn-info btn-lg" data-toggle="modal"
-                                   data-target="#myModal">Приобрести</a>
+                                   data-target="#myModal" name="sbutton">Приобрести</a>
                                 <?
                             }else{
                                 ?>
                                 <p><span style="color:red">*</span>Все цены указаны с учетом НДС</p>
                                 <a type="button" id="pokupka" class="btn btn-info btn-lg" data-toggle="modal"
-                                   data-target="#myModal">Приобрести</a>
+                                   data-target="#myModal" >Приобрести</a>
                                 <?
-
                             }
                         ?>
                     </div>

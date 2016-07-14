@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
  <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
-    <link rel="shortcut icon" href="/img/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/png">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="../../css-styles/champ.css" />
-	<script src="../../js/menu.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../assets/css-styles/champ.css" />
+	<script src="../../assets/js/menu.js"></script>
     <title>РА Чемпион</title>
    <!-- <meta name="keywords" content="">
     <meta name="description" content="">
@@ -23,13 +23,13 @@ $category = "portfolio";
 	<h2>ООО "ЧЕМПИОН-ГРУПП"</h2>
 	<table style="width: 100%">
 		<tr>
-			<td colspan="2"><img src="../../img/contacts/point.png"/>
+			<td colspan="2"><img src="/assets/img/contacts/point.png"/>
 				г. Одесса, ул. Новосельского, 5/3
 			</td>
 		</tr>
 		<tr>
 			<td colspan="3">
-				<img src="../../img/contacts/phone.png">
+				<img src="/assets/img/contacts/phone.png">
 				Телефоны:
 				<div align="center">
 					<br>(048) 795-68-03<br> (048) 736-26-49<br>(093) 946-14-95<br/>(095) 862-61-64<br/>(096) 321-58-11
@@ -38,13 +38,13 @@ $category = "portfolio";
 </div>
 	<tr>
 		<td colspan="2">
-			<img src="../../img/contacts/clock.png">
+			<img src="/assets/img/contacts/clock.png">
 			Время работы: с 10:00 до 18:00
 		</td>
 	</tr>
 	<tr>
 		<td colspan="2">
-			<img src="../../img/contacts/mail.png">
+			<img src="/assets/img/contacts/mail.png">
 			E-mail: 7362649@ukr.net
 		</td>
 	</tr>

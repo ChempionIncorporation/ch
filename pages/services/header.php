@@ -38,7 +38,7 @@ if(($test[strlen($test)-1] == 1 && $test[strlen($test)-3] == 't') || (isset($_GE
     <script src="/assets/js/bootstrap.min.js"></script>
 <!--    <script type="text/javascript" src="/pages/services/shop/modules/prod/List_prod.js"></script>-->
 
-    <script type="text/javascript" src="/js/jquery.mosaicflow.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.mosaicflow.js"></script>
 </head>
 <body style="min-height:100%;position:relative;background: #e8e8e8">
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="menu"
@@ -55,10 +55,10 @@ if(($test[strlen($test)-1] == 1 && $test[strlen($test)-3] == 't') || (isset($_GE
 
         <div class="collapse navbar-collapse">
             <div class="row">
-                <div class="col-xs">
+                <div class="col-xs-2">
                     <div class="box ">
                         <a class="navbar-brand" href="/?ch=1" style="margin-top:-10px">
-                            <img class="logo" src="../../../assets/img/logo-head.png" width="130px" alt="CHAMPION LOGO"
+                            <img class="logo" src="/assets/img/logo-head.png" width="130px" alt="CHAMPION LOGO"
                                  style="position: absolute;left: 20px">
                         </a>
                     </div>

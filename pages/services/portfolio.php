@@ -6,8 +6,8 @@ include('header.php');
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
-    <link rel="shortcut icon" href="/img/favicon.png" type="image/png">
-	<script src="../../js/menu.js"></script>
+    <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/png">
+	<script src="../../assets/js/menu.js"></script>
     <title>РА Чемпион</title>
     <meta name="keywords" content="">
     <meta name="description" content="">

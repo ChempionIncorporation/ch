@@ -118,7 +118,7 @@ include('../../../header.php');
                                             fulltext = gleb +"+"+ fulltext;
                                     }
                                 }
-                                $('.somy_text').html("<img width='50px' src='/img/load.gif'>");
+                                $('.somy_text').html("<img width='50px' src='/assets/img/load.gif'>");
                                 setTimeout(function () {
                                     $.ajax({
                                         url: "pages/services/shop/modules/offormit/l.php",
@@ -168,7 +168,7 @@ include('../../../header.php');
                                     <h4 class="modal-title">Ответ</h4>
                                 </div>
                                 <div class="modal-body">
-                                    <p class="somy_text center-xs"><img width='50px' src='/img/load.gif'></p>
+                                    <p class="somy_text center-xs"><img width='50px' src='/assets/img/load.gif'></p>
                                 </div>
                                 <div class="modal-footer">
                                     <div class="row">

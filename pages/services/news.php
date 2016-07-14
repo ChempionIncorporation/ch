@@ -1,6 +1,6 @@
 <?php 
 require_once($_SERVER['DOCUMENT_ROOT']."/modules/connect.php");
-require_once($_SERVER['DOCUMENT_ROOT']."/modules/menu_top.php");
+require_once($_SERVER['DOCUMENT_ROOT']."/pages/services/header.php");
 require_once($_SERVER['DOCUMENT_ROOT']."/modules/connect.php");
 if(isset($_GET['link'])){
 $link = $_GET['link'];
@@ -14,19 +14,19 @@ $arr = mysql_fetch_object($sql);
 <head>
     <meta charset="utf-8">
  <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
-    <link rel="shortcut icon" href="/img/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/png">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="/css-styles/champ.css" />
-	<script src="/js/menu.js"></script>
+	<link rel="stylesheet" type="text/css" href="/assets/css-styles/champ.css" />
+	<script src="/assets/js/menu.js"></script>
     <title>Новости</title>
    <!-- <meta name="keywords" content="">
     <meta name="description" content="">
     <link rel="icon" type="image/ico" href="img/favicon.ico">-->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="/css-styles/champ.css" />
-	<link rel="stylesheet" type="text/css" href="/css-styles/body.css">
-	<link rel="stylesheet" type="text/css" href="/css-styles/css-1.css">
-	<script src="/js/menu.js"></script>
+	<link rel="stylesheet" type="text/css" href="/assets/css-styles/champ.css" />
+	<link rel="stylesheet" type="text/css" href="/assets/css-styles/body.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css-styles/css-1.css">
+	<script src="/assets/js/menu.js"></script>
 </head>
 <body>
 

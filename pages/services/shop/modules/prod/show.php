@@ -15,7 +15,7 @@ while($re = mysql_fetch_array($z)){
     <div class="col-xs" style="border-bottom:1px solid #e8e8e8;margin: 10px 0px;border-radius: 10px;">
     <div class="box">
         <a href="/shop/<?print $re["name"];?>?n=<?print $i?>">
-            <img src="/../../img/upload/montaj/razdel/<? print $re["foto"]; ?>" width="250px">
+            <img src="/assets/img/upload/montaj/razdel/<? print $re["foto"]; ?>" width="250px">
         </a>
     </div>
     <div class="box" style="text-align:center;min-height:50px;">
