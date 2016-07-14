@@ -48,7 +48,7 @@ include("change_pass.php");
                     </div>
                 </div>
                 <div class="box">
-                    <div class="row" style="margin-bottom: 10px; border: 1px solid silver;background: white;">
+                    <div class="row" style=" background: white;margin-bottom:10px;border:1px solid silver">
                         <div class="col-xs">
                             <div class="box">
                                 <div class="row" style="padding:10px">

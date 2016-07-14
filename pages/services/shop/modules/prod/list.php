@@ -27,7 +27,7 @@
                     </div>
                     <div class="col-xs center-xs">
                         <div class="box">
-                            <button type="button" class="btn btn-success btn_cart" data-dismiss="modal">Добавить в
+                            <button type="button" class="btn btn-success btn_cart" id='incart' class="add_cart" data-dismiss="modal">Добавить в
                                 корзину
                             </button>
                         </div>

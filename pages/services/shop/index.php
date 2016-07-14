@@ -6,6 +6,7 @@
 <?
     include("../header.php");
 include('modules/functions.php');
+include_once('modules/cart/view.php');
 $id = $_SESSION['id'];
 $login = $_SESSION['login'];
 $psw = $_SESSION['password'];
@@ -40,9 +41,9 @@ if(checkuser($_SESSION['password']) < 70){
     }
 </style>
 <div class="container" style="margin-top:100px">
-    <div class="row middle-xs" style="height:70px;background: #88212a;border:2px solid silver;">
+    <div class="row middle-xs" style="height:70px;background: #88212a ">
         <div class="col-xs">
-            <div class="box" >
+            <div class="box">
                 <h2 style="font-weight:800;text-align: center;">Мобильные стэнды</h2>
             </div>
         </div>
@@ -57,6 +58,7 @@ if(checkuser($_SESSION['password']) < 70){
                         count = 0;
                     else
                         count = sessionStorage.getItem("Count");
+                $('itog').html("<img src='/img/load.gif' style='width:30px'>");
                     setTimeout(function () {
                         $('itog').html(
                             "<gleb style='font-size:10pt'>" +
@@ -66,6 +68,7 @@ if(checkuser($_SESSION['password']) < 70){
                             " ед.<p style='font-size:8pt'>Сумма: " + po + " грн.</p>" +
                             "</gleb>");
                     }, 400);
+                ed();
             }
             ShowCart();
         </script>
@@ -91,6 +94,8 @@ if(checkuser($_SESSION['password']) < 70){
             </div>
         </div>
     </div>
+
+
     <div class="row" style="background: #88212a;border:2px solid silver;">
         <div class="col-xs">
             <div class="box">
@@ -111,7 +116,7 @@ if(checkuser($_SESSION['password']) < 70){
     </div>
     <div class="row">
         <div class="col-xs" style="padding:20px;margin-top:10px;background: #fff;border:1px solid #e8e8e8;">
-            <div class="row">
+            <div class="row start-xs">
                     <?
                     switch($_GET['prod']) {
                         case '1':
@@ -129,7 +134,3 @@ if(checkuser($_SESSION['password']) < 70){
         </div>
     </div>
 </body>
-
-<?
-    include_once('modules/cart/view.php');
-?>

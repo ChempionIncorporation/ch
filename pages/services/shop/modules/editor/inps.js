@@ -48,6 +48,7 @@ $(function () {
                 "des": $('#des').val(),
                 "cha": $('#cha').val(),
                 "req": $('#req').val(),
+                "dat": $('#ex_date').val(),
                 "inp": input_f,
                 "rad": radio_f,
                 "che": check_f

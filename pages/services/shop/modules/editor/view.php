@@ -55,6 +55,16 @@ if (checkName('grp', $_SESSION['password']) == 'Администратор') {
                 include_once('blocks/size.php');
                 //Размер
                 ?>
+                <div class="row">
+                    <div class="col-xs">
+                        <div class="box">
+                            <div class="form-group">
+                                <label for="email">Количество дней до отправки:</label>
+                                <input type="number" class="form-control" name="height" id="ex_date">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             </div>
         <div class="row">

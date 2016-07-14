@@ -1,4 +1,5 @@
 $(function () {
+var ff = "",tt="";
     $('#pokupka').click(function () {
         var k_col = $('.konstr').val();
         var insert = $('.ins');
@@ -108,18 +109,18 @@ $(function () {
         }
         if (list_name_check != "")
             ft = list_name_check + "†" + ft;
-        var my_count = 0;
-        if (sessionStorage.getItem("Count") <= 0) {
-            my_count = sessionStorage.getItem("Count");
-            my_count++;
-            sessionStorage.setItem("Count", my_count);
-        } else {
-            my_count = sessionStorage.getItem("Count");
-            my_count++;
-            sessionStorage.setItem("Count", my_count);
-        }
-        sessionStorage.setItem("Gleb_" + sessionStorage.getItem("Count"), ft);
-        sessionStorage.setItem("APrice_" + sessionStorage.getItem("Count"), al);
+        ff = ft;
+        tt = al;
+    });
+
+    $('#incart').click(function(){
+
+        my_count = sessionStorage.getItem("Count");
+        my_count++;
+        sessionStorage.setItem("Count", my_count);
+
+        sessionStorage.setItem("Gleb_" + sessionStorage.getItem("Count"), ff);
+        sessionStorage.setItem("APrice_" + sessionStorage.getItem("Count"), tt);
 
         var all_p = 0;
         for(var i=0; i< sessionStorage.getItem("Count"); i++){

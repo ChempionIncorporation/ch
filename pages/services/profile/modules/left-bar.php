@@ -1,6 +1,6 @@
 <?include('functions.php');?>
 <? session_start(); ?>
-<link rel="stylesheet" href="/assets/css/style-modal.css" rel="stylesheet">
+<!--<link rel="stylesheet" href="/assets/css/style-modal.css" rel="stylesheet">-->
 
 <?
 connect();
@@ -14,18 +14,17 @@ $r = mysql_fetch_array($s);
         <ul style='list-style: none;line-height: 2.5;' class="uul">
             <li><a href='/<? print "id" . $_SESSION['id'] ?>'>Профиль</a></li>
             <?
-            if($_SESSION['group'] != "Администратор") {
-                ?>
-                <li><a href='/<?= "id" . $_SESSION['id'] ?>/list/'>Список заказов</a></li>
-                <?
+            if($_SESSION['group'] != "Администратор"){
+                ?><li>
+                    <a href='/<?= "id" . $_SESSION['id'] ?>/list/'>
+                        Список заказов
+                    </a>
+                </li><?
             }
             ?>
             <li><a href='/shop/'>Интернет-магазин</a></li>
-            <li>Скидка</li>
-            <li>Оформить покупку</li>
-            <li>Сообщения</li>
             <li>
-                <a style="cursor: pointer" data-toggle="modal" data-target="#myModal">Изменить пароль</a>
+                <a style="cursor: pointer" data-toggle="modal" data-target="#editPas">Изменить пароль</a>
             </li>
         </ul>
     </div>
@@ -42,7 +41,7 @@ $r = mysql_fetch_array($s);
 
 
 <!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
+<div id="editPas" class="modal fade" role="dialog">
     <div class="modal-dialog">
         <!-- Modal content-->
         <div class="modal-content">

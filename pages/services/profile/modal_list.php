@@ -44,39 +44,50 @@
                         itog = qq[3] * qq[4] + itog;
                         for (var j = 0; j < a.length - 1; j++) {
                             var ar = a[j].split("|");
-//                                if (ar[2] != undefined && arr[1] != 'underfined') {
-//                                    alert(ar[j])
-                            $('.bio_' + i).append(
-                                "<tr>" +
-                                "<td>" + ar[2] + "</td>" +
-                                "<td>" + ar[3] + "</td>" +
-                                "<td>" + ar[4] + "</td>" +
-                                "<td>" + ar[3] * ar[4] + "</td>" +
-                                "</tr>");
+                            if(sessionStorage.getItem("group") == "admin") {
+                                $('.bio_' + i).append(
+                                    "<tr>" +
+                                    "<td>" + ar[2] + "</td>" +
+                                    "<td>" + ar[3] + "</td>" +
+                                    "<td><input type='text' class='col_"+id+"_"+i+"_"+j+"' onkeyup='ed("+id+","+i+","+j+","+c+")' value='" + ar[4] + "'></td>" +
+                                    "<td>" + ar[3] * ar[4] + "</td>" +
+                                    "</tr>");
+                            }else {
+                                $('.bio_' + i).append(
+                                    "<tr>" +
+                                    "<td>" + ar[2] + "</td>" +
+                                    "<td>" + ar[3] + "</td>" +
+                                    "<td>" + ar[4] + "</td>" +
+                                    "<td>" + ar[3] * ar[4] + "</td>" +
+                                    "</tr>");
+                            }
+
                             itog = ar[3] * ar[4] + itog;
-//                                }
                         }
                     }
                     $('.itog').html("Итого: <b>" + itog + "</b> грн.");
                 }
-                //                    var size = [],i=0;
 
-                //                    function un(o){
-                //                        $('#p_'+o).css("display", "none");
-                //                        $('#ssave').css("display", "block");
-                //
-                //                        size[i] = o;
-                //                        i++;
-                //                        $('#ssave').click(function(){
-                //                            var ssize = "&size="+size.length;
-                //                            var idd = "";
-                //                            for(var c=0; c < size.length; c++){
-                //                                    idd = id[c] + "|" + idd;
-                //                            }
-                //                            window.location.assign("?set=1?"+ssize+"&id="+idd);
-                //                        });
-                //                    }
+                function ed(id,i,j,c){
+                    var col = $('.col_'+id+'_'+i+'_'+j).val();
+                    var arr = fmt[c].split("+");
+                    var Ftext = "";
+                    for (var i1 = 0; i1 < arr.length; i1++) {
+                        var a = arr[i1].split("†");
+                        for (var j1 = 0; j1 < a.length - 1; j1++) {
+                            var ar = a[j1].split("|");
+                            if(i1 == i) {
+                                if (j1 == j) {
 
+                                    console.log(ar[2]);
+                                }
+                            }
+                        }
+                    }
+
+
+//                    console.log(id+","+i+","+j+","+col+"="+arr[0]);
+                }
             </script>
             <div class="bo"></div>
         </div>
@@ -149,6 +160,15 @@
                                 var ar = a[j].split("|");
 //                                if (ar[2] != undefined && arr[1] != 'underfined') {
 //                                    alert(ar[j])
+                                if(sessionStorage.getItem("group") == "admin"){
+                                    $('.bio_' + i).append(
+                                        "<tr>" +
+                                        "<td>" + ar[2] + "</td>" +
+                                        "<td>" + ar[3] + "</td>" +
+                                        "<td><input type=number class='col_"+id+"_"+i+"_"+j+"' onkeyup='ed("+id+","+i+","+j+")' value='" + ar[4] + "'></td>" +
+                                        "<td>" + ar[3] * ar[4] + "</td>" +
+                                        "</tr>");
+                                }else{
                                 $('.bio_' + i).append(
                                     "<tr>" +
                                     "<td>" + ar[2] + "</td>" +
@@ -156,30 +176,14 @@
                                     "<td>" + ar[4] + "</td>" +
                                     "<td>" + ar[3] * ar[4] + "</td>" +
                                     "</tr>");
+                                }
                                 itog = ar[3] * ar[4] + itog;
 //                                }
                             }
                         }
                         $('.itog').html("Итого: <b>" + itog + "</b> грн.");
+
                     }
-                    //                    var size = [],i=0;
-
-                    //                    function un(o){
-                    //                        $('#p_'+o).css("display", "none");
-                    //                        $('#ssave').css("display", "block");
-                    //
-                    //                        size[i] = o;
-                    //                        i++;
-                    //                        $('#ssave').click(function(){
-                    //                            var ssize = "&size="+size.length;
-                    //                            var idd = "";
-                    //                            for(var c=0; c < size.length; c++){
-                    //                                    idd = id[c] + "|" + idd;
-                    //                            }
-                    //                            window.location.assign("?set=1?"+ssize+"&id="+idd);
-                    //                        });
-                    //                    }
-
                 </script>
                 <div class="form_admin"></div>
             </div>

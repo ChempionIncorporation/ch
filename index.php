@@ -13,7 +13,6 @@
 
 	</div>
 </div>
-
 <div class="container">
 	<div class="row center-md">
 		<div class="col-xs-9">
@@ -111,7 +110,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div
 <div class="container">
 	<div class="row center-xs">
 		<div class="col-xs-4" style="background: #fff;border: 2px solid #eee;margin:10px;">

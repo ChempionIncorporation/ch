@@ -20,56 +20,76 @@ $s = mysql_query(
         </div>
     </div>
 
-<div class="row middle-xs">
-    <div class="col-xs-1">
-        <div class="box">
-            <input onchange="search($('#id').val())" class="form-control" id="id" type="text"name="id">
+<div class="row center-xs middle-xs">
+    <div class="col-xs-3 center-xs">
+        <div class="box">ID
+            <input onkeyup="sort_spis()" class="form-control r" id="iid" type="text" name="id">
         </div>
     </div>
-    <div class="col-xs-4">
+    <div class="col-xs-4 center-xs">
         <div class="box">
-            <input class="form-control" id="inputdefault" type="text"name="fio">
+            Фамилия: <input onkeyup="sort_spis()" class="form-control input-sm r" id="f" type="text">
+            Имя: <input onkeyup="sort_spis()" class="form-control input-sm r" id="i" type="text" name="i">
+            Отчество: <input onkeyup="sort_spis()" class="form-control input-sm r" id="o" type="text" name="o">
         </div>
     </div>
-    <div class="col-xs-2">
+    <div class="col-xs-4 start-xs">
         <div class="box">
-            <input class="form-control" id="inputdefault" type="text" name="np">
-        </div>
-    </div>
-    <div class="col-xs-1">
-        <div class="box">
-            <input class="form-control" id="inputdefault" type="text" name="cdate">
-        </div>
-    </div>
-    <div class="col-xs-3">
-        <div class="box">
-            <input class="form-control" id="inputdefault" type="text" name="status">
+            <div class="form-group">
+                <label for="sel1">Статус:</label>
+                <select onclick="sort_spis()" class="form-control" id="status">
+                    <option value="" selected>Выбор</option>
+                    <option value="1">Процесс ответа от менеджера</option>
+                    <option value="2">Процесс разработки</option>
+                    <option value="3">Отпавлено</option>
+                </select>
+            </div>
         </div>
     </div>
 </div>
+
 <script>
-    function search(v){
-//        $('.pp_'+c).html("sss<img width='50px' src='/img/load.gif'>");
+function sort_spis(){
+    $('.lol').html("<img width='20px' src='/img/load.gif'> Загрузка...");
+    setTimeout(function (){
+        $.ajax({
+            url: "/pages/services/profile/send_edit.php",
+            method: "POST",
+            data: {
+                id: $("#iid").val(),
+                f: $("#f").val(),
+                i: $("#i").val(),
+                o: $("#o").val(),
+                s: $("#status").val(),
+                razdel: "Search"
+            }
+        }).done(function(data){
+            sessionStorage.setItem('group', 'admin');
+            $('.op').css("display", "none");
+            var va = $(data).filter('.o').html();
+            var er = $(data).filter('.m').html();
 
-        setTimeout(function (){
-            $.ajax({
-                url: "/pages/services/profile/send_edit.php",
-                method: "POST",
-                data: {
-                    razdel: "sear"
-                }
-            }).done(function(data) {
-                alert(v)
-            }).fail(function() {
+//            console.log("Otvet: "+va);
+//            console.log("Error: "+er);
 
-            });
-        }, 200);
-    }
+            $('.gleb').html(er);
+            var arr = va.split("+");
+            for (var i = 0; i <= arr.length; i++) {
+                console.log(arr[i]);
+                $("#gl_" + arr[i]).css("display", "block");
+            }
+            $('.lol').html("");
+        }).fail(function() {
+            alert( "error" );
+        });
+    }, 100);
+}
 </script>
+
 
 <div class="row middle-xs" style="border-bottom:2px solid black">
     <div class="col-xs-1">
-        <div class="box">Номер</div>
+        <div class="box sss">Номер</div>
     </div>
     <div class="col-xs-4">
         <div class="box">ФИО</div>
@@ -85,82 +105,83 @@ $s = mysql_query(
     </div>
 </div>
 
-<?
-$i=0;
-while($r = mysql_fetch_array($s))
-{
-    ?>
-    <div id='<?="id_".$r['id']?>' class="row middle-xs" style="border-bottom:1px solid silver;display:none">
-        <div class="col-xs-1" >
-            <div class="box">
-                <a id='<?="id_".$r['id']?>' onclick='k(<?=$i?>)' data-toggle='modal' data-target='#z_list' style="color: #88212a">
-                    <?=$r['id']?>
-                </a>
+<div class="lol">
+</div>
+    <?
+    $i=0;
+    while($r = mysql_fetch_array($s))
+    {
+        ?>
+        <div id='gl_<?=$r['id']?>' class="row middle-xs <?="xx_".$i?> op" style="border-bottom:1px solid silver;">
+            <div class="col-xs-1" >
+                <div class="box">
+                    <a id="id" onclick='k(<?=$i?>,<?=$r['id']?>)' data-toggle='modal' data-target='#z_list' style="color: #88212a;">
+                        <?=$r['id']?>
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="col-xs-4">
-            <div class="box">
-                    <?= gp($r['key_p'], 'f')." ".gp($r['key_p'], 'i')." ".gp($r['key_p'], 'o')?>
+            <div class="col-xs-4">
+                <div class="box">
+                       <f class="f_<?=$i?>"><?= gp($r['key_p'], 'f')?></f>
+                       <f class='i_<?=$i?>'><?=gp($r['key_p'], 'i')?></f>
+                       <f class='o_<?=$i?>'><?=gp($r['key_p'], 'o')?></f>
+                </div>
             </div>
-        </div>
-        <div class="col-xs-2">
-            <div class="box"><?= gp($r['key_p'], 'number_phone')?></div>
-        </div>
-        <div class="col-xs-1">
-            <div class="box"><?= $r['cdate']?></div>
-        </div>
-        <div class="col-xs-4 tt_<?=$i?>">
-            <div class="box">
-                <?
-                switch($r['status']) {
-                    case "Процесс ответа менеджера":
-                        $otv = 'selected';
-                        break;
-                    case "Процесс разработки":
-                        $otv = 'selected';
-                        break;
-                    case "Отправлено":
-                        $otv = 'selected';
-                        break;
-                }
-                print "<div class='pp_".$i."'>".$r['status']."</div>";
-                ?>
-                <script>
-                    var len = <?php print $i?>;
-                    function sel(c,id){
-                        var otv = $("#s_"+c).val();
-//                        alert($("#s_"+c).val());
-                        $('.pp_'+c).html("<img width='50px' src='/img/load.gif'>");
-                        setTimeout(function (){
-                            $.ajax({
-                                url: "/pages/services/profile/send_edit.php",
-                                method: "POST",
-//                                dataType: 'html',
-                                data: {
-                                    n: id,
-                                    m: otv,
-                                    razdel: "alc"
-                                }
-                            }).done(function(data) {
-                                var po = $(data).filter('.o').html();
-//                                        alert(po+"~"+id+"~"+ c);
-                                $('.pp_'+c).html(po);
-                                $('#s_'+c).css("display", "block");
-                            }).fail(function() {
-                                alert( "error" );
-                            });
-                        }, 800);
+            <div class="col-xs-2">
+                <div class="box"><?= gp($r['key_p'], 'number_phone')?></div>
+            </div>
+            <div class="col-xs-1">
+                <div class="box"><?= $r['cdate']?></div>
+            </div>
+            <div class="col-xs-4 tt_<?=$i?>">
+                <div class="box">
+                    <?
+                    switch($r['status']) {
+                        case "Процесс ответа менеджера":
+                            $otv = 'selected';
+                            break;
+                        case "Процесс разработки":
+                            $otv = 'selected';
+                            break;
+                        case "Отправлено":
+                            $otv = 'selected';
+                            break;
                     }
-                </script>
-                <select size="1" onchange="sel(<?=$i?>,<?=$r['id']?>)" id='s_<?=$i?>'>
-                    <option selected value='0'>Выбрать</option>
-                    <option value='1'>Процесс ответа менеджера</option>
-                    <option value='2'>Процесс разработки</option>
-                    <option value='3'>Отправлено</option>
-                </select>
+                    print "<div class='pp_".$i."'>".$r['status']."</div>";
+                    ?>
+                    <script>
+                        var len = <?php print $i?>;
+                        function sel(c,id){
+                            var otv = $("#s_"+c).val();
+                            $('.pp_'+c).html("<img width='20px' src='/img/load.gif'>");
+                            setTimeout(function (){
+                                $.ajax({
+                                    url: "/pages/services/profile/send_edit.php",
+                                    method: "POST",
+                                    data: {
+                                        n: id,
+                                        m: otv,
+                                        razdel: "alc"
+                                    }
+                                }).done(function(data) {
+                                    var po = $(data).filter('.o').html();
+    //                                        alert(po+"~"+id+"~"+ c);
+                                    $('.pp_'+c).html(po);
+                                    $('#s_'+c).css("display", "block");
+                                }).fail(function() {
+                                    alert( "error" );
+                                });
+                            }, 800);
+                        }
+                    </script>
+                    <select size="1" onchange="sel(<?=$i?>,<?=$r['id']?>)" id='s_<?=$i?>'>
+                        <option selected value='0'>Выбрать</option>
+                        <option value='1'>Процесс ответа менеджера</option>
+                        <option value='2'>Процесс разработки</option>
+                        <option value='3'>Отправлено</option>
+                    </select>
+                </div>
             </div>
         </div>
-    </div>
-<?$i++;
-}?>
-
+    <?$i++;
+    }?>

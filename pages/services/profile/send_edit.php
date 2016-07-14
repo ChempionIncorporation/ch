@@ -105,6 +105,74 @@ $ch = "";
         </DIV>
 <?
         break;
+
+    case 'Search':
+
+
+        if(!empty($_POST['f']) || !empty($_POST['i']) || !empty($_POST['o']) || !empty($_POST['id']) || !empty($_POST['s'])) {
+            if (!empty($_POST['id']) || !isset($_POST['id']))
+                $id = " and zayavka.id = " . $_POST['id'];
+            else
+                $id = "";
+            if (!empty($_POST['f']) || !isset($_POST['f']))
+                $f = " and f = '" . $_POST['f'] . "'";
+            else
+                $f = "";
+            if (!empty($_POST['i']) || !isset($_POST['i']))
+                $i = " and i = '" . $_POST['i'] . "'";
+            else
+                $i = "";
+            if (!empty($_POST['o']) || !isset($_POST['o']))
+                $o = " and o = '" . $_POST['o'] . "'";
+            else
+                $o = "";
+            if (!empty($_POST['s']) || !isset($_POST['s']))
+                $s = " and status = " . $_POST['s'];
+            else
+                $s = "";
+
+        }
+
+            $sql = "select zayavka.id from user_l,profile,zayavka
+                    WHERE profile.login = user_l.login AND user_l.key_p = zayavka.key_p " . $f . $i . $o . $id. $s;
+            $s0 = mysql_query($sql);
+
+            $l = "";
+            while ($r0 = mysql_fetch_array($s0)) {
+                $l = $r0[0] . "+" . $l;
+            }
+            ?><div class='o'><?= $l ?></div><?
+    break;
+    case 'Edit_modal_col':
+        $s1 = mysql_query("select full_text from zayavka where id = ".$_POST['id']);
+        $r = mysql_fetch_array($s1);
+//$_POST['id'].",".$_POST['i'].",".$_POST['n'].",".$_POST['col']
+
+        $a = explode("+",$r[0]);
+        for($i=0; $i<count($a);$i++){
+            $a1 = explode("†", $a[$i]);
+                $p = "+".$p;
+
+                for($j=0; $j<=count($a1)-1;$j++) {
+                    $a2 = explode("|", $a1[$j]);
+                    if($i == $_POST['i'] && $j == $_POST['j']) {
+//                            $p = $a2[4] . "-" . $i . "," . $j . "~" . $_POST['id'] . "," . $_POST['i'] . "," . $_POST['j'] . "," . $_POST['col'];
+                            $p =  "†".$a2[0]."|".$a2[1]."|".$a2[2]."|".$a2[3]."|".$_POST['col'].$p;
+                    }else {
+                        $p =   "†".$a2[0] . "|" . $a2[1] . "|" . $a2[2] . "|" . $a2[3] . "|" . $a2[4] .$p;
+                    }
+                }
+        }
+//        $p = substr($p, 0, strlen($p)-2);
+
+
+        ?><div class='o'><?= $p ?></div><?
+//        ?><!--<div class='o'>--><?//= $f. "~". count($a1)."-".$_POST['id']."-".$_POST['i']."-".$_POST['j'] ?><!--</div>--><?//
+
+
+
+
+    break;
 }
 
 

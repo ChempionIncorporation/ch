@@ -28,9 +28,11 @@ if (!empty($_POST['rad']))
     $rad = $_POST['rad'];
 if (!empty($_POST['che']))
     $che = $_POST['che'];
+if (!empty($_POST['dat']))
+    $dat = $_POST['dat'];
 
 
-if (mysql_query("INSERT INTO stend_pn  VALUES (NULL, '" . $n . "', '" . $img . "', '" . $cat . "', '" . $nal . "', '" . $pri . "', '" . $h . "', '" . $w . "', '" . $des . "', '" . $cha . "', '" . $req . "', '" . $inp . "', '" . $rad . "', '" . $che . "')")) {
+if (mysql_query("INSERT INTO stend_pn  VALUES (NULL, '" . $n . "', '" . $img . "', '" . $cat . "', '" . $nal . "', '" . $pri . "', '" . $h . "', '" . $w . "', '" . $des . "', '" . $cha . "', '" . $req . "', '" . $inp . "', '" . $rad . "', '" . $che . "', '" . $dat . "')")) {
 // print_r($_POST);
     print "<div class='Result_text'>Добавлен</div>>";
 }
